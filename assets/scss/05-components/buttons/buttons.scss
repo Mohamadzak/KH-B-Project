@@ -1,5 +1,6 @@
 .button {
   background-color: var(--success-color);
+  font-weight: 700;
   color: #000;
   border: none;
   border-radius: 30px;
@@ -41,3 +42,8 @@
   border-bottom: 1px solid var(--white-color);
 }
 
+@media(max-width:768px){
+ button{
+  width: 100%;
+ }
+}

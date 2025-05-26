@@ -36,18 +36,23 @@
 
 .consultation-benefits {
   font-family: "Tahoma", sans-serif;
-  color: var(--white-color);
   font-size: 17px;
   line-height: 1.6;
+  color: #d5d5d5;
 }
 
-.consultation-benefits ul {
+.custom-bullets {
   padding-left: 20px;
-  margin-top: 8px;
+  margin: 0;
+  color: #d5d5d5;
 }
 
-.consultation-benefits li {
-  margin-bottom: 8px;
+.custom-bullets li {
+  list-style-type: disc;
+  color: #d5d5d5;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
 }
 
 .consultation-form {
@@ -78,15 +83,20 @@
   color: var(--white-color);
   line-height: 1.6;
   font-family: "Tahoma", sans-serif;
+  a{
+    color: var(--white-color);
+  }
 }
 
 .consultation-image {
   flex: 1 1 350px;
   display: flex;
   justify-content: center;
+  align-items: flex-start;
+  transform: translateY(-8%);
 }
 
 .consultation-image img {
-  max-width: 100%;
-  height: auto;
+  width: 486px;
+  height: 353.76px;
 }

@@ -1,49 +1,68 @@
+/* Body */
 body {
   background-color: var(--black-color);
   color: var(--white-color);
   font-family: 'Tahoma', sans-serif;
 }
 
-header {
+/* Sticky Header Base */
+.site-header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 48px;
-  position: relative;
-  align-self: stretch;
+  position: sticky;
+  top: 0;
   width: 100%;
-  flex: 0 0 auto;
+  z-index: 1000;
+  background-color: var(--black-color);
+  transition: all 0.3s ease-in-out;
 }
 
-/* Navbar links */
+/* Sticky Active State (JS will toggle this class) */
+.site-header.sticky-active {
+  opacity: 0.95;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  background-color: #0a0a0a; /* slightly darker */
+}
+
+/* Navbar Links */
 .navbar-nav .nav-link {
-  color: var(--white-color) !important;  /* Consider removing !important by increasing specificity */
+  color: var(--white-color) !important;
   font-weight: 400;
   font-size: 17px;
+  line-height: 100%;
+  transition: color 0.3s ease;
 }
 
-/* Dropdown container spacing */
+.navbar-nav .nav-link:hover {
+  color: var(--black-color) !important;
+  background-color: var(--white-color) !important;
+  font-weight: 400 !important;
+  font-size: 17px !important;
+  border-radius: 20px;
+}
+
+/* Dropdown */
 .dropdown {
   gap: 4px;
 }
 
-/* Hover background for dropdown links */
 .dropdown-menu a:hover {
   background-color: #333;
 }
 
-/* Border for elements with custom-border-color */
+/* Border Utility */
 .custom-border-color {
   border-bottom: 1px var(--dark-color) solid;
 }
 
-/* Logo alignment on vertical flex (mobile) */
+/* Logo Alignment */
 .logo-direction {
-  align-self: flex-start; /* push logo to left on mobile */
+  align-self: flex-start;
   transform: translateY(30%);
 }
 
-/* Navbar toggler button positioning */
+/* Mobile Toggler Positioning */
 .navbar-toggler-abs {
   position: absolute;
   top: 100%;
@@ -52,23 +71,14 @@ header {
   z-index: 10;
 }
 
-/* Overlay dropdown for collapsed navbar */
+/* Mobile Nav Collapse */
 .navbar-collapse-absolute {
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: var(--black-color); /* Black background */
+  background-color: var(--black-color);
   padding: 10px;
   z-index: 9;
   border-radius: 5px;
-}
-
-/* Navbar link hover styles */
-.navbar-nav .nav-link:hover {
-  color: var(--black-color) !important; /* Make sure black is visible on hover */
-  background-color: var(--white-color) !important;
-  font-weight: 400 !important;
-  font-size: 17px !important;
-  border-radius: 20px;
 }

@@ -1,14 +1,31 @@
-/* ===========================
-   Slick Carousel
-=========================== */
+.banner-span {
+  font-size: 96px;
+  font-weight: 700;
+  background: url('/images/dummy/home/banner-img.png') no-repeat center center;
+  background-size: cover;
+  display: inline-block;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  line-height: 82px;
+  filter: brightness(2.5);
+}
+
+
+/* Slick Carousel */
 .slick-carousel {
   z-index: 1;
+  button{
+    width: 25%;
+  }
 }
 
 .Not-your {
   font-size: 64px;
   font-weight: 400;
   line-height: 82px;
+  color: var(--white-color);
 }
 
 .lead {
@@ -16,4 +33,12 @@
   font-weight: 400;
   line-height: 44px;
   color: var(--white-color);
+}
+
+.carousel-controls {
+  z-index: 10;
+}
+.slide-number {
+  font-size: 18px;
+  color: #fff;
 }

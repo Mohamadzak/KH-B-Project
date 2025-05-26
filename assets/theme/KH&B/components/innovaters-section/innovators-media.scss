@@ -1,33 +1,98 @@
-/* ================================
-   Innovators Section Responsive Styles
-   Target screen widths up to 991.98px
-   ================================ */
-@media (max-width: 991.98px) {
-  /* Center container and limit width/height */
+/* ===========================
+   Innovators Section - Responsive (Taller & Longer Content)
+=========================== */
+
+/* Tablet and below (≤ 1200px) */
+@media (max-width: 1200px) {
+  .innovators-section {
+    padding: 200px 0 200px 0; /* Much taller vertical padding */
+  }
   .container-innovators {
-    justify-content: center;
-    padding: 0 20px;
-    width: 343px;
-    height: 525px;
+    padding: 0 80px; /* Wider horizontal padding */
   }
-
-  /* Center text content */
   .content-box {
-    margin: 0 auto;
-    text-align: center;
+    max-width: 760px; /* Even wider content box */
+    padding: 56px;    /* More padding inside the box */
+    min-height: 500px; /* Enforce taller box */
   }
-
-  /* Headline typography adjustments */
+  .section-subject,
+  .section-subject strong {
+    font-size: 48px;
+    line-height: 68px;
+  }
   .headline {
-    font-weight: 400;
-    font-size: 34px;
-    color: var(--black-color);
+    font-size: 38px;
+    line-height: 1.36;
   }
+}
 
-  /* Description typography adjustments */
-  .description {
-    font-weight: 400;
+/* Small Tablet (≤ 900px) */
+@media (max-width: 900px) {
+  .innovators-section {
+    padding: 140px 0 140px 0; /* Much taller */
+  }
+  .container-innovators {
+    padding: 0 36px;
+    justify-content: center;
+  }
+  .content-box {
+    max-width: 98vw;
+    padding: 44px;
+    min-height: 420px;
+  }
+  .section-title {
     font-size: 16px;
-    color: #616161;
+  }
+  .section-subject,
+  .section-subject strong {
+    font-size: 38px;
+    line-height: 54px;
+  }
+  .headline {
+    font-size: 30px;
+    line-height: 1.32;
+  }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .innovators-section {
+    padding: 100px 0 90px 0; /* Taller top and bottom */
+    background-position: center top;
+  }
+  .container-innovators {
+    padding: 0 8vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-box {
+    padding: 32px 10px;
+    border-radius: 14px;
+    gap: 24px;
+    min-height: 320px;
+  }
+  .section-title {
+    font-size: 15px;
+    letter-spacing: 0.7px;
+  }
+  .section-subject,
+  .section-subject strong {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0;
+  }
+  .headline {
+    font-size: 21px;
+    line-height: 1.25;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .content-box button {
+    width: 100%;
+    min-width: unset;
+    font-size: 19px;
+    padding: 18px 0;
   }
 }

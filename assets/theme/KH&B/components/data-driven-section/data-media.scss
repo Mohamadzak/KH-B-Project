@@ -1,23 +1,119 @@
-/* ================================
-   Data Driven Section Responsive Styles
-   Target screen widths up to 767.98px
-   ================================ */
-@media (max-width: 767.98px) {
-  /* Stack columns vertically and center text */
-  .data-driven-section .row.align-items-center {
-    flex-direction: column;
-    text-align: center;
-  }
+/* ===========================
+   Data Driven Section
+=========================== */
+.data-driven-section {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-family: 'Tahoma', sans-serif;
+}
 
-  /* Make columns full width with margin below */
-  .data-driven-section .row.align-items-center .col-md-6 {
-    width: 100%;
-    margin-bottom: 20px;
-  }
+.data-driven-section button {
+  width: 30%;
+}
 
-  /* Button styling: full width and vertical transform */
-  .data-driven-section .button {
-    transform: translateY(600%);
+.data-driven-section h5 {
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--white-color);
+  line-height: 36px;
+}
+
+.data-driven-section span {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--white-color);
+  line-height: 36px;
+}
+
+.data-driven-section h2 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+}
+
+.data-driven-description {
+  font-size: 17px;
+  font-weight: 400;
+  color: #d5d5d5;
+  line-height: 24px;
+}
+
+.Innovative-strategies {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2%;
+  color: var(--white-color);
+}
+
+.Innovative-strategies .Innovative-mark {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2%;
+  color: var(--white-color);
+}
+
+/* ===========================
+   Responsive Styles
+=========================== */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .data-driven-section h2 {
+    font-size: 2rem;
+  }
+  .data-driven-section h5 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .data-driven-section span {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  .data-driven-description {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .Innovative-strategies,
+  .Innovative-strategies .Innovative-mark {
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .data-driven-section button {
+    width: 45%;
+    font-size: 1rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .data-driven-section {
+    padding: 16px;
+  }
+  .data-driven-section h2 {
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
+  }
+  .data-driven-section h5 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .data-driven-section span {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .data-driven-description {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .Innovative-strategies,
+  .Innovative-strategies .Innovative-mark {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .data-driven-section button {
     width: 100%;
+    font-size: 0.95rem;
+    padding: 10px 0;
   }
 }

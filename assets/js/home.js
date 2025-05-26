@@ -57,20 +57,39 @@ document.addEventListener('click', function(event) {
    Slick Slider Initialization
    =========================== */
 
-/* Banner Slick Slider */
-$(document).ready(function() {
-  $('.slick-carousel').slick({
+
+$(document).ready(function () {
+  const $carousel = $('.slick-carousel');
+  const $current = $('.current-slide');
+  const $total = $('.total-slides');
+
+  // Set total slides on init
+  $carousel.on('init', function (event, slick) {
+    $total.text(slick.slideCount);
+    $current.text(1);
+  });
+
+  // Update current slide number after change
+  $carousel.on('afterChange', function (event, slick, currentSlide) {
+    $current.text(currentSlide + 1);
+  });
+
+  // Initialize slick with custom arrows
+  $carousel.slick({
     dots: false,
     arrows: true,
-    prevArrow: $('.slick-prev'),
-    nextArrow: $('.slick-next'),
+    prevArrow: $('#carousel-prev'), // use ID selector
+    nextArrow: $('#carousel-next'), // use ID selector
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true,
+    adaptiveHeight: true
   });
 });
+
+
+
 
 /* Data-Driven Slick Slider
    - Only initialize on screens smaller than 768px
@@ -86,6 +105,37 @@ $(document).ready(function() {
     });
   }
 });
+//market leader slider
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".review-card");
+  let currentIndex = 0;
+
+  function showCard(index) {
+    cards.forEach((card, i) => {
+      card.style.display = i === index ? "flex" : "none";
+    });
+  }
+
+  // Initial display
+  showCard(currentIndex);
+
+  // Handle arrow clicks inside each card
+  cards.forEach((card, index) => {
+    const leftArrow = card.querySelector(".review-card__arrow--left");
+    const rightArrow = card.querySelector(".review-card__arrow--right");
+
+    leftArrow.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+      showCard(currentIndex);
+    });
+
+    rightArrow.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % cards.length;
+      showCard(currentIndex);
+    });
+  });
+});
+
 
 /* Featured Case Studies Slick Slider
    - Responsive toggle: initialize on small screens, destroy on large screens

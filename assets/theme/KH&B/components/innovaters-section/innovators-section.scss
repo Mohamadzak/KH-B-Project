@@ -42,6 +42,20 @@
   font-family: Tahoma, sans-serif;
   text-transform: uppercase;
 }
+.section-subject{
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2%;
+  strong{
+      color: var(--black-color);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2%;
+  }
+}
 
 .headline {
   font-size: 40px;
@@ -60,4 +74,13 @@
   color: #616161;
   line-height: 1.6;
   font-family: Tahoma, sans-serif;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+//button edit 
+.content-box{
+  button{
+    width:30% ;
+  }
 }
