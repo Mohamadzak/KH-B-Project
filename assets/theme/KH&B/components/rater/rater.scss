@@ -1,0 +1,37 @@
+/* Rating stars container */
+.review-card__rating {
+  display: grid;
+  grid-template-columns: repeat(5, 19px);
+  gap: 10px;
+  width: max-content;
+  height: 19px;
+  cursor: pointer;
+  direction: rtl !important;        /* invert star order */
+  unicode-bidi: normal !important;  /* reset bidi */
+  font-size: 0;                    /* reset font size */
+}
+
+/* Hide radio inputs */
+.review-card__rating input {
+  display: none;
+  width: 19px;
+  height: 19px;
+}
+
+/* Stars style */
+.review-card__rating label {
+  display: inline-block;
+  width: 19px;
+  height: 19px;
+  color: #D9D9D9; /* inactive stars */
+  transition: color 0.3s;
+  font-size: 19px;
+  line-height: 19px;
+}
+
+/* Hover and checked stars color */
+.review-card__rating label:hover,
+.review-card__rating label:hover ~ label,
+.review-card__rating input:checked ~ label {
+  color: var(--warning-color);
+}

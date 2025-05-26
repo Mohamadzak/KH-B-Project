@@ -1,0 +1,273 @@
+/* Market leaders section */
+.home-page-d .market-leaders {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  align-items: center;
+  gap: 32px;
+  padding: 0 120px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--black-color);
+  margin-top: 20px;
+}
+
+/* Clients section styling */
+.clients-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 24px 16px;
+  background-color: var(--black-color);
+  margin-top: 20px;
+}
+
+.clients-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 792px;
+  width: 100%;
+  gap: 16px;
+  text-align: center;
+}
+
+/* Clients subtitle */
+.clients-subtitle {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--white-color);
+  letter-spacing: 0.65px;
+  margin: 0;
+}
+
+/* Clients main title */
+.clients-title {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -0.96px;
+  color: var(--white-color);
+  margin: 0;
+}
+
+/* Highlight text in clients section */
+.clients-highlight {
+  font-weight: 700;
+}
+
+/* Market leaders buttons */
+.market-leaders .button {
+  width: 25%;
+}
+
+/* Buttons go full width on smaller screens */
+@media (max-width: 992px) {
+  .market-leaders .button {
+    width: 100%;
+  }
+}
+
+/* Wrapper for centering the review card */
+.review-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  height: 100vh; /* full viewport height */
+  width: 100%;
+}
+
+/* Review card styling */
+.review-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 64px 72px;
+  width: 1200px;
+  height: 501px;
+  background: var(--white-color);
+  border-radius: 48px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  z-index: 1;
+}
+
+/* Review card text */
+.review-card__text {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 120%;
+  color: var(--black-color);
+  transform: translateY(10%);
+  margin-bottom: 32px;
+}
+
+/* User info section */
+.review-card__user {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 50px;
+}
+
+.review-card__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.review-card__name {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  color: var(--black-color);
+}
+
+.review-card__role {
+  margin: 4px 0 0 0;
+  font-size: 16px;
+  color: var(--black-color);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation arrows */
+.review-card__arrows {
+  position: absolute;
+  bottom: 90px;
+  right: 100px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.review-card__arrow {
+  width: 28px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-card__arrow--left::before {
+  content: '<';
+  font-size: 40px;
+  color: var(--black-color);
+}
+
+.review-card__arrow--right::before {
+  content: '>';
+  font-size: 40px;
+  color: var(--black-color);
+}
+
+/* Responsive for tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .review-card {
+    width: 90%;
+    height: auto;
+    padding: 48px;
+    border-radius: 32px;
+  }
+  .review-card__rating {
+    gap: 8px;
+    height: 19px;
+  }
+  .review-card__rating label {
+    width: 19px;
+    height: 19px;
+    font-size: 19px;
+  }
+  .review-card__text {
+    font-size: 32px;
+  }
+  .review-card__user {
+    gap: 16px;
+    margin-top: 50px;
+  }
+  .review-card__avatar {
+    width: 64px;
+    height: 64px;
+  }
+  .review-card__name {
+    font-size: 20px;
+  }
+  .review-card__role {
+    font-size: 14px;
+    margin-left: 12px;
+  }
+  .review-card__arrows {
+    bottom: 48px;
+    right: 24px;
+    gap: 16px;
+  }
+  .review-card__arrow {
+    width: 24px;
+    height: 20px;
+  }
+  .review-card__arrow--left::before,
+  .review-card__arrow--right::before {
+    font-size: 20px;
+  }
+}
+
+/* Responsive for mobile (max-width: 576px) */
+@media (max-width: 576px) {
+  .review-card {
+    width: 343px;
+    height: 508px;
+    padding: 24px 16px;
+    border-radius: 24px;
+    margin-top: 20px;
+  }
+  .review-card__rating {
+    gap: 6px;
+    height: 19px;
+  }
+  .review-card__rating label {
+    width: 19px;
+    height: 19px;
+    font-size: 19px;
+  }
+  .review-card__text {
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  .review-card__user {
+    gap: 5px;
+    margin-top: 10px;
+  }
+  .review-card__avatar {
+    width: 48px;
+    height: 48px;
+  }
+  .review-card__name {
+    font-size: 18px;
+  }
+  .review-card__role {
+    font-size: 12px;
+    margin-left: 8px;
+  }
+  .review-card__arrows {
+    bottom: 40px;
+    right: 15px;
+    gap: 12px;
+  }
+  .review-card__arrow {
+    width: 20px;
+    height: 16px;
+  }
+  /* Consider scaling down arrows here, 50px seems large */
+  .review-card__arrow--left::before,
+  .review-card__arrow--right::before {
+    font-size: 50px;
+  }
+}

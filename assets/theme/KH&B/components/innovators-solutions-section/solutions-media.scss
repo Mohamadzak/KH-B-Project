@@ -1,0 +1,47 @@
+/* ================================
+   Innovative Section Responsive Styles
+   Target screen widths 768px and below
+   ================================ */
+@media (max-width: 768px) {
+  /* Stack items vertically with spacing */
+  .innovative-section {
+    flex-direction: column;
+    gap: 40px;
+    padding: 24px;
+    margin-top: 100px;
+  }
+
+  /* Button full width and adjusted vertical position */
+  .innovative-section .button {
+    transform: translateY(650%);
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  /* Services list styling */
+  .services-list {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* space between each service item */
+    margin-left: 0;
+    margin-top: -100px; /* push whole list down */
+  }
+
+  /* Each service item aligns bullet and text */
+  .service-item {
+    display: flex;
+    align-items: flex-start; /* align bullets to top of text */
+    gap: 20px;
+  }
+
+  /* Custom bullet styling */
+  .bullet {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: var(--success-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0.75rem 0.1875rem var(--success-color);
+    margin-top: 0.375rem;
+  }
+}

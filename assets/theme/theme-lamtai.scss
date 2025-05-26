@@ -1,0 +1,29 @@
+@import '../scss/main.scss';
+
+:root {
+    --font-family: "Inter", sans-serif;
+    --font-family-alt: 'Merriweather', serif;
+   // --primary-color: #00314F;
+  //  --secondary-color: #0075BB;
+    //--accent-color: #004067;
+    --dark-color: #383838;
+    --text-color: #535353;
+    --white-color: #ffffff;
+    --black-color: #000000;
+   // --info-color: #006AAA;
+    --success-color: #A3F287;
+    --warning-color: #EFCB2E;
+    //--danger-color: #A75700;
+}
+html,
+body {
+  margin: 0px;
+  height: 100%;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}

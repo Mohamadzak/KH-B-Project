@@ -1,0 +1,30 @@
+@import 'pages/home/home';
+@import 'list/List.scss';
+@import 'client-testimonials/client.scss';
+@import 'rater/rater.scss';
+//components of home
+@import 'pages/home/progress-circle/progress-circle';
+@import 'pages/home/Featured-case-studies/featured-case-studies';
+@import 'pages/home/market-leaders-section/market-leaders.scss';
+  //in market leaders
+  @import 'pages/home/market-leaders-section/words/words.scss';
+//who we help page
+@import 'pages/who-we-help/banner/banner.scss';
+@import 'pages/who-we-help/service-detail-page/service-details.scss';
+@import 'pages/who-we-help/challenges/challenges.scss';
+@import 'pages/who-we-help/offerings/offerings.scss';
+@import 'pages/who-we-help/gtm/gtm.scss';
+@import 'pages/who-we-help/gtm/responsive/gtm-responsive.scss';
+   //animations of gtm execution
+   @import 'pages/who-we-help/gtm/gtm-detail-animation/active.scss';
+   @import 'pages/who-we-help/gtm/gtm-detail-animation/focus.scss';
+   @import 'pages/who-we-help/gtm/gtm-detail-animation/hover.scss';
+
+@import 'pages/who-we-help/solutions/solutions.scss';
+
+
+//media
+@import 'header/headerMedia';
+@import 'footer/footer';
+@import 'pages/home/homemedia';
+@import 'pages/who-we-help/banner/banner-media.scss';

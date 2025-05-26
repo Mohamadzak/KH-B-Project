@@ -1,0 +1,23 @@
+/* ================================
+   Data Driven Section Responsive Styles
+   Target screen widths up to 767.98px
+   ================================ */
+@media (max-width: 767.98px) {
+  /* Stack columns vertically and center text */
+  .data-driven-section .row.align-items-center {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* Make columns full width with margin below */
+  .data-driven-section .row.align-items-center .col-md-6 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Button styling: full width and vertical transform */
+  .data-driven-section .button {
+    transform: translateY(600%);
+    width: 100%;
+  }
+}

@@ -1,0 +1,118 @@
+/* Reset and base background */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--black-color);
+  min-height: 100vh;
+}
+
+.service-detail-page {
+  background-color: var(--black-color);
+  margin: 0;
+  padding: 0;
+}
+
+.service-detail-page .frame-7 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 96px;
+  padding: 64px 0 64px; /* Added bottom padding to avoid margin collapse */
+  width: 100%;
+  background-color: var(--black-color);
+  min-height: 100vh; /* Fill full viewport height */
+  overflow: hidden; /* Contain child margins */
+}
+
+.service-detail-page .solutions {
+  display: flex;
+  flex-direction: column;
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 120px;
+  gap: 64px;
+}
+
+.service-detail-page .frame-8 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.service-detail-page .frame-9 {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 24px;
+}
+
+.service-detail-page .frame-10 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-detail-page .text-wrapper-2 {
+  font-family: "Tahoma", sans-serif;
+  font-size: 48px;
+  color: var(--white-color);
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.service-detail-page .at-kole-hugg-booz-we {
+  font-family: "Tahoma", sans-serif;
+  font-size: 18px;
+  color: #D5D5D5;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.service-detail-page .actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.service-detail-page .text-wrapper-3 {
+  font-family: "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--white-color);
+  letter-spacing: 0.65px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.service-detail-page .image-wrapper {
+  flex: 1 1 450px;
+  padding-top: 64px;
+}
+
+.service-detail-page .image {
+  width: 486px;
+  max-height: 474px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.service-detail-page .frame-11 {
+  position: absolute;
+  width: 89px;
+  height: 84px;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .hide-on-mobile{
+    display: none;
+  }
+}

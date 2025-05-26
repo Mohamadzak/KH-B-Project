@@ -1,0 +1,33 @@
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+    direction: ltr;
+}
+
+.category-box {
+  width: 148px;
+  height: 49px;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 16px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+    .slick-initialized {
+  direction: ltr;
+}
+@media(max-width:768px){
+    .slick-initialized {
+  direction: ltr;
+}
+.category-box{
+    margin-left: 15px;
+}
+
+}

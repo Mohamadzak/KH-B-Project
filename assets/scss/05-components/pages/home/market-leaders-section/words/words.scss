@@ -1,0 +1,26 @@
+.my-words-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  text-align: center;
+}
+
+.words {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  gap: 16px;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Responsive: on smaller screens, 2 columns */
+@media (max-width: 600px) {
+  .words {
+    grid-template-columns: repeat(2, auto);
+    gap: 12px;
+    padding: 48px 16px;
+    margin: 20px;
+}
+}

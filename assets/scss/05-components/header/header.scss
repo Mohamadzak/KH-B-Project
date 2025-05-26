@@ -1,0 +1,74 @@
+body {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-family: 'Tahoma', sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 48px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: var(--white-color) !important;  /* Consider removing !important by increasing specificity */
+  font-weight: 400;
+  font-size: 17px;
+}
+
+/* Dropdown container spacing */
+.dropdown {
+  gap: 4px;
+}
+
+/* Hover background for dropdown links */
+.dropdown-menu a:hover {
+  background-color: #333;
+}
+
+/* Border for elements with custom-border-color */
+.custom-border-color {
+  border-bottom: 1px var(--dark-color) solid;
+}
+
+/* Logo alignment on vertical flex (mobile) */
+.logo-direction {
+  align-self: flex-start; /* push logo to left on mobile */
+  transform: translateY(30%);
+}
+
+/* Navbar toggler button positioning */
+.navbar-toggler-abs {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  transform: translateY(-150%);
+  z-index: 10;
+}
+
+/* Overlay dropdown for collapsed navbar */
+.navbar-collapse-absolute {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--black-color); /* Black background */
+  padding: 10px;
+  z-index: 9;
+  border-radius: 5px;
+}
+
+/* Navbar link hover styles */
+.navbar-nav .nav-link:hover {
+  color: var(--black-color) !important; /* Make sure black is visible on hover */
+  background-color: var(--white-color) !important;
+  font-weight: 400 !important;
+  font-size: 17px !important;
+  border-radius: 20px;
+}

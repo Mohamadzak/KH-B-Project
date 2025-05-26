@@ -1,0 +1,47 @@
+/* ================================
+   Consultation Section Responsive Styles
+   Target screen widths 768px and below
+   ================================ */
+@media (max-width: 768px) {
+  /* Stack consultation content vertically, align left */
+  .consultation-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* Consultation title font size */
+  .consultation-title {
+    font-size: 32px;
+  }
+
+  /* Form stacked vertically, stretch inputs */
+  .consultation-form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  /* Input fields styling */
+  .consultation-form input {
+    height: 40px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  /* Button styling */
+  .consultation-form button {
+    background-color: var(--success-color);
+    color: var(--black-color);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    align-items: center;
+  }
+
+  /* Consultation image centered with margin */
+  .consultation-image {
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+  }
+}

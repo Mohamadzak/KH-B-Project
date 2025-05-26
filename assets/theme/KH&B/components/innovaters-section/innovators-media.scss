@@ -1,0 +1,33 @@
+/* ================================
+   Innovators Section Responsive Styles
+   Target screen widths up to 991.98px
+   ================================ */
+@media (max-width: 991.98px) {
+  /* Center container and limit width/height */
+  .container-innovators {
+    justify-content: center;
+    padding: 0 20px;
+    width: 343px;
+    height: 525px;
+  }
+
+  /* Center text content */
+  .content-box {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  /* Headline typography adjustments */
+  .headline {
+    font-weight: 400;
+    font-size: 34px;
+    color: var(--black-color);
+  }
+
+  /* Description typography adjustments */
+  .description {
+    font-weight: 400;
+    font-size: 16px;
+    color: #616161;
+  }
+}

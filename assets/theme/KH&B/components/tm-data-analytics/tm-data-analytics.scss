@@ -1,0 +1,226 @@
+/* tm Data Analytics Case Studies Container */
+.tm-data-analytics-case-studies {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+/* Header Section */
+.tm-data-analytics-case-studies__header {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+  width: 100%;
+}
+
+/* Title Styling - allow wrapping */
+.tm-data-analytics-case-studies__title {
+  overflow: visible;
+  max-width: 50%;
+  margin: 0;
+  padding: 0;
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+/* Container for description + button + learn more */
+.tm-data-analytics-case-studies__header > div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 60%;
+  gap: 12px;
+  color: white;
+}
+
+/* Description paragraph */
+.tm-data-analytics-case-studies__header > div > p {
+  margin: 0 0 8px 0;
+  max-width: 100%;
+  line-height: 1.4;
+  color: #d5d5d5;
+}
+
+/* Container for Sign Up button + Learn more link side by side */
+.tm-action-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Learn more link */
+.tm-learn-more {
+  cursor: pointer;
+  color: var(--white-color);
+  text-decoration: underline;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Responsive Styling (Mobile - max-width: 768px) */
+@media (max-width: 768px) {
+  /* Case study card headline and description */
+  .case-study-card__headline,
+  .case-study-card__description {
+    display: block;
+    width: 100%;
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  .case-study-card__description {
+    font-size: 0.95rem;
+  }
+
+  /* Title responsive font size and width */
+  .tm-data-analytics-case-studies__title {
+    font-size: 32px;
+    max-width: 100%;
+  }
+
+  /* Main container flex column */
+  .tm-data-analytics-case-studies {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Title and description wrapper (header) first */
+  .tm-data-analytics-case-studies__header {
+    order: 1;
+    flex-direction: column !important;
+    gap: 24px;
+  }
+
+  /* Description paragraph inside header */
+  .tm-data-analytics-case-studies__header > div > p {
+    position: relative;
+    top: 0;
+    opacity: 1;
+  }
+
+  /* Slider list second */
+  .featured-case-studies__list {
+    order: 2;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  flex-wrap: wrap;
+  margin-left: -10px; /* Negative half of padding */
+  }
+  /* Slick slider margin fix */
+.case-study-card {
+  flex: 0 0 30%;
+  margin-left: 20px; /* half spacing */
+  box-sizing: border-box;
+}
+
+  /* Move action row (button + learn more) below slider */
+  .tm-action-row {
+    position: relative !important;
+    bottom: unset !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    margin-top: 12px;
+    order: 3;
+    align-self: flex-start;
+  }
+}
+
+/* Case Studies List Container */
+.tm-data-analytics-case-studies__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  overflow: visible;
+  justify-content: center;
+}
+
+/* Individual Case Study Card */
+.tm-data-analytics-case-study-card {
+  background: var(--white-color);
+  border-radius: 8px;
+  flex: 1 1 300px;
+  max-width: 384px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tm-data-analytics-case-study-card:focus {
+  outline: 1px solid var(--white-color);
+  outline-offset: 7px;
+  border-radius: 6px;
+}
+
+/* Card Image */
+.tm-data-analytics-case-study-card__image {
+  width: 100%;
+  height: 185px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Card Content */
+.tm-data-analytics-case-study-card__content {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-grow: 1;
+}
+
+.tm-data-analytics-case-study-card__content:active {
+  border: 1px solid var(--black-color);
+  transform: scale(0.95);
+}
+
+/* Headline */
+.tm-data-analytics-case-study-card__headline {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: var(--black-color);
+  margin: 0;
+}
+
+.tm-data-analytics-case-study-card__headline:hover {
+  border-bottom: 1px solid var(--black-color);
+}
+
+/* Description */
+.tm-data-analytics-case-study-card__description {
+  font-family: 'Tahoma', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: #616161;
+  margin: 0;
+}
+
+/* Footer */
+.tm-data-analytics-case-study-card__footer {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Button inside Card */
+.tm-data-analytics-case-study-card__btn {
+  margin-left: auto;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--black-color);
+}
+
+.tm-data-analytics-case-study-card__btn img {
+  width: 50px;
+  height: auto;
+}
