@@ -1045,6 +1045,7 @@ body {
   justify-content: center;
   gap: 40px;
   padding-right: 40px;
+  transform: translateX(10%);
 }
 
 .description-who-we-help {
@@ -1052,6 +1053,7 @@ body {
   font-size: 18px;
   line-height: 27px;
   color: var(--white-color);
+  font-weight: 400;
   margin: 0;
 }
 
@@ -1706,6 +1708,7 @@ body {
 
 .ecco-logo {
   width: 90px;
+  height: 23px;
 }
 
 /* Responsive: move button image down on smaller screens */
@@ -1957,15 +1960,6 @@ html, body {
   height: 474px;
   -o-object-fit: cover;
      object-fit: cover;
-}
-
-.insight .insight-icon {
-  position: absolute;
-  width: 89px;
-  height: 84px;
-  top: 40px;
-  left: 50%;
-  transform: translateX(-50%);
 }
 
 /* Benefit list renamed */
@@ -3182,21 +3176,27 @@ html, body {
 }
 
 .category-box {
-  width: 148px;
+  width: 125px;
   height: 49px;
   border: 1px solid white;
   border-radius: 30px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 700;
   background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  text-transform: uppercase;
 }
 
 .slick-initialized {
   direction: ltr;
+}
+
+.category-box:hover {
+  border-color: #BCFFA5;
 }
 
 @media (max-width: 768px) {
@@ -3205,6 +3205,88 @@ html, body {
   }
   .category-box {
     margin-left: 15px;
+  }
+}
+.client-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  padding: 50px;
+  background-color: black;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  place-items: center;
+}
+
+.client-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-card {
+  width: 360px;
+  height: 380px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #ddd;
+  background-color: white;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+
+.client-card-header {
+  background-color: #eee;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-card-header img {
+  width: 48px;
+  height: 48px;
+  opacity: 0.5;
+}
+
+.client-card-body {
+  padding: 18px;
+}
+
+.client-card-title {
+  font-size: 13px;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.client-card-name {
+  font-weight: 400;
+  line-height: 32px;
+  font-size: 24px;
+  color: var(--black-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 1100px) {
+  .client-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .client-section {
+    grid-template-columns: 1fr;
+  }
+  .client-card-wrapper {
+    justify-content: center;
+  }
+  .client-card {
+    width: 90vw; /* Use most of the screen width */
+    height: auto; /* Let height grow naturally */
+    max-width: 400px; /* Prevent it from being too large */
   }
 }
 .banner-span {
@@ -3740,6 +3822,28 @@ html, body {
     line-height: 18px;
   }
 }
+.card-design .card {
+  border-color: 1px solid #565656 !important;
+  border-radius: 8px;
+}
+
+.card-body {
+  background-color: #272727;
+  border: 1px solid #565656;
+}
+.card-body .card-title {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+}
+.card-body .card-text {
+  color: #d5d5d5;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 /* Wrapper for centering the review card */
 .review-card-wrapper {
   display: flex;
@@ -4850,4 +4954,84 @@ html, body {
   height: 84px;
   pointer-events: none;
   z-index: 1;
+}
+
+.service-offerings-ellipse-25 {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  top: 10%;
+  left: 78%;
+  opacity: 50%;
+}
+
+.insight .insight-icon-1 {
+  position: absolute;
+  width: 76px;
+  height: 70px;
+  top: 102%;
+  left: 41%;
+  opacity: 75%;
+}
+
+.insight .insight-icon-2 {
+  position: absolute;
+  width: 76px;
+  height: 70px;
+  top: 243%;
+  left: 43%;
+  opacity: 75%;
+}
+
+.insight .insight-icon-3 {
+  position: absolute;
+  width: 76px;
+  height: 70px;
+  top: 385%;
+  left: 42%;
+  opacity: 75%;
+}
+
+.service-icon-46 {
+  position: absolute;
+  top: 55%;
+  left: 30%; /* Shifted a little left from start (0) */
+  z-index: 0;
+  opacity: 80%; /* same opacity */
+}
+
+.category-cards-ellipse {
+  position: absolute;
+  width: 76px;
+  height: 70px;
+  top: 109%;
+  left: 38%;
+  opacity: 75%;
+}
+
+.Target-market-frame-163 {
+  position: absolute;
+  width: 76px;
+  height: 70px;
+  top: 90%;
+  left: 41%;
+  opacity: 75%;
+}
+
+.target-market-frame-167 {
+  position: absolute;
+  width: 97px;
+  height: 109px;
+  transform: translateY(-65%);
+  left: 85%;
+  opacity: 75%;
+}
+
+.client-listing-ellipse {
+  position: absolute;
+  width: 76px;
+  height: 70px;
+  top: 92%;
+  left: 38%;
+  opacity: 75%;
 }/*# sourceMappingURL=styles.css.map */

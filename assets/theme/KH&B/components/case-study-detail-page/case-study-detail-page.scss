@@ -1,0 +1,20 @@
+.card-design .card {
+  border-color: 1px solid #565656 !important;
+  border-radius: 8px;
+}
+.card-body{
+    background-color: #272727;
+    border: 1px solid #565656;
+    .card-title{
+        color: var(--white-color);
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .card-text{
+        color: #d5d5d5;
+        font-size: 17px;
+        line-height: 24px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+}

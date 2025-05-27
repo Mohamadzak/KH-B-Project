@@ -91,6 +91,7 @@
   justify-content: center;
   gap: 40px;
    padding-right: 40px;
+   transform: translateX(10%);
 }
 
 .description-who-we-help {
@@ -98,6 +99,7 @@
   font-size: 18px;
   line-height: 27px;
   color: var(--white-color);
+  font-weight: 400;
   margin: 0;
 }
 

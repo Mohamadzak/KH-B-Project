@@ -2,3 +2,17 @@
 @import 'Inv.solutions.scss';
 @import 'empower-client.scss';
 @import 'who-we-help.scss';
+@import 'reasons.scss';
+@import 'khb-case-studies.scss';
+@import 'Target.scss';
+
+
+//client listing ellipse 
+.client-listing-ellipse{
+      position: absolute;
+        width: 76px;
+        height: 70px;
+        top: 92%;
+        left: 38%;
+        opacity: 75%;
+}

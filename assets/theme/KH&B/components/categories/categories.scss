@@ -7,20 +7,25 @@
 }
 
 .category-box {
-  width: 148px;
+  width: 125px;
   height: 49px;
   border: 1px solid white;
   border-radius: 30px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 700;
   background: transparent;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+   text-transform: uppercase;
 }
     .slick-initialized {
   direction: ltr;
+}
+.category-box:hover {
+   border-color: #BCFFA5;
 }
 @media(max-width:768px){
     .slick-initialized {
