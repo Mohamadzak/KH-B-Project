@@ -10,7 +10,7 @@
   display: flex;
   align-items: stretch;
   justify-content: center;
-  gap: 48px;
+  gap: 64px; /* Increased gap for more space between image and content */
   padding: 0;
   max-width: 1280px;
   margin: 64px auto 0 auto;
@@ -19,13 +19,9 @@
 
 .service-offerings__main-image {
   width: 486px;
-  border-radius: 12px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   flex-shrink: 0;
-  height: 100%;
-  min-height: 520px;
-  max-height: 640px;
+  height: 510px;
   align-self: stretch;
   background: #232323;
 }
@@ -36,7 +32,8 @@
   justify-content: flex-start;
   width: 588px;
   z-index: 1;
-  height: 100%;
+  height: 510px;
+  transform: translateX(5%);
 }
 
 .service-offerings__title {
@@ -104,23 +101,12 @@
   margin: 0;
 }
 
-.service-offerings__accent-image {
-  position: absolute;
-  width: 92px;
-  height: 92px;
-  top: 106px;
-  left: 1062px;
-  z-index: 0;
-  pointer-events: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
 
 /* Responsive Styles */
+
 @media (max-width: 1280px) {
   .service-offerings__container {
-    gap: 32px;
+    gap: 40px; /* Still a good space but slightly less on small screens */
     max-width: 100%;
     padding: 0 24px;
   }
@@ -133,6 +119,7 @@
     width: 440px;
   }
 }
+
 @media (max-width: 900px) {
   .service-offerings__container {
     flex-direction: column;
@@ -170,13 +157,13 @@
   }
   /* Keep flex-direction: row so bullet stays left next to text */
   .service-offerings__item {
-    flex-direction: row; /* <-- Changed from column to row */
-    align-items: flex-start; /* instead of center */
-    gap: 16px; /* slightly smaller gap for mobile */
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
     padding: 16px 0;
   }
   .service-offerings__bullet {
-    margin-top: 6px; /* restore margin so bullet aligns nicely */
+    margin-top: 6px;
   }
   .service-offerings__item-title {
     font-size: 24px;
@@ -190,6 +177,7 @@
     display: none;
   }
 }
+
 @media (max-width: 480px) {
   .service-offerings__title {
     font-size: 28px;
@@ -206,4 +194,4 @@
     font-size: 14px;
     line-height: 18px;
   }
-}/*# sourceMappingURL=offerings.css.map */
+}

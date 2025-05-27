@@ -3,12 +3,12 @@
   width: 100vw;
   max-width: 100%;
   background: var(--black-color);
-  padding: 0 120px 0 120px;
+  padding: 0 120px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-   margin-top: 80px; 
+  margin-top: 80px;
 }
 
 .khb-challenges-accent {
@@ -22,19 +22,28 @@
 }
 
 .khb-challenges-content {
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: start; /* center all children horizontally */
   gap: 48px;
   position: relative;
   z-index: 1;
-  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
 }
 
 .khb-challenges-header {
   display: flex;
   align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+  max-width: 792px;
+  height: auto;
+  justify-content: flex-start;
+  box-sizing: border-box;
 }
 
 .khb-challenges-title {
@@ -42,22 +51,29 @@
   font-size: 48px;
   font-weight: 400;
   color: var(--white-color);
-  letter-spacing: -0.96px;
+  letter-spacing: -2%;
   line-height: 64px;
   margin: 0;
-  width: 792px;
+  width: fit-content;
+  min-width: 0;
+  max-width: 100%;
+  text-align: left;
+  align-self: flex-start;
 }
 
 .khb-challenges-listing {
   display: flex;
   flex-direction: row;
-  align-items: stretch; /* make children stretch equally in height */
+  align-items: stretch;
   gap: 24px;
-  width: 1200px;
+  width: 100%;
+  max-width: 1200px;
   position: relative;
-  height: 400px;
+  height: auto;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 .khb-challenge-card {
   display: flex;
@@ -65,21 +81,20 @@
   align-items: flex-start;
   background: #272727;
   border-radius: 8px;
-  border: 1px solid #555555;
+  border: 1px solid #565656;
   padding: 40px 32px 72px;
   gap: 24px;
   width: 100%;
-  max-width: 376px;
-  min-width: 310px;
-
-  /* Make cards equal height */
-  flex: 1 1 0; /* allow cards to grow and shrink equally */
+  max-width: 384px;
+  min-width: 240px;
+  height: 415px;
+  flex: 1 1 0;
   box-sizing: border-box;
 }
 
 .khb-challenge-bullet {
-   margin: 0 0 0 0; /* remove right margin */
-  align-self: flex-start; /* ensure bullet stays left */
+  margin: 0;
+  align-self: flex-start;
 }
 
 .khb-challenge-glow {
@@ -94,9 +109,9 @@
 .khb-challenge-details {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 10px;
   align-items: flex-start;
-  width: calc(100% - 48px);
+  width: 100%;
 }
 
 .khb-challenge-headline {
@@ -106,7 +121,11 @@
   letter-spacing: -0.56px;
   line-height: 36px;
   font-weight: 400;
-  margin: 0 0 0 0;
+  margin: 0;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  height: auto;
 }
 
 .khb-challenge-description {
@@ -116,6 +135,9 @@
   line-height: 24px;
   margin: 0;
   font-weight: 400;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .khb-challenges-arrows {
@@ -141,20 +163,26 @@
     padding-left: 16px;
     padding-right: 16px;
   }
-  .khb-challenges-content, .khb-challenges-listing {
+  .khb-challenges-content,
+  .khb-challenges-listing {
     width: 100%;
     min-width: 0;
     max-width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .khb-challenges-header {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    justify-content: flex-start;
   }
   .khb-challenges-title {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
     font-size: 36px;
     line-height: 48px;
   }
   .khb-challenge-card {
-    min-width: 240px;
+    min-width: 200px;
     max-width: 100%;
     padding: 32px 16px 48px;
   }
@@ -178,5 +206,13 @@
     top: 24px;
     width: 72px;
     height: 80px;
+  }
+  .khb-challenges-header {
+    height: auto;
+  }
+  .khb-challenge-card {
+    height: auto;
+    min-width: 0;
+    max-width: 100%;
   }
 }
