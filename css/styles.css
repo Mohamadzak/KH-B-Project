@@ -1294,7 +1294,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
   gap: 12px;
   width: 100%;
 }
@@ -1310,10 +1309,11 @@ body {
 /* Title styling */
 .testimonials__title {
   font-family: "Tahoma", sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
-  line-height: 1.2;
-  color: var(--black-color);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2%;
+  color: var(--white-color);
   margin: 0;
   white-space: normal; /* Allow wrapping */
 }
@@ -1322,7 +1322,7 @@ body {
 .text-Client-testimonials {
   font-family: "Tahoma", sans-serif;
   font-size: 1rem;
-  color: #ccc;
+  color: #d5d5d5;
   margin-top: 8px;
   line-height: 1.5;
 }
@@ -1387,8 +1387,9 @@ body {
 .testimonials__description {
   font-family: "Tahoma", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
-  color: #616161;
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--black-color);
   margin: 0;
 }
 
@@ -1695,6 +1696,18 @@ body {
   height: auto;
 }
 
+.featured-case-studies-key-word {
+  color: #616161;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 5%;
+  line-height: 100%;
+}
+
+.ecco-logo {
+  width: 90px;
+}
+
 /* Responsive: move button image down on smaller screens */
 @media (max-width: 768px) {
   .case-study-card__btn img {
@@ -1906,12 +1919,13 @@ html, body {
   color: var(--white-color);
   font-weight: 400;
   margin: 0;
-  line-height: 1.2;
+  line-height: 120%;
+  letter-spacing: 0%;
 }
 
 .insight .insight-description {
   font-family: "Tahoma", sans-serif;
-  font-size: 18px;
+  font-size: 17px;
   color: #D5D5D5;
   line-height: 1.5;
   margin: 0;
@@ -1976,7 +1990,7 @@ html, body {
   font-weight: 400;
   font-size: 28px;
   line-height: 32px;
-  letter-spacing: -0.02em;
+  letter-spacing: -2%;
   color: var(--white-color);
   margin-bottom: 12px;
 }
@@ -2037,6 +2051,7 @@ html, body {
     font-size: 16px;
     text-align: start;
     margin: 0 0 0 0; /* no margin top or bottom */
+    color: rgba(221, 85, 221, 0.3333333333);
   }
   /* Benefit list */
   .benefit-list {
@@ -2897,25 +2912,9 @@ html, body {
   height: auto;
 }
 
-:root {
-  --color-white: #fff;
-  --color-black: #000;
-  --color-bg-dark: #000; /* changed from #1a1a1a to pure black */
-  --color-bg-section: #272727;
-  --color-border-grey: #555;
-  --color-accent: #02b08b;
-  --color-btn: #a2f287;
-  --color-text-main: #fff;
-  --color-text-desc: #d5d5d5;
-  --color-heading: #fff;
-  --color-learn-more: #fff;
-  --color-btn-text: #000;
-  --font-main: "Tahoma", Arial, Helvetica, sans-serif;
-}
-
 /* HERO SECTION */
 .service-details-hero {
-  background: var(--color-bg-dark);
+  background: #000;
   padding: 60px 0 40px 0;
   width: 100%;
 }
@@ -2942,7 +2941,7 @@ html, body {
 .service-details-hero__tagline {
   font-size: 15px;
   font-weight: 700;
-  color: var(--color-accent);
+  color: #02b08b;
   letter-spacing: 1px;
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -2952,7 +2951,7 @@ html, body {
   font-size: 42px;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--color-heading);
+  color: var(--white-color);
   margin-bottom: 10px;
   text-align: left;
   max-width: 500px;
@@ -2971,7 +2970,7 @@ html, body {
 
 .service-details-hero__desc {
   font-size: 18px;
-  color: var(--color-text-desc);
+  color: #d5d5d5;
   margin-bottom: 28px;
   line-height: 1.5;
   max-width: 380px;
@@ -2986,8 +2985,8 @@ html, body {
 }
 
 .service-details-hero__btn {
-  background: var(--color-btn);
-  color: var(--color-btn-text);
+  background: #a2f287;
+  color: #000;
   font-size: 15px;
   font-weight: 700;
   border: none;
@@ -3007,7 +3006,7 @@ html, body {
 }
 
 .service-details-hero__learn-more {
-  color: var(--color-learn-more);
+  color: var(--white-color);
   font-size: 15px;
   font-weight: 700;
   text-decoration: underline;
@@ -3015,7 +3014,7 @@ html, body {
 }
 
 .service-details-hero__learn-more:hover {
-  color: var(--color-accent);
+  color: #02b08b;
 }
 
 /* Layout for hero: left title, right description + actions, description behind on small screens */
@@ -3084,7 +3083,7 @@ html, body {
 }
 /* SUB SERVICES LISTING */
 .sub-services-listing {
-  background: var(--color-bg-dark);
+  background: #000;
   width: 100%;
   padding: 48px 0;
 }
@@ -3099,8 +3098,8 @@ html, body {
 }
 
 .sub-services-listing__item {
-  background: var(--color-bg-section);
-  border: 1px solid var(--color-border-grey);
+  background: #272727;
+  border: 1px solid #565656;
   border-radius: 8px;
   padding: 36px 24px;
   display: flex;
@@ -3116,16 +3115,18 @@ html, body {
 }
 
 .sub-services-listing__heading {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--color-heading);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--white-color);
   margin-bottom: 3px;
+  letter-spacing: -2%;
 }
 
 .sub-services-listing__desc {
-  font-size: 16px;
-  color: var(--color-text-desc);
-  line-height: 1.5;
+  font-size: 17px;
+  color: #d5d5d5;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 @media (max-width: 1260px) {

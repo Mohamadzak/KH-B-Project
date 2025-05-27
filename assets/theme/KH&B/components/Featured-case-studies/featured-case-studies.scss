@@ -208,7 +208,19 @@
   width: 50px;
   height: auto;
 }
-
+//key word
+.featured-case-studies-key-word{
+  color: #616161;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 5%;
+  line-height: 100%;
+}
+//ecco logo in target market file
+.ecco-logo{
+  width: 90px;
+  height: 23px;
+}
 /* Responsive: move button image down on smaller screens */
 @media (max-width: 768px) {
   .case-study-card__btn img {

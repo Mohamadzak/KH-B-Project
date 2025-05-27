@@ -1,24 +1,8 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
 
-:root {
-  --color-white: #fff;
-  --color-black: #000;
-  --color-bg-dark: #000; /* changed from #1a1a1a to pure black */
-  --color-bg-section: #272727;
-  --color-border-grey: #555;
-  --color-accent: #02b08b;
-  --color-btn: #a2f287;
-  --color-text-main: #fff;
-  --color-text-desc: #d5d5d5;
-  --color-heading: #fff;
-  --color-learn-more: #fff;
-  --color-btn-text: #000;
-  --font-main: 'Tahoma', Arial, Helvetica, sans-serif;
-}
-
 /* HERO SECTION */
 .service-details-hero {
-  background: var(--color-bg-dark);
+  background: #000;
   padding: 60px 0 40px 0;
   width: 100%;
 }
@@ -45,7 +29,7 @@
 .service-details-hero__tagline {
   font-size: 15px;
   font-weight: 700;
-  color: var(--color-accent);
+  color: #02b08b;
   letter-spacing: 1px;
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -55,7 +39,7 @@
   font-size: 42px;
   font-weight: 700;
   line-height: 1.2;
-  color: var(--color-heading);
+  color: var(--white-color);
   margin-bottom: 10px;
   text-align: left;
   max-width: 500px;
@@ -74,7 +58,7 @@
 
 .service-details-hero__desc {
   font-size: 18px;
-  color: var(--color-text-desc);
+  color: #d5d5d5;
   margin-bottom: 28px;
   line-height: 1.5;
   max-width: 380px;
@@ -89,8 +73,8 @@
 }
 
 .service-details-hero__btn {
-  background: var(--color-btn);
-  color: var(--color-btn-text);
+  background: #a2f287;
+  color: #000;
   font-size: 15px;
   font-weight: 700;
   border: none;
@@ -110,7 +94,7 @@
 }
 
 .service-details-hero__learn-more {
-  color: var(--color-learn-more);
+  color: var(--white-color);
   font-size: 15px;
   font-weight: 700;
   text-decoration: underline;
@@ -118,7 +102,7 @@
 }
 
 .service-details-hero__learn-more:hover {
-  color: var(--color-accent);
+  color: #02b08b;
 }
 
 /* Layout for hero: left title, right description + actions, description behind on small screens */
@@ -190,7 +174,7 @@
 
 /* SUB SERVICES LISTING */
 .sub-services-listing {
-  background: var(--color-bg-dark);
+  background: #000;
   width: 100%;
   padding: 48px 0;
 }
@@ -205,8 +189,8 @@
 }
 
 .sub-services-listing__item {
-  background: var(--color-bg-section);
-  border: 1px solid var(--color-border-grey);
+  background: #272727;
+  border: 1px solid #565656;
   border-radius: 8px;
   padding: 36px 24px;
   display: flex;
@@ -222,16 +206,18 @@
 }
 
 .sub-services-listing__heading {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--color-heading);
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--white-color);
   margin-bottom: 3px;
+  letter-spacing: -2%;
 }
 
 .sub-services-listing__desc {
-  font-size: 16px;
-  color: var(--color-text-desc);
-  line-height: 1.5;
+  font-size: 17px;
+  color: #d5d5d5;
+  line-height: 24px;
+  font-weight: 400;
 }
 
 @media (max-width: 1260px) {

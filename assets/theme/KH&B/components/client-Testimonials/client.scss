@@ -13,7 +13,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  flex-wrap: wrap;
   gap: 12px;
   width: 100%;
 }
@@ -29,10 +28,11 @@
 /* Title styling */
 .testimonials__title {
   font-family: 'Tahoma', sans-serif;
-  font-weight: 600;
-  font-size: 2rem;
-  line-height: 1.2;
-  color: var(--black-color);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2%;
+  color: var(--white-color);
   margin: 0;
   white-space: normal; /* Allow wrapping */
 }
@@ -41,7 +41,7 @@
 .text-Client-testimonials {
   font-family: 'Tahoma', sans-serif;
   font-size: 1rem;
-  color: #ccc;
+  color: #d5d5d5;
   margin-top: 8px;
   line-height: 1.5;
 }
@@ -105,8 +105,9 @@
 .testimonials__description {
   font-family: 'Tahoma', sans-serif;
   font-weight: 400;
-  font-size: 1rem;
-  color: #616161;
+  font-size: 22px;
+  line-height: 32px;
+  color: var(--black-color);
   margin: 0;
 }
 
