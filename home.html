@@ -4,171 +4,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
     <link rel="stylesheet" href="/css/styles.css" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   </head>
   <body>
-   <div class="home-page bg-black text-white">
-    <div class="home-page-detail bg-black text-white">
-      <header class="container-fluid py-3 bg-black fade-in-section">
-        <div class="container-xxl">
-          <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3 gap-lg-0">
-            <!-- Left: Logo -->
-            <div class="flex-shrink-0 logo-direction fade-in-section">
-              <a href="home.html">
-                <img class="logo" src="/images/dummy/home/Logo - Black.png" alt="Logo" width="85" height="67" />
-              </a>
-            </div>
+   <div class="bg-black text-white">
+    <div class="bg-black text-white">
+    <header class="py-3 bg-black fade-in-section" id="header">
+  <div class="container-xxl">
+    <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3 gap-lg-0">
+      <!-- Left: Logo -->
+      <div class="flex-shrink-0 logo-direction fade-in-section">
+        <a href="home.html">
+          <img class="logo" src="/images/dummy/home/Logo - Black.png" alt="Logo" width="85" height="67" />
+        </a>
+      </div>
 
-            <!-- Center: Navbar -->
-            <nav class="navbar navbar-expand-lg navbar-dark position-relative w-100 w-lg-auto fade-in-section">
-              <button class="navbar-toggler navbar-toggler-abs border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse navbar-collapse-absolute justify-content-center mt-3 mt-lg-0" id="navbarNavDropdown">
-                <ul class="navbar-nav gap-3">
-                  <li class="nav-item fade-in-section"><a class="nav-link" href="who-we-help.html">Who we help</a></li>
-                  <li class="nav-item fade-in-section"><a class="nav-link" href="reasons.html">Why KHB</a></li>
-                  <li class="nav-item dropdown fade-in-section">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="target-market.html">target-market</a></li>
-                      <li><a class="dropdown-item" href="target-market.html">target-market</a></li>
-                      <li><a class="dropdown-item" href="target-market.html">target-market</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item fade-in-section"><a class="nav-link" href="#results">Results</a></li>
-                  <li class="nav-item fade-in-section"><a class="nav-link" href="#blog">Blog</a></li>
-                  <li class="nav-item fade-in-section"><a class="nav-link" href="#careers">Careers</a></li>
-                  <li class="nav-item fade-in-section"><a class="nav-link" href="#contact">Contact</a></li>
-                  <!-- Language Dropdown (visible only on small screens) -->
-                  <li class="nav-item dropdown d-lg-none fade-in-section">
-                    <a class="nav-link dropdown-toggle text-white text-center" href="#" role="button" data-bs-toggle="dropdown">En</a>
-                    <ul class="dropdown-menu dropdown-menu-dark">
-                      <li><a class="dropdown-item" href="#en">English</a></li>
-                      <li><a class="dropdown-item" href="#fr">Français</a></li>
-                      <li><a class="dropdown-item" href="#es">Español</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </nav>
+      <!-- Center: Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark w-100 w-lg-auto fade-in-section">
+        <button class="navbar-toggler navbar-toggler-abs border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbar-collapse-absolute justify-content-center mt-3 mt-lg-0" id="navbarNavDropdown">
+          <ul class="navbar-nav gap-3" id="nav-links">
+            <li class="nav-item fade-in-section"><a class="nav-link" href="who-we-help.html" data-en="Who we help" data-ar="من نساعد">Who we help</a></li>
+            <li class="nav-item fade-in-section"><a class="nav-link" href="reasons.html" data-en="Why KHB" data-ar="لماذا KHB">Why KHB</a></li>
+            <li class="nav-item dropdown fade-in-section">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" data-en="Services" data-ar="الخدمات">Services</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="target-market.html" data-en="target-market" data-ar="السوق المستهدف">target-market</a></li>
+                <li><a class="dropdown-item" href="target-market.html" data-en="target-market" data-ar="السوق المستهدف">target-market</a></li>
+                <li><a class="dropdown-item" href="target-market.html" data-en="target-market" data-ar="السوق المستهدف">target-market</a></li>
+              </ul>
+            </li>
+            <li class="nav-item fade-in-section"><a class="nav-link" href="#results" data-en="Results" data-ar="النتائج">Results</a></li>
+            <li class="nav-item fade-in-section"><a class="nav-link" href="#blog" data-en="Blog" data-ar="المدونة">Blog</a></li>
+            <li class="nav-item fade-in-section"><a class="nav-link" href="#careers" data-en="Careers" data-ar="وظائف">Careers</a></li>
+            <li class="nav-item fade-in-section"><a class="nav-link" href="#contact" data-en="Contact" data-ar="اتصل بنا">Contact</a></li>
 
-            <!-- Right: Language (visible only on large screens) -->
-            <div class="flex-shrink-0 mt-3 mt-lg-0 d-none d-lg-block fade-in-section">
-              <div class="dropdown">
-                <a class="nav-link dropdown-toggle text-white text-center text-lg-end" href="#" role="button" data-bs-toggle="dropdown">
-                  En
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
-                  <li><a class="dropdown-item" href="#en">English</a></li>
-                  <li><a class="dropdown-item" href="#fr">arabic</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+            <!-- Language Dropdown (visible only on small screens) -->
+            <li class="nav-item dropdown d-lg-none fade-in-section">
+              <a class="nav-link dropdown-toggle text-white text-center" href="#" role="button" data-bs-toggle="dropdown" id="lang-toggler-sm">En</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item lang-select" href="#" data-lang="en">English</a></li>
+                <li><a class="dropdown-item lang-select" href="#" data-lang="ar">العربية</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-      </header>
+      </nav>
+
+      <!-- Right: Language (visible only on large screens) -->
+      <div class="flex-shrink-0 mt-3 mt-lg-0 d-none d-lg-block fade-in-section">
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle text-white text-center text-lg-end" href="#" role="button" data-bs-toggle="dropdown" id="lang-toggler-lg">
+            En
+          </a>
+          <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
+            <li><a class="dropdown-item lang-select" href="#" data-lang="en">English</a></li>
+            <li><a class="dropdown-item lang-select" href="#" data-lang="ar">العربية</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
       <div class="custom-border-color fade-in-section"></div>
-      <!-- Carousel Section -->
-      <section class="carousel-section container py-5 position-relative fade-in-section">
-        <!-- Decorative Ellipses -->
-        <img class="opacity-75 ellipse-45 fade-in-section" src="/images/dummy/home/ellipses/Ellipse 45.png" alt="" width="105" height="105" style="z-index: 0;" />
-        <img class="ellipse-46 fade-in-section" src="/images/dummy/home/ellipses/Ellipse 46.png" alt="" width="172" height="172" style="z-index: 0;" />
+    <section class="carousel-section container py-5 position-relative fade-in-section" id="carousel-section">
+  <!-- Decorative Ellipses -->
+  <img class="opacity-75 ellipse-45 fade-in-section" src="/images/dummy/home/ellipses/Ellipse 45.png" alt="" width="105" height="105" style="z-index: 0;" />
+  <img class="ellipse-46 fade-in-section" src="/images/dummy/home/ellipses/Ellipse 46.png" alt="" width="172" height="172" style="z-index: 0;" />
 
-        <!-- Slide Counter for Mobile -->
-        <div class="responsive-slide-counter d-lg-none fade-in-section">
-          <span class="fw-bold current-slide">1</span>/<span class="total-slides">3</span>
-        </div>
+  <!-- Slick Carousel Wrapper -->
+  <div class="slick-carousel z-1 fade-in-section">
+    <!-- Slide 1 -->
+    <div class="row align-items-center">
+      <div class="col-lg-8 col-md-12 mb-4 mb-lg-0 text-lg-start">
+        <h1 class="Not-your display-4 fw-normal d-flex justify-content-start fade-in-section" data-en="Not your" data-ar="ليس مجرد">Not your</h1>
+        <span class="banner-span fade-in-section" data-en="TYPICAL MEDIA AND TECHNOLOGY COMPANY" data-ar="شركة إعلام وتقنية نموذجية">TYPICAL MEDIA AND TECHNOLOGY COMPANY</span>
+        <p class="lead mt-4 d-flex justify-content-start fade-in-section" data-en="We're the friends you want in your corner when navigating today’s complex world of digital communication." data-ar="نحن الأصدقاء الذين تريدهم إلى جانبك عند التنقل في عالم التواصل الرقمي المعقد اليوم.">
+          We're the friends you want in your corner when navigating today’s complex world of digital communication.
+        </p>
+        <button class="button fade-in-section" data-en="WHAT WE DO" data-ar="ماذا نفعل">WHAT WE DO</button>
+      </div>
+    </div>
 
-        <!-- Slick Carousel Wrapper -->
-        <div class="slick-carousel z-1 fade-in-section">
-          <!-- Slide 1 -->
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12 mb-4 mb-lg-0 text-lg-start">
-              <h1 class="Not-your display-4 fw-normal d-flex justify-content-start fade-in-section">Not your</h1>
-              <span class="banner-span fade-in-section">TYPICAL MEDIA AND TECHNOLOGY COMPANY</span>
-              <p class="lead mt-4 d-flex justify-content-start fade-in-section">
-                We're the friends you want in your corner when navigating today’s complex world of digital communication.
-              </p>
-              <button class="button fade-in-section">WHAT WE DO</button>
-            </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12 mb-4 mb-lg-0 text-lg-start">
-              <h1 class="Not-your display-4 fw-normal d-flex justify-content-start fade-in-section">Not your</h1>
-              <span class="banner-span fade-in-section">TYPICAL MEDIA AND TECHNOLOGY COMPANY</span>
-              <p class="lead mt-4 d-flex justify-content-start fade-in-section">
-                We're the friends you want in your corner when navigating today’s complex world of digital communication.
-              </p>
-              <button class="button fade-in-section">WHAT WE DO</button>
-            </div>
-          </div>
-          <!-- Slide 3 -->
-          <div class="row align-items-center">
-            <div class="col-lg-8 col-md-12 mb-4 mb-lg-0 text-lg-start">
-              <h1 class="Not-your display-4 fw-normal d-flex justify-content-start fade-in-section">Not your</h1>
-              <span class="banner-span fade-in-section">TYPICAL MEDIA AND TECHNOLOGY COMPANY</span>
-              <p class="lead mt-4 d-flex justify-content-start fade-in-section">
-                We're the friends you want in your corner when navigating today’s complex world of digital communication.
-              </p>
-              <button class="button fade-in-section">WHAT WE DO</button>
-            </div>
-          </div>
-        </div>
-        <!-- ✅ Single Arrow Controls -->
-        <div class="carousel-controls d-none d-lg-flex align-items-center gap-3 position-absolute top-50 end-0 translate-middle-y me-3 z-3 fade-in-section">
-          <button id="carousel-prev" class="btn p-2">
-            <img src="images/dummy/home/Left carousel arrow.png" alt="Previous" />
-          </button>
-          <div class="slide-number text-white fw-bold">
-            <span class="current-slide">1</span>/<span class="total-slides">3</span>
-          </div>
-          <button id="carousel-next" class="btn p-2">
-            <img src="images/dummy/home/right carousel arrow.png" alt="Next" />
-          </button>
-        </div>
-        <!-- Scroll down prompt for mobile -->
-        <div class="scroll-down-responsive d-flex justify-content-end fade-in-section">
-          <div class="d-flex align-items-center gap-2 scroll-down-button" tabindex="0">
-            <span class="fw-bold text-uppercase small">Scroll down</span>
-           <img src="images/dummy/Dropdown arrow.png" alt="arrow" width="16" height="9" />
-          </div>
-        </div>
-      </section>
-      <section class="innovators-section fade-in-section">
-        <div class="container-innovators container fade-in-section">
-          <div class="content-box fade-in-section">
-            <div class="section-title text-start text-black fade-in-section">INNOVATORS</div>
-            <h2 class="text-start section-subject fade-in-section">
-              We are not just participants in the media & tech, we are
-              <strong class="fade-in-section">the pioneers</strong> shaping its future
-            </h2>
-            <p class="description text-start fade-in-section">
-              With a global presence and a relentless drive for innovation, we ensure that our solutions are as dynamic as the markets we serve.
-            </p>
-            <button class="button text-center fade-in-section">EXPLORE MORE</button>
-          </div>
-        </div>
-      </section>
-      <section class="data-driven-section py-5 bg-black text-white fade-in-section">
-        <div class="container fade-in-section">
-          <div class="row mb-5 fade-in-section">
-            <div class="col-md-6 fade-in-section">
-              <h6 class="text-uppercase fade-in-section">Data Driven</h6>
-              <h2 class="Innovative-strategies fade-in-section">
-                Innovative strategies for <span class="Innovative-mark fade-in-section">measurable growth</span>
-              </h2>
-            </div>
-            <div class="col-md-6 fade-in-section">
-              <p class="data-driven-description fade-in-section">
-                At Kole, Hugg, & Booz, we empower clients with data-driven insights. Our innovative strategies drive engagement and enhance customer experiences.
-              </p>
-              <button href="#" class="button fade-in-section">Read More</button>
-            </div>
-          </div>
+    <!-- Slide 2 -->
+    <div class="row align-items-center">
+      <div class="col-lg-8 col-md-12  mb-lg-0 text-lg-start">
+        <h1 class="Not-your display-4 fw-normal d-flex justify-content-start fade-in-section" data-en="Not your" data-ar="ليس مجرد">Not your</h1>
+        <span class="banner-span fade-in-section" data-en="TYPICAL MEDIA AND TECHNOLOGY COMPANY" data-ar="شركة إعلام وتقنية نموذجية">TYPICAL MEDIA AND TECHNOLOGY COMPANY</span>
+        <p class="lead mt-4 d-flex justify-content-start fade-in-section" data-en="We're the friends you want in your corner when navigating today’s complex world of digital communication." data-ar="نحن الأصدقاء الذين تريدهم إلى جانبك عند التنقل في عالم التواصل الرقمي المعقد اليوم.">
+          We're the friends you want in your corner when navigating today’s complex world of digital communication.
+        </p>
+        <button class="button fade-in-section" data-en="WHAT WE DO" data-ar="ماذا نفعل">WHAT WE DO</button>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="row align-items-center">
+      <div class="col-lg-8 col-md-12 mb-4 mb-lg-0 text-lg-start">
+        <h1 class="Not-your display-4 fw-normal d-flex justify-content-start fade-in-section" data-en="Not your" data-ar="ليس مجرد">Not your</h1>
+        <span class="banner-span fade-in-section" data-en="TYPICAL MEDIA AND TECHNOLOGY COMPANY" data-ar="شركة إعلام وتقنية نموذجية">TYPICAL MEDIA AND TECHNOLOGY COMPANY</span>
+        <p class="lead mt-4 d-flex justify-content-start fade-in-section" data-en="We're the friends you want in your corner when navigating today’s complex world of digital communication." data-ar="نحن الأصدقاء الذين تريدهم إلى جانبك عند التنقل في عالم التواصل الرقمي المعقد اليوم.">
+          We're the friends you want in your corner when navigating today’s complex world of digital communication.
+        </p>
+        <button class="button fade-in-section" data-en="WHAT WE DO" data-ar="ماذا نفعل">WHAT WE DO</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Carousel controls and counters unchanged -->
+  <div class="carousel-controls d-none d-lg-flex align-items-center gap-3 position-absolute top-50 end-0 translate-middle-y me-3 z-3 fade-in-section">
+    <button id="carousel-prev" class="btn p-2">
+      <img src="images/dummy/home/Left carousel arrow.png" alt="Previous" />
+    </button>
+    <div class="slide-number text-white fw-bold">
+      <span class="current-slide">1</span>/<span class="total-slides">3</span>
+    </div>
+    <button id="carousel-next" class="btn p-2">
+      <img src="images/dummy/home/right carousel arrow.png" alt="Next" />
+    </button>
+  </div>
+
+  <div class="slide-counter-scroll-container d-lg-none d-flex justify-content-between align-items-center mt-3 px-3 fade-in-section">
+    <div class="responsive-slide-counter">
+      <span class="fw-bold current-slide">1</span>/<span class="total-slides">3</span>
+    </div>
+    <div class="scroll-down-responsive">
+      <div class="d-flex align-items-center gap-2 scroll-down-button" tabindex="0">
+        <span class="fw-bold text-uppercase small" data-en="Scroll down" data-ar="مرر للأسفل">Scroll down</span>
+        <img src="images/dummy/Dropdown arrow.png" alt="arrow" width="16" height="9" />
+      </div>
+    </div>
+  </div>
+</section>
+     <section id="innovators-section" class="innovators-section fade-in-section">
+  <div class="container-innovators container fade-in-section">
+    <div class="content-box fade-in-section">
+      <div class="section-title text-start text-black fade-in-section" data-en="INNOVATORS" data-ar="المبتكرون">INNOVATORS</div>
+      <h2 class="text-start section-subject fade-in-section">
+        <span data-en="We are not just participants in the media & tech, we are" data-ar="نحن لسنا مجرد مشاركين في الإعلام والتكنولوجيا، نحن"></span>
+        <strong class="fade-in-section" data-en="the pioneers" data-ar="الرواد">the pioneers</strong>
+        <span data-en=" shaping its future" data-ar=" الذين يشكلون مستقبله"></span>
+      </h2>
+      <p class="description text-start fade-in-section" data-en="With a global presence and a relentless drive for innovation, we ensure that our solutions are as dynamic as the markets we serve." data-ar="بوجود عالمي ودفع لا يتوقف للابتكار، نضمن أن تكون حلولنا ديناميكية بقدر الأسواق التي نخدمها.">With a global presence and a relentless drive for innovation, we ensure that our solutions are as dynamic as the markets we serve.</p>
+      <button class="button text-center fade-in-section" data-en="EXPLORE MORE" data-ar="استكشف المزيد">EXPLORE MORE</button>
+    </div>
+  </div>
+</section>
+
+<section id="data-driven-section" class="data-driven-section py-5 bg-black text-white fade-in-section">
+  <div class="container fade-in-section">
+    <div class="row mb-5 fade-in-section">
+      <div class="col-md-6 fade-in-section">
+        <h6 class="text-uppercase fade-in-section" data-en="Data Driven" data-ar="مدفوعة بالبيانات">Data Driven</h6>
+        <h2 class="Innovative-strategies fade-in-section">
+          <span data-en="Innovative strategies for " data-ar="استراتيجيات مبتكرة من أجل "></span>
+          <span class="Innovative-mark fade-in-section" data-en="measurable growth" data-ar="نمو قابل للقياس">measurable growth</span>
+        </h2>
+      </div>
+      <div class="col-md-6 fade-in-section">
+        <p class="data-driven-description fade-in-section" data-en="At Kole, Hugg, & Booz, we empower clients with data-driven insights. Our innovative strategies drive engagement and enhance customer experiences." data-ar="في كول، هوغ، وبوز، نمكّن العملاء من خلال رؤى مدفوعة بالبيانات. استراتيجياتنا المبتكرة تعزز التفاعل وتحسن تجربة العملاء.">At Kole, Hugg, & Booz, we empower clients with data-driven insights. Our innovative strategies drive engagement and enhance customer experiences.</p>
+        <button href="#" class="button fade-in-section" data-en="Read More" data-ar="اقرأ المزيد">Read More</button>
+      </div>
+    </div>
           <div class="row text-center g-4 slick-progress mb-5 fade-in-section">
             <div class="col-sm-6 col-lg-3 fade-in-section">
               <div class="progress-circle fade-in-section" data-percentage="75">
@@ -217,59 +219,63 @@
           </div>
         </div>
       </section>
-      <!-- Innovative Solutions Section -->
-      <div class="innovative-section bg-black container fade-in-section">
-        <div class="content-column fade-in-section">
-          <div class="title-group fade-in-section">
-            <span class="sub-title fade-in-section">INNOVATIVE SOLUTIONS</span>
-            <h2 class="main-heading fade-in-section">
-              Explore our <span class="fade-in-section">comprehensive service</span> offerings
-            </h2>
-            <p class="description-solution fade-in-section">
-              At Kole, Hugg, & Booz, we provide a wide range of services designed to meet your marketing and technology needs.
-              Our expert team is dedicated to delivering innovative solutions that drive results.
-            </p>
-          </div>
-          <button class="button fade-in-section">VIEW ALL SERVICES</button>
-        </div>
-        <div class="services-list fade-in-section">
-          <div class="service-item fade-in-section">
-            <div class="bullet fade-in-section"></div>
-            <div class="text-block fade-in-section">
-              <h3 class="fade-in-section">Human analytics and insights</h3>
-              <p class="fade-in-section">Unlock the power of data-driven decision-making.</p>
-            </div>
-          </div>
-          <div class="service-item fade-in-section">
-            <div class="bullet fade-in-section"></div>
-            <div class="text-block fade-in-section">
-              <h3 class="fade-in-section">Digital customer engagement strategies</h3>
-              <p class="fade-in-section">Enhance your connection with customers through tailored strategies.</p>
-            </div>
-          </div>
-          <div class="service-item fade-in-section">
-            <div class="bullet fade-in-section"></div>
-            <div class="text-block fade-in-section">
-              <h3 class="fade-in-section">Predictive analytics for future success</h3>
-              <p class="fade-in-section">Anticipate trends and stay ahead of the competition.</p>
-            </div>
-          </div>
-        </div>
-        <img class="decorative-image fade-in-section" src="/images/dummy/home/ellipses/Frame 163.png" alt="Decorative Graphic" />
+    <!-- Innovative Solutions Section -->
+<div id="innovative-solutions-section" class="innovative-section bg-black container fade-in-section">
+  <div class="content-column fade-in-section">
+    <div class="title-group fade-in-section">
+      <span class="sub-title fade-in-section" data-en="INNOVATIVE SOLUTIONS" data-ar="الحلول المبتكرة">INNOVATIVE SOLUTIONS</span>
+      <h2 class="main-heading fade-in-section">
+        <span data-en="Explore our " data-ar="استكشف خدماتنا "></span>
+        <span class="fade-in-section" data-en="comprehensive service" data-ar="الشاملة للخدمات"></span>
+        <span data-en=" offerings" data-ar=" المقدمة"></span>
+      </h2>
+      <p class="description-solution fade-in-section" data-en="At Kole, Hugg, & Booz, we provide a wide range of services designed to meet your marketing and technology needs. Our expert team is dedicated to delivering innovative solutions that drive results." data-ar="في كول، هوغ، وبوز، نقدم مجموعة واسعة من الخدمات المصممة لتلبية احتياجاتك في التسويق والتكنولوجيا. فريقنا الخبير مكرس لتقديم حلول مبتكرة تحقق النتائج.">
+        At Kole, Hugg, & Booz, we provide a wide range of services designed to meet your marketing and technology needs.
+        Our expert team is dedicated to delivering innovative solutions that drive results.
+      </p>
+    </div>
+    <button class="button fade-in-section" data-en="VIEW ALL SERVICES" data-ar="عرض كل الخدمات">VIEW ALL SERVICES</button>
+  </div>
+  <div class="services-list fade-in-section">
+    <div class="service-item fade-in-section">
+      <div class="bullet fade-in-section"></div>
+      <div class="text-block fade-in-section">
+        <h3 class="fade-in-section" data-en="Human analytics and insights" data-ar="تحليلات ورؤى بشرية">Human analytics and insights</h3>
+        <p class="fade-in-section" data-en="Unlock the power of data-driven decision-making." data-ar="اكتشف قوة اتخاذ القرار المبني على البيانات.">Unlock the power of data-driven decision-making.</p>
       </div>
-      <section class="market-leaders container fade-in-section">
-        <div class="clients-section fade-in-section">
-          <div class="clients-container fade-in-section">
-            <h2 class="clients-subtitle fade-in-section">WE EMPOWER CLIENTS</h2>
-            <p class="clients-title fade-in-section">
-              <span class="clients-highlight fade-in-section">Trusted</span>
-              <span class="fade-in-section"> by top brands across various industries</span>
-            </p>
-            <button class="button fade-in-section" type="button">
-              VIEW ALL CLIENTS
-            </button>
-          </div>
-        </div>
+    </div>
+    <div class="service-item fade-in-section">
+      <div class="bullet fade-in-section"></div>
+      <div class="text-block fade-in-section">
+        <h3 class="fade-in-section" data-en="Digital customer engagement strategies" data-ar="استراتيجيات التفاعل الرقمي مع العملاء">Digital customer engagement strategies</h3>
+        <p class="fade-in-section" data-en="Enhance your connection with customers through tailored strategies." data-ar="عزز اتصالك بالعملاء من خلال استراتيجيات مخصصة.">Enhance your connection with customers through tailored strategies.</p>
+      </div>
+    </div>
+    <div class="service-item fade-in-section">
+      <div class="bullet fade-in-section"></div>
+      <div class="text-block fade-in-section">
+        <h3 class="fade-in-section" data-en="Predictive analytics for future success" data-ar="تحليلات تنبؤية للنجاح المستقبلي">Predictive analytics for future success</h3>
+        <p class="fade-in-section" data-en="Anticipate trends and stay ahead of the competition." data-ar="توقع الاتجاهات والبقاء في المقدمة على المنافسة.">Anticipate trends and stay ahead of the competition.</p>
+      </div>
+    </div>
+  </div>
+  <img class="decorative-image fade-in-section" src="/images/dummy/home/ellipses/Frame 163.png" alt="Decorative Graphic" />
+</div>
+
+<!-- Market Leaders Section -->
+<section id="market-leaders-section" class="market-leaders container fade-in-section">
+  <div class="clients-section fade-in-section">
+    <div class="clients-container fade-in-section">
+      <h2 class="clients-subtitle fade-in-section" data-en="WE EMPOWER CLIENTS" data-ar="نُمكّن العملاء">WE EMPOWER CLIENTS</h2>
+      <p class="clients-title fade-in-section">
+        <span class="clients-highlight fade-in-section" data-en="Trusted" data-ar="موثوق">Trusted</span>
+        <span class="fade-in-section" data-en=" by top brands across various industries" data-ar=" من قبل العلامات التجارية الكبرى عبر مختلف الصناعات"></span>
+      </p>
+      <button class="button fade-in-section" type="button" data-en="VIEW ALL CLIENTS" data-ar="عرض جميع العملاء">
+        VIEW ALL CLIENTS
+      </button>
+    </div>
+  </div>
         <img class="Frame-167 fade-in-section" src="/images/dummy/home/ellipses/Frame 167.png" alt="Decorative Graphic" />
         <div class="my-words-wrapper fade-in-section">
           <div class="words fade-in-section">
@@ -301,9 +307,10 @@
               <input type="radio" id="star1-1" name="rating1" value="1" />
               <label for="star1-1" title="1 star">&#9733;</label>
             </div>
-            <p class="review-card__text fade-in-section">
-              “Working with KH&B has been a game-changer for our brand. Their team took the time to understand our vision and crafted a marketing strategy that exceeded our expectations.”
-            </p>
+           <p class="review-card__text fade-in-section"
+            data-en="“Working with KH&B has been a game-changer for our brand. Their team took the time to understand our vision and crafted a marketing strategy that exceeded our expectations.”"
+            data-ar="“العمل مع KH&B غيّر قواعد اللعبة لعلامتنا التجارية. لقد أخذ فريقهم الوقت لفهم رؤيتنا وصاغ استراتيجية تسويق فاقت توقعاتنا.”">
+          </p>
             <div class="review-card__user fade-in-section">
               <img src="/images/dummy/home/13.png" alt="">
               <div>
@@ -329,9 +336,10 @@
               <input type="radio" id="star1-2" name="rating2" value="1" />
               <label for="star1-2" title="1 star">&#9733;</label>
             </div>
-            <p class="review-card__text fade-in-section">
-              “KH&B helped us double our sales in just 6 months. Their marketing tactics are smart and effective.”
-            </p>
+           <p class="review-card__text fade-in-section"
+            data-en="“Working with KH&B has been a game-changer for our brand. Their team took the time to understand our vision and crafted a marketing strategy that exceeded our expectations.”"
+            data-ar="“العمل مع KH&B غيّر قواعد اللعبة لعلامتنا التجارية. لقد أخذ فريقهم الوقت لفهم رؤيتنا وصاغ استراتيجية تسويق فاقت توقعاتنا.”">
+          </p>
             <div class="review-card__user fade-in-section">
               <img src="/images/dummy/home/14.png" alt="">
               <div>
@@ -346,153 +354,152 @@
           </div>
         </section>
       </section>
-      <section class="featured-case-studies fade-in-section">
-        <header class="featured-case-studies__header fade-in-section">
-          <h2 class="featured-case-studies__title fade-in-section">Featured Case Studies</h2>
-          <button class="button fade-in-section">View All Case Studies</button>
-        </header>
-        <div class="featured-case-studies__list fade-in-section">
-          <article class="case-study-card fade-in-section" tabindex="0">
-            <img src="/images/Dummy/home/image-card.png" alt="Driving engagement campaign" class="case-study-card__image fade-in-section" />
-            <div class="case-study-card__content fade-in-section">
-              <div class="fade-in-section">
-                <h3 class="case-study-card__headline fade-in-section">Driving engagement through innovative campaigns </h3>
-                <p class="case-study-card__description mt-2 fade-in-section">Discover how we enhanced brand visibility and customer interaction. </p>
-              </div>
-              <footer class="case-study-card__footer fade-in-section">
-                <img src="/images/Dummy/home/Testimonial Person.png" alt="Jane Doe" class="case-study-card__avatar fade-in-section" />
-                <div>
-                  <p class="case-study-card__author fade-in-section">Jane Doe</p>
-                  <time datetime="2022-01-11" class="case-study-card__date fade-in-section">11 Jan 2022 • 5 min read</time>
-                </div>
-                <button class="case-study-card__btn fade-in-section">
-                  <img src="images/dummy/Button arrow.png" alt="Read more" />
-                </button>
-              </footer>
-            </div>
-          </article>
-          <article class="case-study-card fade-in-section" tabindex="0">
-            <img src="/images/Dummy/home/image-card.png" alt="Driving engagement campaign" class="case-study-card__image fade-in-section" />
-            <div class="case-study-card__content fade-in-section">
-              <div class="fade-in-section">
-                <h3 class="case-study-card__headline fade-in-section">Maximizing ROI with data-driven strategies </h3>
-                <p class="case-study-card__description mt-2 fade-in-section">Learn how data insights led to increased sales and customer loyalty.</p>
-              </div>
-              <footer class="case-study-card__footer fade-in-section">
-                <img src="/images/Dummy/home/Testimonial Person.png" alt="Jane Doe" class="case-study-card__avatar fade-in-section" />
-                <div>
-                  <p class="case-study-card__author fade-in-section">Jane Doe</p>
-                  <time datetime="2022-01-11" class="case-study-card__date fade-in-section">11 Jan 2022 • 5 min read</time>
-                </div>
-                <button class="case-study-card__btn fade-in-section">
-                  <img src="images/dummy/Button arrow.png" alt="Read more" />
-                </button>
-              </footer>
-            </div>
-          </article>
-          <article class="case-study-card fade-in-section" tabindex="0">
-            <img src="/images/Dummy/home/image-card.png" alt="Driving engagement campaign" class="case-study-card__image fade-in-section" />
-            <div class="case-study-card__content fade-in-section">
-              <div class="fade-in-section">
-                <h3 class="case-study-card__headline fade-in-section">Innovative solutions for modern marketing challenges</h3>
-                <p class="case-study-card__description mt-2 fade-in-section">Explore how our solutions addressed unique client challenges effectively.</p>
-              </div>
-              <footer class="case-study-card__footer fade-in-section">
-                <img src="/images/Dummy/home/Testimonial Person.png" alt="Jane Doe" class="case-study-card__avatar fade-in-section" />
-                <div>
-                  <p class="case-study-card__author fade-in-section">Jane Doe</p>
-                  <time datetime="2022-01-11" class="case-study-card__date fade-in-section">11 Jan 2022 • 5 min read</time>
-                </div>
-                <button class="case-study-card__btn fade-in-section">
-                  <img src="images/dummy/Button arrow.png" alt="Read more" />
-                </button>
-              </footer>
-            </div>
-          </article>
+     <section id="featured-case-studies-section" class="featured-case-studies fade-in-section">
+  <header class="featured-case-studies__header fade-in-section">
+    <h2 class="featured-case-studies__title fade-in-section" data-en="Featured Case Studies" data-ar="دراسات الحالة المميزة">Featured Case Studies</h2>
+    <button class="button fade-in-section" data-en="View All Case Studies" data-ar="عرض جميع دراسات الحالة">View All Case Studies</button>
+  </header>
+  <div class="featured-case-studies__list fade-in-section">
+    <article class="case-study-card fade-in-section" tabindex="0">
+      <img src="/images/Dummy/home/image-card.png" alt="Driving engagement campaign" class="case-study-card__image fade-in-section" />
+      <div class="case-study-card__content fade-in-section">
+        <div class="fade-in-section">
+          <h3 class="case-study-card__headline fade-in-section" data-en="Driving engagement through innovative campaigns" data-ar="تعزيز التفاعل من خلال الحملات المبتكرة">Driving engagement through innovative campaigns</h3>
+          <p class="case-study-card__description mt-2 fade-in-section" data-en="Discover how we enhanced brand visibility and customer interaction." data-ar="اكتشف كيف عززنا رؤية العلامة التجارية وتفاعل العملاء.">Discover how we enhanced brand visibility and customer interaction.</p>
         </div>
-      </section>
-      <section class="free-consultation mt-5 fade-in-section">
-        <div class="consultation-content container fade-in-section">
-          <div class="consultation-text fade-in-section">
-            <h2 class="consultation-title fade-in-section">
-              Consult with a SaaS &amp; tech marketing specialist today
-            </h2>
-            <div class="consultation-benefits fade-in-section">
-              <p class="fade-in-section">Start with a complimentary digital sales and marketing review. Send us your email and schedule a chat with our experts. You’ll get:</p>
-              <ul class="custom-bullets fade-in-section">
-                <li class="fade-in-section">Helpful advice and guidance.</li>
-                <li class="fade-in-section">No sales pitches or nonsense.</li>
-                <li class="fade-in-section">No obligations or commitments.</li>
-              </ul>
-            </div>
-            <div class="consultation-form fade-in-section">
-              <input type="email" placeholder="Your email" class="consultation-mail fade-in-section"/>
-              <button type="button" class="button fade-in-section">BOOK NOW</button>
-            </div>
-            <p class="disclaimer fade-in-section">
-              By clicking sign up you’re confirming that you agree with our <a href="#">Terms &amp; Conditions.</a>
-            </p>
+        <footer class="case-study-card__footer fade-in-section">
+          <img src="/images/Dummy/home/Testimonial Person.png" alt="Jane Doe" class="case-study-card__avatar fade-in-section" />
+          <div>
+            <p class="case-study-card__author fade-in-section" data-en="Jane Doe" data-ar="جين دو">Jane Doe</p>
+            <time datetime="2022-01-11" class="case-study-card__date fade-in-section" data-en="11 Jan 2022 • 5 min read" data-ar="11 يناير 2022 • قراءة 5 دقائق">11 Jan 2022 • 5 min read</time>
           </div>
-          <div class="consultation-image fade-in-section">
-            <img src="/images/dummy/home/consultation-image.png" alt="Consultation Graphic" />
-          </div>
+          <button class="case-study-card__btn fade-in-section">
+            <img src="images/dummy/Button arrow.png" alt="Read more" />
+          </button>
+        </footer>
+      </div>
+    </article>
+    <article class="case-study-card fade-in-section" tabindex="0">
+      <img src="/images/Dummy/home/image-card.png" alt="Maximizing ROI" class="case-study-card__image fade-in-section" />
+      <div class="case-study-card__content fade-in-section">
+        <div class="fade-in-section">
+          <h3 class="case-study-card__headline fade-in-section" data-en="Maximizing ROI with data-driven strategies" data-ar="تعظيم العائد على الاستثمار من خلال استراتيجيات مدفوعة بالبيانات">Maximizing ROI with data-driven strategies</h3>
+          <p class="case-study-card__description mt-2 fade-in-section" data-en="Learn how data insights led to increased sales and customer loyalty." data-ar="تعرف كيف أدت رؤى البيانات إلى زيادة المبيعات وولاء العملاء.">Learn how data insights led to increased sales and customer loyalty.</p>
         </div>
-      </section>
-      <footer class="custom-footer container fade-in-section">
-        <div class="newsletter-section fade-in-section">
-          <div class="newsletter-text fade-in-section">
-            <h5 class="fade-in-section">Subscribe to our newsletter for the latest updates on features and releases.</h5>
+        <footer class="case-study-card__footer fade-in-section">
+          <img src="/images/Dummy/home/Testimonial Person.png" alt="Jane Doe" class="case-study-card__avatar fade-in-section" />
+          <div>
+            <p class="case-study-card__author fade-in-section" data-en="Jane Doe" data-ar="جين دو">Jane Doe</p>
+            <time datetime="2022-01-11" class="case-study-card__date fade-in-section" data-en="11 Jan 2022 • 5 min read" data-ar="11 يناير 2022 • قراءة 5 دقائق">11 Jan 2022 • 5 min read</time>
           </div>
-          <form class="newsletter-form fade-in-section">
-            <div class="form-row fade-in-section">
-              <input type="email" placeholder="Your email" required class="input-email fade-in-section" />
-              <button type="submit" class="button fade-in-section">Sign Up</button>
-            </div>
-            <small class="fade-in-section">
-              By subscribing you consent to our <a href="#">privacy policy</a> and agree to receive updates.
-            </small>
-          </form>
-        </div>
-        <div class="divider fade-in-section"></div>
-        <div class="footer-main fade-in-section">
-          <div class="footer-logo fade-in-section">
-            <img src="images/dummy/home/Logo - Black.png" alt="KHB Logo" />
-          </div>
-          <div class="footer-links fade-in-section">
-            <ul>
-              <li class="fade-in-section"><a href="#">Who We Help</a></li>
-              <li class="fade-in-section"><a href="#">Why KHB?</a></li>
-              <li class="fade-in-section"><a href="#">Services</a></li>
-              <li class="fade-in-section"><a href="#">Results</a></li>
-            </ul>
-          </div>
-          <div class="footer-links fade-in-section">
-            <ul>
-              <li class="fade-in-section"><a href="#">Career</a></li>
-              <li class="fade-in-section"><a href="#">Blog</a></li>
-              <li class="fade-in-section"><a href="#">Get in touch</a></li>
-            </ul>
-          </div>
-          <div class="footer-social fade-in-section">
-            <h6 class="fade-in-section">Follow us</h6>
-            <div class="social-icons fade-in-section">
-              <a href="#"><img src="images/dummy/footer/Linkedin.png" alt="LinkedIn" /></a>
-              <a href="#"><img src="images/dummy/footer/Instagram.png" alt="Instagram" /></a>
-              <a href="#"><img src="images/dummy/footer/x.png" alt="X" /></a>
-              <a href="#"><img src="images/dummy/footer/Youtube.png" alt="YouTube" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="divider fade-in-section"></div>
-        <div class="footer-bottom fade-in-section">
-          <p class="footer-p fade-in-section">© 2025 KOLE HUGG & BOOZ. All rights reserved</p>
-          <div class="footer-policies fade-in-section">
-            <a href="#">Privacy policy</a>
-            <a href="#">Terms of service</a>
-            <a href="#">Cookies settings</a>
-          </div>
-        </div>
-      </footer>
+          <button class="case-study-card__btn fade-in-section">
+            <img src="images/dummy/Button arrow.png" alt="Read more" />
+          </button>
+        </footer>
+      </div>
+    </article>
+    <article class="case-study-card fade-in-section" tabindex="0">
+  <img src="/images/Dummy/home/image-card.png" alt="Maximizing ROI" class="case-study-card__image fade-in-section" />
+  <div class="case-study-card__content fade-in-section">
+    <div class="fade-in-section">
+      <h3 class="case-study-card__headline fade-in-section" data-en="Maximizing ROI with data-driven strategies" data-ar="تعظيم العائد على الاستثمار من خلال استراتيجيات مدفوعة بالبيانات">Maximizing ROI with data-driven strategies</h3>
+      <p class="case-study-card__description mt-2 fade-in-section" data-en="Learn how data insights led to increased sales and customer loyalty." data-ar="تعرف كيف أدت رؤى البيانات إلى زيادة المبيعات وولاء العملاء.">Learn how data insights led to increased sales and customer loyalty.</p>
+    </div>
+    <footer class="case-study-card__footer fade-in-section">
+      <img src="/images/Dummy/home/Testimonial Person.png" alt="Jane Doe" class="case-study-card__avatar fade-in-section" />
+      <div>
+        <p class="case-study-card__author fade-in-section" data-en="Jane Doe" data-ar="جين دو">Jane Doe</p>
+        <time datetime="2022-01-11" class="case-study-card__date fade-in-section" data-en="11 Jan 2022 • 5 min read" data-ar="11 يناير 2022 • قراءة 5 دقائق">11 Jan 2022 • 5 min read</time>
+      </div>
+      <button class="case-study-card__btn fade-in-section">
+        <img src="images/dummy/Button arrow.png" alt="Read more" />
+      </button>
+    </footer>
+  </div>
+</article>
+  </div>
+</section>
+
+<section id="free-consultation-section" class="free-consultation mt-5 fade-in-section">
+  <div class="consultation-content container fade-in-section">
+    <div class="consultation-text fade-in-section">
+      <h2 class="consultation-title fade-in-section" data-en="Consult with a SaaS & tech marketing specialist today" data-ar="استشر متخصصًا في تسويق SaaS والتكنولوجيا اليوم">Consult with a SaaS & tech marketing specialist today</h2>
+      <div class="consultation-benefits fade-in-section">
+        <p class="fade-in-section" data-en="Start with a complimentary digital sales and marketing review. Send us your email and schedule a chat with our experts. You’ll get:" data-ar="ابدأ بمراجعة مجانية للمبيعات والتسويق الرقمي. أرسل لنا بريدك الإلكتروني وجدول محادثة مع خبرائنا. ستحصل على:">Start with a complimentary digital sales and marketing review. Send us your email and schedule a chat with our experts. You’ll get:</p>
+        <ul class="custom-bullets fade-in-section">
+          <li class="fade-in-section" data-en="Helpful advice and guidance." data-ar="نصائح وإرشادات مفيدة.">Helpful advice and guidance.</li>
+          <li class="fade-in-section" data-en="No sales pitches or nonsense." data-ar="لا عروض مبيعات أو هراء.">No sales pitches or nonsense.</li>
+          <li class="fade-in-section" data-en="No obligations or commitments." data-ar="لا التزامات أو تعهدات.">No obligations or commitments.</li>
+        </ul>
+      </div>
+      <div class="consultation-form fade-in-section">
+        <input type="email" placeholder="Your email" class="consultation-mail fade-in-section" />
+        <button type="button" class="button fade-in-section" data-en="Book Now" data-ar="احجز الآن">Book Now</button>
+      </div>
+      <p class="disclaimer fade-in-section" data-en="By clicking sign up you’re confirming that you agree with our Terms & Conditions." data-ar="بالنقر على الاشتراك، تؤكد أنك توافق على الشروط والأحكام الخاصة بنا.">
+        By clicking sign up you’re confirming that you agree with our <a href="#">Terms & Conditions.</a>
+      </p>
+    </div>
+    <div class="consultation-image fade-in-section">
+      <img src="/images/dummy/home/consultation-image.png" alt="Consultation Graphic" />
+    </div>
+  </div>
+</section>
+     <footer class="custom-footer container fade-in-section">
+  <div class="newsletter-section fade-in-section">
+    <div class="newsletter-text fade-in-section">
+      <h5 class="fade-in-section" data-en="Subscribe to our newsletter for the latest updates on features and releases." data-ar="اشترك في نشرتنا الإخبارية للحصول على أحدث التحديثات والميزات.">Subscribe to our newsletter for the latest updates on features and releases.</h5>
+    </div>
+    <form class="newsletter-form fade-in-section">
+      <div class="form-row fade-in-section">
+        <input type="email" placeholder="Your email" required class="input-email fade-in-section" />
+        <button type="submit" class="button fade-in-section" data-en="Sign Up" data-ar="اشترك">Sign Up</button>
+      </div>
+      <small class="fade-in-section" data-en="By subscribing you consent to our privacy policy and agree to receive updates." data-ar="بالاشتراك، فإنك توافق على سياسة الخصوصية الخاصة بنا وتوافق على تلقي التحديثات.">
+        By subscribing you consent to our <a href="#">privacy policy</a> and agree to receive updates.
+      </small>
+    </form>
+  </div>
+  <div class="divider fade-in-section"></div>
+  <div class="footer-main fade-in-section">
+    <div class="footer-logo fade-in-section">
+      <img src="images/dummy/home/Logo - Black.png" alt="KHB Logo" />
+    </div>
+    <div class="footer-links fade-in-section">
+      <ul>
+        <li class="fade-in-section"><a href="#" data-en="Who We Help" data-ar="من نساعد">Who We Help</a></li>
+        <li class="fade-in-section"><a href="#" data-en="Why KHB?" data-ar="لماذا KHB؟">Why KHB?</a></li>
+        <li class="fade-in-section"><a href="#" data-en="Services" data-ar="الخدمات">Services</a></li>
+        <li class="fade-in-section"><a href="#" data-en="Results" data-ar="النتائج">Results</a></li>
+      </ul>
+    </div>
+    <div class="footer-links fade-in-section">
+      <ul>
+        <li class="fade-in-section"><a href="#" data-en="Career" data-ar="وظائف">Career</a></li>
+        <li class="fade-in-section"><a href="#" data-en="Blog" data-ar="مدونة">Blog</a></li>
+        <li class="fade-in-section"><a href="#" data-en="Get in touch" data-ar="تواصل معنا">Get in touch</a></li>
+      </ul>
+    </div>
+    <div class="footer-social fade-in-section">
+      <h6 class="fade-in-section" data-en="Follow us" data-ar="تابعنا">Follow us</h6>
+      <div class="social-icons fade-in-section">
+        <a href="#"><img src="images/dummy/footer/Linkedin.png" alt="LinkedIn" /></a>
+        <a href="#"><img src="images/dummy/footer/Instagram.png" alt="Instagram" /></a>
+        <a href="#"><img src="images/dummy/footer/x.png" alt="X" /></a>
+        <a href="#"><img src="images/dummy/footer/Youtube.png" alt="YouTube" /></a>
+      </div>
+    </div>
+  </div>
+  <div class="divider fade-in-section"></div>
+  <div class="footer-bottom fade-in-section">
+    <p class="footer-p fade-in-section" data-en="© 2025 KOLE HUGG & BOOZ. All rights reserved" data-ar="© 2025 كول هوغ وبوز. جميع الحقوق محفوظة">© 2025 KOLE HUGG & BOOZ. All rights reserved</p>
+    <div class="footer-policies fade-in-section">
+      <a href="#" data-en="Privacy policy" data-ar="سياسة الخصوصية">Privacy policy</a>
+      <a href="#" data-en="Terms of service" data-ar="شروط الخدمة">Terms of service</a>
+      <a href="#" data-en="Cookies settings" data-ar="إعدادات ملفات تعريف الارتباط">Cookies settings</a>
+    </div>
+  </div>
+</footer>
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

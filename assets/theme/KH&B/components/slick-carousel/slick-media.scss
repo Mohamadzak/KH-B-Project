@@ -74,3 +74,18 @@
     font-size: 16px;
   }
 }
+@media (max-width: 991.98px) {
+  .slide-counter-scroll-container {
+    width: 100%;
+  }
+
+  .responsive-slide-counter {
+    font-size: 1rem;
+  }
+
+  .scroll-down-responsive {
+    font-size: 0.9rem;
+    cursor: pointer;
+    transform: translateX(120%);
+  }
+}

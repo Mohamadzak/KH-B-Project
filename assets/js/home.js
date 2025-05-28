@@ -180,3 +180,90 @@ $(document).ready(function() {
     nextArrow: $('.review-card__arrow--right'),
   });
 });
+
+
+
+/*arabic translator*/
+  // On DOM load
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.getElementById("header");
+  const langTogglers = document.querySelectorAll(".lang-select");
+  const langDisplaySm = document.getElementById("lang-toggler-sm");
+  const langDisplayLg = document.getElementById("lang-toggler-lg");
+
+  // Added sections
+  const innovativeSolutionsSection = document.getElementById("innovative-solutions-section");
+  const footer = document.querySelector(".custom-footer");
+
+  // Check saved language or default to English
+  let currentLang = localStorage.getItem("siteLanguage") || "en";
+  setLanguage(currentLang);
+
+  // Add click events for language togglers
+  langTogglers.forEach(link => {
+    link.addEventListener("click", e => {
+      e.preventDefault();
+      const selectedLang = link.getAttribute("data-lang");
+      setLanguage(selectedLang);
+    });
+  });
+
+  function setLanguage(lang) {
+    currentLang = lang;
+    localStorage.setItem("siteLanguage", lang);
+
+    // Update text direction & lang attribute on <html>
+    if (lang === "ar") {
+      document.documentElement.lang = "ar";
+      document.documentElement.dir = "rtl";
+    } else {
+      document.documentElement.lang = "en";
+      document.documentElement.dir = "ltr";
+    }
+
+    // Update language toggler display text
+    langDisplaySm.textContent = lang === "en" ? "En" : "ع";
+    langDisplayLg.textContent = lang === "en" ? "En" : "ع";
+
+    // Update all relevant sections text and layout
+    updateLanguageTexts(lang);
+  }
+
+  function updateLanguageTexts(lang) {
+    // Generic helper to update all elements with data-lang attributes inside a container
+    function updateSectionTexts(container) {
+      if (!container) return;
+      const elements = container.querySelectorAll("[data-en]");
+      elements.forEach(el => {
+        const text = el.getAttribute(`data-${lang}`) || el.textContent;
+        el.textContent = text;
+      });
+    }
+
+    // Update text content for all sections
+    const sections = document.querySelectorAll("section, header, footer, .consultation-content, .case-study-card, .review-card, #innovative-solutions-section, .custom-footer");
+    sections.forEach(section => {
+      updateSectionTexts(section);
+
+      // Adjust text direction and alignment
+      section.style.direction = lang === "ar" ? "rtl" : "ltr";
+      const textAlignmentClass = lang === "ar" ? "text-start" : "text-end";
+      const oppositeAlignmentClass = lang === "ar" ? "text-end" : "text-start";
+      const alignmentElements = section.querySelectorAll(`.${oppositeAlignmentClass}`);
+      alignmentElements.forEach(el => {
+        el.classList.remove(oppositeAlignmentClass);
+        el.classList.add(textAlignmentClass);
+      });
+    });
+
+    // Specifically update Innovative Solutions Section and Footer
+    updateSectionTexts(innovativeSolutionsSection);
+    updateSectionTexts(footer);
+    if (innovativeSolutionsSection) {
+      innovativeSolutionsSection.style.direction = lang === "ar" ? "rtl" : "ltr";
+    }
+    if (footer) {
+      footer.style.direction = lang === "ar" ? "rtl" : "ltr";
+    }
+  }
+});

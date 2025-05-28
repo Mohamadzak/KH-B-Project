@@ -18,3 +18,32 @@
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 }
+
+
+.case-study-title{
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--white-color);
+    line-height: 120%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.case-study-description{
+    font-weight: 400;
+    font-size: 17px;
+    color: #d5d5d5;
+    line-height: 24px;
+}
+.case-study-icon{
+    width: 41.88px;
+    height: 41.88px;
+}
+.case-study-percentage{
+    font-weight: 400;
+    font-size: 44px;
+    color: var(--white-color);
+    line-height: 100%;
+}
+.case-study-caption{font-weight: 400;
+    font-size: 17px;
+    color: #d5d5d5;
+    line-height: 24px;}

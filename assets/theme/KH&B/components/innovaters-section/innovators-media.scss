@@ -5,7 +5,25 @@
 /* Tablet and below (≤ 1200px) */
 @media (max-width: 1200px) {
   .innovators-section {
-    padding: 200px 0 200px 0; /* Much taller vertical padding */
+  width: 375px;
+  height: 693px;
+  padding: 163px 16px 32px 16px;
+  background: linear-gradient(
+      0deg, 
+      rgba(0, 0, 0, 0) 0%, 
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url('https://c.animaapp.com/maxzjozgvRLJLm/img/innovators.png') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .innovators-section {
+    padding: 16px 32px;
+    width: 343px;
+    height: 525px;
+    gap: 24px;
   }
   .container-innovators {
     padding: 0 80px; /* Wider horizontal padding */
@@ -17,12 +35,14 @@
   }
   .section-subject,
   .section-subject strong {
-    font-size: 48px;
-    line-height: 68px;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    font-weight: 400;
   }
   .headline {
-    font-size: 38px;
-    line-height: 1.36;
+    font-size: 34px;
+    line-height: 44px;
   }
 }
 

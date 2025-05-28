@@ -1,3 +1,6 @@
+.navbar-toggler-abs{
+  transform: translate(40% , -170%);
+}
 @media (min-width: 992px) {
   /* Center logo vertically and reset transform on desktop */
   .logo-direction {
@@ -5,10 +8,6 @@
     transform: translateY(0);
   }
 
-  /* Hide mobile navbar toggler on desktop */
-  .navbar-toggler-abs {
-    display: none;
-  }
 
   /* Reset navbar collapse styles for desktop */
   .navbar-collapse-absolute {

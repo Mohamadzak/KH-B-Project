@@ -25,6 +25,10 @@ body {
   box-sizing: border-box;
 }
 
+.g-4 {
+  --bs-gutter-x: 3rem; /* reset to default or remove this rule */
+}
+
 /** colors */
 /** messages colors */
 .colors-product-details-1 {
@@ -861,15 +865,15 @@ body {
     gap: 16px;
   }
 }
+.navbar-toggler-abs {
+  transform: translate(40%, -170%);
+}
+
 @media (min-width: 992px) {
   /* Center logo vertically and reset transform on desktop */
   .logo-direction {
     align-self: center;
     transform: translateY(0);
-  }
-  /* Hide mobile navbar toggler on desktop */
-  .navbar-toggler-abs {
-    display: none;
   }
   /* Reset navbar collapse styles for desktop */
   .navbar-collapse-absolute {
@@ -2150,8 +2154,6 @@ html, body {
   font-family: "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 6vw;
-  max-font-size: 48px;
-  min-font-size: 28px;
   line-height: 1.2;
   letter-spacing: -0.02em; /* -2% converted to em */
   color: var(--white-color);
@@ -2200,10 +2202,11 @@ html, body {
     padding: 0 2vw;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .home-page-d .market-leaders {
     gap: 16px;
     padding: 0 8px;
+    margin-top: 100%;
   }
   .clients-section {
     padding: 16px 4px;
@@ -2234,6 +2237,11 @@ body {
   justify-content: center;
   transition: transform 0.3s ease;
   border: 1px;
+  margin-right: 20px; /* Added space between circles */
+}
+
+.progress-circle:last-child {
+  margin-right: 0; /* Remove extra margin on last circle */
 }
 
 .progress-circle:hover {
@@ -2290,19 +2298,26 @@ body {
 /* Tablet */
 @media (max-width: 992px) {
   .progress-circle {
-    width: 140px;
-    height: 140px;
+    width: 172px;
+    height: 252px;
+  }
+  .progress-circle:last-child {
+    margin-right: 0;
   }
   .circle-text {
-    font-size: 36px;
+    font-size: 44px;
+    font-weight: 400;
+    line-height: 100%;
   }
 }
 /* Mobile */
 @media (max-width: 600px) {
   .progress-circle {
-    width: 90px;
-    height: 90px;
-    border-radius: 18%;
+    width: 172px;
+    height: 252px;
+  }
+  .progress-circle:last-child {
+    margin-right: 0;
   }
   .circle-text {
     font-size: 18px;
@@ -2349,14 +2364,6 @@ body {
 .review-card__rating label:hover ~ label,
 .review-card__rating input:checked ~ label {
   color: var(--warning-color);
-}
-
-/* Reset and base background */
-html, body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--black-color);
-  min-height: 100vh;
 }
 
 .service-detail-page {
@@ -3446,6 +3453,7 @@ html, body {
 =========================== */
 .innovators-section {
   width: 100%;
+  height: 693px !important;
   padding: 160px 20px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url("https://c.animaapp.com/maxzjozgvRLJLm/img/innovators.png") center/cover no-repeat;
   display: flex;
@@ -3842,6 +3850,285 @@ html, body {
   font-size: 17px;
   line-height: 24px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.case-study-title {
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--white-color);
+  line-height: 120%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.case-study-description {
+  font-weight: 400;
+  font-size: 17px;
+  color: #d5d5d5;
+  line-height: 24px;
+}
+
+.case-study-icon {
+  width: 41.88px;
+  height: 41.88px;
+}
+
+.case-study-percentage {
+  font-weight: 400;
+  font-size: 44px;
+  color: var(--white-color);
+  line-height: 100%;
+}
+
+.case-study-caption {
+  font-weight: 400;
+  font-size: 17px;
+  color: #d5d5d5;
+  line-height: 24px;
+}
+
+.careers-description {
+  color: #d5d5d5;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.job-card {
+  background-color: #262626;
+  border-radius: 10px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 40px 32px;
+  max-width: 1200px;
+  width: 98%;
+  height: 176px;
+  gap: 50px;
+  margin-top: 40px;
+  box-sizing: border-box; /* important for padding */
+}
+
+/* LEFT */
+.job-start {
+  display: flex;
+  flex-direction: column;
+  max-width: 282px;
+  flex-shrink: 0;
+  min-width: 150px; /* ensure it shrinks nicely */
+}
+
+.job-location {
+  font-weight: 400;
+  font-size: 17px;
+  color: #D5D5D5;
+  line-height: 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.job-title {
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--white-color);
+  line-height: 32px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* CENTER */
+.job-description {
+  font-size: 17px;
+  color: #D5D5D5;
+  line-height: 24px;
+  text-align: start;
+  flex: 1 1 auto;
+  padding: 0 24px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  min-width: 0; /* for text truncation inside flex */
+  overflow-wrap: break-word;
+}
+
+/* RIGHT */
+.job-end {
+  display: flex;
+  align-items: flex-start; /* Align button to the top */
+  justify-content: flex-end;
+  height: 100%;
+  min-width: 120px; /* keep button area consistent */
+}
+
+/* Button styling */
+.apply-button {
+  background-color: var(--success-color);
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.apply-button:hover {
+  background-color: var(--success-color);
+  box-shadow: 0 0 10px var(--success-color);
+}
+
+.apply-button:focus {
+  border: 2px solid var(--white-color);
+  box-shadow: inset 0 0 0 2px black;
+  outline: none;
+  background-color: #60D148;
+}
+
+.apply-button:active {
+  border: 1px solid var(--black-color);
+  transform: scale(1);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .job-card {
+    height: auto; /* allow height to grow */
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  .job-title {
+    font-size: 24px;
+    white-space: normal; /* allow wrapping */
+  }
+  .job-description {
+    padding: 0 16px;
+  }
+}
+@media (max-width: 768px) {
+  .job-card {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 24px 16px;
+    gap: 20px;
+  }
+  .job-start {
+    max-width: 100%;
+  }
+  .job-title {
+    font-size: 22px;
+    white-space: normal;
+    margin-bottom: 4px;
+  }
+  .job-description {
+    padding: 0;
+    text-align: left;
+  }
+  .job-end {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .apply-button {
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+    padding: 14px 0;
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .job-card {
+    padding: 20px 12px;
+    gap: 16px;
+  }
+  .job-title {
+    font-size: 20px;
+  }
+  .careers-description {
+    font-size: 15px;
+  }
+}
+.form-input {
+  width: 100%;
+  max-width: 384px;
+  height: 56px;
+  border-radius: 48px;
+  border: 1px solid #535353;
+  background-color: #272727;
+  padding: 16px;
+}
+
+.form-label {
+  font-family: Tahoma;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 5%;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+.radio {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+.radio .form-check-label {
+  font-family: Tahoma;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--white-color);
+}
+
+.message {
+  width: 1200px;
+  height: 213px;
+  border-radius: 8px;
+  border: 1px solid #535353;
+  background-color: #272727;
+  padding: 16px;
+  gap: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.message::-moz-placeholder {
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.2;
+  color: #D8D8D8;
+}
+
+.message::placeholder {
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.2;
+  color: #D8D8D8;
+}
+
+.form-check-input {
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+}
+
+.form-check-label {
+  font-family: Tahoma;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--white-color);
+}
+.form-check-label span {
+  text-decoration: underline;
 }
 
 /* Wrapper for centering the review card */
@@ -4313,7 +4600,19 @@ html, body {
 /* Tablet and below (≤ 1200px) */
 @media (max-width: 1200px) {
   .innovators-section {
-    padding: 200px 0 200px 0; /* Much taller vertical padding */
+    width: 375px;
+    height: 693px;
+    padding: 163px 16px 32px 16px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url("https://c.animaapp.com/maxzjozgvRLJLm/img/innovators.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .innovators-section {
+    padding: 16px 32px;
+    width: 343px;
+    height: 525px;
+    gap: 24px;
   }
   .container-innovators {
     padding: 0 80px; /* Wider horizontal padding */
@@ -4325,12 +4624,14 @@ html, body {
   }
   .section-subject,
   .section-subject strong {
-    font-size: 48px;
-    line-height: 68px;
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    font-weight: 400;
   }
   .headline {
-    font-size: 38px;
-    line-height: 1.36;
+    font-size: 34px;
+    line-height: 44px;
   }
 }
 /* Small Tablet (≤ 900px) */
@@ -4415,20 +4716,6 @@ html, body {
   width: 30%;
 }
 
-.data-driven-section h5 {
-  font-size: 26px;
-  font-weight: 400;
-  color: var(--white-color);
-  line-height: 36px;
-}
-
-.data-driven-section span {
-  font-size: 32px;
-  font-weight: 700;
-  color: var(--white-color);
-  line-height: 36px;
-}
-
 .data-driven-section h2 {
   font-size: 2.5rem;
   letter-spacing: -1px;
@@ -4443,16 +4730,16 @@ html, body {
 
 .Innovative-strategies {
   font-weight: 400;
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 34px;
+  line-height: 44px;
   letter-spacing: -2%;
   color: var(--white-color);
 }
 
 .Innovative-strategies .Innovative-mark {
   font-weight: 700;
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 34px;
+  line-height: 44px;
   letter-spacing: -2%;
   color: var(--white-color);
 }
@@ -4563,13 +4850,13 @@ html, body {
   }
   .main-heading,
   .main-heading span {
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: -1%;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -2%;
   }
   .description-solution {
     font-size: 15px;
-    line-height: 20px;
+    line-height: 30px;
   }
   .text-block h3 {
     font-size: 18px;
@@ -4582,7 +4869,7 @@ html, body {
   }
   .services-list {
     margin-top: 8px;
-    gap: 12px;
+    gap: 25px;
   }
   .service-item {
     gap: 12px;
@@ -4600,7 +4887,8 @@ html, body {
   }
   .innovative-section .button {
     width: 100%;
-    margin-top: 24px;
+    position: absolute;
+    top: 97%;
   }
 }
 /* ================================
@@ -4707,6 +4995,19 @@ html, body {
     font-size: 16px;
   }
 }
+@media (max-width: 991.98px) {
+  .slide-counter-scroll-container {
+    width: 100%;
+  }
+  .responsive-slide-counter {
+    font-size: 1rem;
+  }
+  .scroll-down-responsive {
+    font-size: 0.9rem;
+    cursor: pointer;
+    transform: translateX(120%);
+  }
+}
 /* ===========================
    Data Driven Section
 =========================== */
@@ -4718,20 +5019,6 @@ html, body {
 
 .data-driven-section button {
   width: 30%;
-}
-
-.data-driven-section h5 {
-  font-size: 26px;
-  font-weight: 400;
-  color: var(--white-color);
-  line-height: 36px;
-}
-
-.data-driven-section span {
-  font-size: 32px;
-  font-weight: 700;
-  color: var(--white-color);
-  line-height: 36px;
 }
 
 .data-driven-section h2 {
@@ -4748,16 +5035,16 @@ html, body {
 
 .Innovative-strategies {
   font-weight: 400;
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 34px;
+  line-height: 44px;
   letter-spacing: -2%;
   color: var(--white-color);
 }
 
 .Innovative-strategies .Innovative-mark {
   font-weight: 700;
-  font-size: 48px;
-  line-height: 64px;
+  font-size: 34px;
+  line-height: 44px;
   letter-spacing: -2%;
   color: var(--white-color);
 }
@@ -4868,13 +5155,13 @@ html, body {
   }
   .main-heading,
   .main-heading span {
-    font-size: 28px;
-    line-height: 36px;
-    letter-spacing: -1%;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -2%;
   }
   .description-solution {
     font-size: 15px;
-    line-height: 20px;
+    line-height: 30px;
   }
   .text-block h3 {
     font-size: 18px;
@@ -4887,7 +5174,7 @@ html, body {
   }
   .services-list {
     margin-top: 8px;
-    gap: 12px;
+    gap: 25px;
   }
   .service-item {
     gap: 12px;
@@ -4905,7 +5192,8 @@ html, body {
   }
   .innovative-section .button {
     width: 100%;
-    margin-top: 24px;
+    position: absolute;
+    top: 97%;
   }
 }
 .ellipse-45 {
