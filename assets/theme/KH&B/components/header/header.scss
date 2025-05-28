@@ -1,18 +1,7 @@
-/* Body */
-body {
-  background-color: var(--black-color);
-  color: var(--white-color);
-  font-family: 'Tahoma', sans-serif;
-}
-
 /* Sticky Header Base */
 .site-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   position: sticky;
   top: 0;
-  width: 100%;
   z-index: 1000;
   background-color: var(--black-color);
   transition: all 0.3s ease-in-out;
@@ -27,7 +16,7 @@ body {
 
 /* Navbar Links */
 .navbar-nav .nav-link {
-  color: var(--white-color) !important;
+  color: var(--white-color);
   font-weight: 400;
   font-size: 17px;
   line-height: 100%;
@@ -35,10 +24,10 @@ body {
 }
 
 .navbar-nav .nav-link:hover {
-  color: var(--black-color) !important;
-  background-color: var(--white-color) !important;
-  font-weight: 400 !important;
-  font-size: 17px !important;
+  color: var(--black-color);
+  background-color: var(--white-color);
+  font-weight: 400;
+  font-size: 17px;
   border-radius: 20px;
 }
 
