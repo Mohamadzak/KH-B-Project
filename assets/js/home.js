@@ -78,6 +78,7 @@ $(document).ready(function () {
   $carousel.slick({
     dots: false,
     arrows: true,
+    fade:true,
     prevArrow: $('#carousel-prev'), // use ID selector
     nextArrow: $('#carousel-next'), // use ID selector
     infinite: true,

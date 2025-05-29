@@ -425,7 +425,8 @@ body {
   transition: 0.3s;
   border-radius: 30px;
   align-items: center;
-  width: 132px;
+  padding-left: 2rem;
+  padding-right: 2rem;
   height: 57px;
   transition: all 0.1s ease-in-out;
 }
@@ -472,6 +473,7 @@ body {
 
 /* Sticky Header Base */
 .site-header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -780,7 +782,7 @@ body {
   }
   /* Make newsletter text and form full width */
   .newsletter-text,
-  .newsletter-form {
+.newsletter-form {
     flex: none;
   }
   /* Stack form-row vertically */
@@ -1501,6 +1503,7 @@ body {
 
 /* Title overrides */
 .featured-case-studies__title {
+  font-size: 3rem;
   margin-top: 0; /* Remove top margin */
   padding-bottom: 0; /* Remove bottom padding */
 }
@@ -1658,7 +1661,7 @@ body {
   border: none;
   cursor: pointer;
   color: var(--black-color);
-  margin-top: 150px;
+  margin-top: 115px;
 }
 
 /* Button image (arrow) */
@@ -2135,11 +2138,6 @@ html, body {
 }
 
 /* Market leaders buttons */
-.market-leaders .button {
-  width: 100%;
-  max-width: 350px;
-}
-
 @media (max-width: 768px) {
   .market-leaders .button {
     width: 100%;
@@ -2158,7 +2156,7 @@ html, body {
   justify-content: center;
   transition: transform 0.3s ease;
   border: 1px;
-  margin-right: 20px; /* Added space between circles */
+  /* Added space between circles */
 }
 
 .progress-circle:last-child {
@@ -3440,7 +3438,7 @@ html, body {
 }
 
 .content-box button {
-  width: 30%;
+  width: 44%;
 }
 
 /* ===========================
@@ -3525,7 +3523,7 @@ html, body {
   background-color: #bcffa5;
   border-radius: 50%;
   box-shadow: 0 0 0.75rem 0.1875rem #bcffa5;
-  margin-top: 0.25rem; /* small offset so bullet aligns with first line of text */
+  margin-top: 0.4rem; /* small offset so bullet aligns with first line of text */
 }
 
 .text-block h3 {
@@ -4847,9 +4845,6 @@ html, body {
     font-size: 20px;
     line-height: 36px;
   }
-  .slick-carousel button {
-    width: 30%;
-  }
   /* Scroll down indicator styling for smaller screens */
   .scroll-down-responsive {
     position: absolute;
@@ -4872,9 +4867,6 @@ html, body {
     font-size: 18px;
     line-height: 32px;
   }
-  .slick-carousel button {
-    width: 35%;
-  }
 }
 @media (max-width: 480px) {
   .banner-span {
@@ -4888,9 +4880,6 @@ html, body {
   .lead {
     font-size: 16px;
     line-height: 28px;
-  }
-  .slick-carousel button {
-    width: 100%;
   }
   .slide-number {
     font-size: 16px;
