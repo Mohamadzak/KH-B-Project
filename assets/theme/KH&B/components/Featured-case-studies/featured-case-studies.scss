@@ -2,7 +2,6 @@
    Featured Case Studies Container
    ========================================================================== */
 .featured-case-studies {
-  max-width: 1200px;
   margin: 100px auto;
   padding: 0 24px;
   display: flex;
@@ -14,21 +13,18 @@
    Header Section of Featured Case Studies
    ========================================================================== */
 .featured-case-studies__header {
-  display: flex !important;          /* Ensure flex layout */
-  flex-direction: row !important;    /* Horizontal alignment */
-  justify-content: space-between;    /* Spread header elements */
-  align-items: center;               /* Vertically center items */
-  flex-wrap: nowrap !important;      /* Prevent wrapping */
-  gap: 12px;                        /* Spacing between header items */
-  width: 100%;
+  display: flex; /* Ensure flex layout */
+  flex-direction: row; /* Horizontal alignment */
+  justify-content: space-between; /* Spread header elements */
+  align-items: center; /* Vertically center items */
+  gap: 12px; /* Spacing between header items */
 }
 
 /* Title Styling */
 .featured-case-studies .title {
-  white-space: nowrap;               /* Prevent line breaks */
-  text-overflow: ellipsis;           /* Show ellipsis on overflow */
-  flex-grow: 1;                      /* Allow to expand */
-  min-width: 0;                     /* Prevent overflow */
+  white-space: nowrap; /* Prevent line breaks */
+  text-overflow: ellipsis; /* Show ellipsis on overflow */
+  flex-grow: 1; /* Allow to expand */
   margin: 0;
 }
 
@@ -39,8 +35,8 @@
 
 /* Title overrides */
 .featured-case-studies__title {
-  margin-top: 0;                    /* Remove top margin */
-  padding-bottom: 0;               /* Remove bottom padding */
+  margin-top: 0; /* Remove top margin */
+  padding-bottom: 0; /* Remove bottom padding */
 }
 
 /* ==========================================================================
@@ -51,15 +47,15 @@
     position: relative;
     flex-direction: row;
     align-items: center;
-    height: auto;                  /* Allow height to auto adjust */
-    padding-bottom: 0;             /* Remove bottom padding */
+    height: auto; /* Allow height to auto adjust */
+    padding-bottom: 0; /* Remove bottom padding */
   }
 
   /* Button full width and positioned below header */
   .featured-case-studies .button {
     width: 100%;
     margin-bottom: 0;
-    transform: translateY(1400%);  /* Move below header */
+    transform: translateY(1400%); /* Move below header */
     position: absolute;
     right: 0;
     top: 100%;
@@ -79,10 +75,10 @@
    ========================================================================== */
 .featured-case-studies__list {
   display: flex;
-  flex-wrap: wrap;                 /* Allow wrapping for smaller screens */
-  gap: 24px;                      /* Spacing between cards */
-  overflow: visible;              /* Prevent clipping */
-  justify-content: center;         /* Center cards horizontally */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  gap: 24px; /* Spacing between cards */
+  overflow: visible; /* Prevent clipping */
+  justify-content: center; /* Center cards horizontally */
 }
 
 /* Slick slider margin fix */
@@ -96,8 +92,7 @@
 .case-study-card {
   background: var(--white-color);
   border-radius: 8px;
-  flex: 1 1 300px;                /* Responsive flex-basis */
-  max-width: 384px;               /* Max card width */
+  flex: 1 1 300px; /* Responsive flex-basis */
   display: flex;
   flex-direction: column;
 }
@@ -105,7 +100,7 @@
 /* Focus style for accessibility */
 .case-study-card:focus {
   outline: 1px solid var(--white-color);
-  outline-offset: 7px;            /* Space between outline and card */
+  outline-offset: 7px; /* Space between outline and card */
   border-radius: 6px;
 }
 
@@ -114,7 +109,7 @@
   width: 100%;
   height: 185px;
   object-fit: cover;
-  border-radius: 8px 8px 0 0;    /* Rounded top corners only */
+  border-radius: 8px 8px 0 0; /* Rounded top corners only */
 }
 
 /* Card Content */
@@ -129,12 +124,12 @@
 /* Active state for content when pressed */
 .case-study-card__content:active {
   border: 1px solid var(--black-color);
-  transform: scale(0.95);        /* Slight shrink effect */
+  transform: scale(0.95); /* Slight shrink effect */
 }
 
 /* Headline */
 .case-study-card__headline {
-  font-family: 'Tahoma', sans-serif;
+  font-family: "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 24px;
   color: var(--black-color);
@@ -149,7 +144,7 @@
 
 /* Description */
 .case-study-card__description {
-  font-family: 'Tahoma', sans-serif;
+  font-family: "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 17px;
   color: #616161;
@@ -167,25 +162,23 @@
 
 /* Author avatar */
 .case-study-card__avatar {
-  width: 40px;
-  height: 40px;
   border-radius: 50%;
   object-fit: cover;
 }
 
 /* Author name */
 .case-study-card__author {
-  font-family: 'Tahoma', sans-serif;
+  font-family: "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: var(--black-color);
   margin: 0;
-  white-space: nowrap;            /* Prevent wrapping */
+  white-space: nowrap; /* Prevent wrapping */
 }
 
 /* Date */
 .case-study-card__date {
-  font-family: 'Tahoma', sans-serif;
+  font-family: "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   color: #616161;
@@ -195,12 +188,12 @@
    Read More Button inside Card
    ========================================================================== */
 .case-study-card__btn {
-  margin-left: auto;             /* Push button to the right */
+  margin-left: auto; /* Push button to the right */
   background: none;
   border: none;
   cursor: pointer;
   color: var(--black-color);
-    margin-top: 150px;
+  margin-top: 150px;
 }
 
 /* Button image (arrow) */
@@ -209,7 +202,7 @@
   height: auto;
 }
 //key word
-.featured-case-studies-key-word{
+.featured-case-studies-key-word {
   color: #616161;
   font-weight: 700;
   font-size: 13px;
@@ -217,7 +210,7 @@
   line-height: 100%;
 }
 //ecco logo in target market file
-.ecco-logo{
+.ecco-logo {
   width: 90px;
   height: 23px;
 }
@@ -226,6 +219,6 @@
   .case-study-card__btn img {
     width: 50px;
     height: auto;
-    margin-top: 100px;           /* Push down on mobile */
+    margin-top: 100px; /* Push down on mobile */
   }
 }

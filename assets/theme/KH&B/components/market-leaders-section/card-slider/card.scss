@@ -1,21 +1,6 @@
-/* Wrapper for centering the review card */
-.review-card-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  height: 100vh;
-  width: 100%;
-}
-
 /* Review card styling */
 .review-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
   padding: 64px 72px;
-  width: 1200px;
-  height: 501px;
   background: var(--white-color);
   border-radius: 48px;
   gap: 32px; /* Base spacing between children */
@@ -28,7 +13,6 @@
   font-size: 42px;
   line-height: 120%;
   color: var(--black-color);
-  transform: translateY(20%);
   margin-bottom: 0;
 }
 
@@ -88,14 +72,14 @@
 
 /* Left arrow */
 .review-card__arrow--left::before {
-  content: '<';
+  content: "<";
   font-size: 40px;
   color: var(--black-color);
 }
 
 /* Right arrow */
 .review-card__arrow--right::before {
-  content: '>';
+  content: ">";
   font-size: 40px;
   color: var(--black-color);
 }
@@ -104,7 +88,6 @@
 @media (max-width: 992px) {
   .review-card {
     width: 90%;
-    height: auto;
     padding: 48px;
     border-radius: 32px;
     gap: 24px; /* space between children */
