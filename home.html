@@ -529,5 +529,57 @@ window.addEventListener('scroll', () => {
 });
 
   </script>
+
+
+<script>
+ const container = document.querySelector(".innovators-section");
+const boxes = container.querySelectorAll(".content-box");
+
+let scrollingActive = false;
+
+// Initial position
+boxes.forEach(box => {
+  box.style.transform = `translate(-50%, 50px)`; // initial downward offset
+});
+
+// IntersectionObserver setup
+const observer = new IntersectionObserver(
+  ([entry]) => {
+    if (entry.isIntersecting) {
+      // Start listening to scroll inside container
+      if (!scrollingActive) {
+        scrollingActive = true;
+        container.addEventListener("scroll", onScroll);
+      }
+    } else {
+      // Stop scroll animation when container out of view
+      if (scrollingActive) {
+        scrollingActive = false;
+        container.removeEventListener("scroll", onScroll);
+
+        // Reset boxes to initial position
+        boxes.forEach(box => {
+          box.style.transform = `translate(-50%, 50px)`;
+        });
+      }
+    }
+  },
+  { threshold: 0.1 } // Trigger when at least 10% visible
+);
+
+observer.observe(container);
+
+function onScroll() {
+  const scrollTop = container.scrollTop;
+  const factor = 1.5; // adjust movement speed
+  const offset = 50;  // initial downward offset
+
+  boxes.forEach((box, index) => {
+    const delay = index * 10; // optional stagger
+    const moveY = offset - scrollTop * factor + delay;
+    box.style.transform = `translate(-50%, ${moveY}px)`;
+  });
+}
+</script>
   </body>
 </html>

@@ -1,7 +1,62 @@
 #innovators-section{
     background-attachment: fixed;
 }
+
+
+/* ///////////BANNER ANIMATION/////////// */
 .ellipse-46 {
     opacity: 69%;
-;
 }
+
+@keyframes floatFullScreen {
+    0% {
+      transform: translate(0vw, 0vh);
+    }
+    100% {
+      transform: translate(100vw, 100vh);
+    }
+  }
+  
+  .ellipse-46 {
+
+    animation: floatFullScreen 60s linear infinite;
+    will-change: transform;
+   
+  }
+
+
+  @keyframes wander {
+    0% {
+      transform: translate(0vw, 0vh);
+    }
+    20% {
+      transform: translate(20vw, -10vh);
+    }
+    40% {
+      transform: translate(-10vw, -30vh);
+    }
+    60% {
+      transform: translate(15vw, -50vh);
+    }
+    80% {
+      transform: translate(-25vw, -30vh);
+    }
+    100% {
+      transform: translate(0vw, 0vh);
+    }
+  }
+  
+  .ellipse-45 {
+   
+    transform: translateX(-50%);
+    animation: wander 80s ease-in-out infinite;
+    will-change: transform;
+
+  }
+
+
+
+  .content-box{
+      position: relative;
+      top:100px;
+  }
