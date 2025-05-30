@@ -1,0 +1,68 @@
+.blog-icons {
+  background-color: var(--success-color);
+  color: var(--black-color) !important;
+}
+.blog-heading-title {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -2%;
+  margin-bottom: 0.5rem; /* adds breathing space below the title */
+}
+
+.blog-heading-highlight {
+  color: #d5d5d5;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 0.75rem; /* slightly bigger space below highlight */
+}
+
+.blog-heading-description {
+  color: #d5d5d5;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.sub-heading-title {
+  color: var(--white-color);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -2%;
+  margin-bottom: 1rem; /* Adds space below */
+}
+
+.toc-item {
+  cursor: pointer;
+  padding-left: 1.5rem;
+  position: relative;
+  color: white;
+  user-select: none;
+  transition: color 0.2s;
+}
+
+.toc-item:hover {
+  color: #ccc;
+}
+
+.toc-item.active-toc::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.line-heading {
+  height: 1px; /* thickness of the line */
+  background-color: #8b8b8b; /* gray color */
+  width: 100%; /* full width, adjust as needed */
+  margin-top: 50px;
+}

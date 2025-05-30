@@ -6,6 +6,16 @@
   gap: 32px; /* Base spacing between children */
   z-index: 1;
 }
+.review-card {
+  display: none; /* Hide all cards by default */
+  flex-direction: column;
+  position: relative;
+  align-items: start;
+}
+
+.review-card.active {
+  display: flex; /* Show only active card */
+}
 
 /* Review card text */
 .review-card__text {
