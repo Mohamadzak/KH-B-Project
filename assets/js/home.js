@@ -3,13 +3,13 @@
    - Calculates stroke offset and dot position
    - Based on data-percentage attribute
    =========================== */
-document.querySelectorAll('.progress-circle').forEach(el => {
-  const percent = parseInt(el.getAttribute('data-percentage'), 10);
-  const circle = el.querySelector('.progress');
-  const dot = el.querySelector('.dot');
+document.querySelectorAll(".progress-circle").forEach((el) => {
+  const percent = parseInt(el.getAttribute("data-percentage"), 10);
+  const circle = el.querySelector(".progress");
+  const dot = el.querySelector(".dot");
 
-  const cx = 50;  // SVG center X coordinate
-  const cy = 50;  // SVG center Y coordinate
+  const cx = 50; // SVG center X coordinate
+  const cy = 50; // SVG center Y coordinate
   const radius = 45; // Radius of the circular progress path
 
   // Calculate circumference of the circle (2πr)
@@ -30,47 +30,47 @@ document.querySelectorAll('.progress-circle').forEach(el => {
   const dotY = cy + radius * Math.sin(angleRad);
 
   // Position dot on SVG circle
-  dot.setAttribute('cx', dotX);
-  dot.setAttribute('cy', dotY);
+  dot.setAttribute("cx", dotX);
+  dot.setAttribute("cy", dotY);
 });
-
 
 /* ===========================
    Navbar Auto Collapse on Outside Click
    - Collapses navbar if clicking outside toggler or navbar itself
    =========================== */
-document.addEventListener('click', function(event) {
-  const navbarCollapse = document.getElementById('navbarNavDropdown');
-  const toggler = document.querySelector('.navbar-toggler');
+document.addEventListener("click", function (event) {
+  const navbarCollapse = document.getElementById("navbarNavDropdown");
+  const toggler = document.querySelector(".navbar-toggler");
 
   // Only proceed if navbar is currently expanded
-  if (navbarCollapse.classList.contains('show')) {
+  if (navbarCollapse.classList.contains("show")) {
     // If click is outside navbar and toggler button, trigger collapse
-    if (!navbarCollapse.contains(event.target) && !toggler.contains(event.target)) {
+    if (
+      !navbarCollapse.contains(event.target) &&
+      !toggler.contains(event.target)
+    ) {
       toggler.click(); // Triggers Bootstrap collapse toggle
     }
   }
 });
 
-
 /* ===========================
    Slick Slider Initialization
    =========================== */
 
-
 $(document).ready(function () {
-  const $carousel = $('.slick-carousel');
-  const $current = $('.current-slide');
-  const $total = $('.total-slides');
+  const $carousel = $(".slick-carousel");
+  const $current = $(".current-slide");
+  const $total = $(".total-slides");
 
   // Set total slides on init
-  $carousel.on('init', function (event, slick) {
+  $carousel.on("init", function (event, slick) {
     $total.text(slick.slideCount);
     $current.text(1);
   });
 
   // Update current slide number after change
-  $carousel.on('afterChange', function (event, slick, currentSlide) {
+  $carousel.on("afterChange", function (event, slick, currentSlide) {
     $current.text(currentSlide + 1);
   });
 
@@ -78,31 +78,28 @@ $(document).ready(function () {
   $carousel.slick({
     dots: false,
     arrows: true,
-    fade:true,
-    prevArrow: $('#carousel-prev'), // use ID selector
-    nextArrow: $('#carousel-next'), // use ID selector
+    fade: true,
+    prevArrow: $("#carousel-prev"), // use ID selector
+    nextArrow: $("#carousel-next"), // use ID selector
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    adaptiveHeight: true
+    adaptiveHeight: true,
   });
 });
-
-
-
 
 /* Data-Driven Slick Slider
    - Only initialize on screens smaller than 768px
 */
-$(document).ready(function() {
+$(document).ready(function () {
   if (window.innerWidth < 768) {
-    $('.slick-progress').slick({
+    $(".slick-progress").slick({
       dots: true,
       arrows: false,
       infinite: false,
       slidesToShow: 2,
-      slidesToScroll: 2
+      slidesToScroll: 2,
     });
   }
 });
@@ -137,16 +134,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-
 /* Featured Case Studies Slick Slider
    - Responsive toggle: initialize on small screens, destroy on large screens
 */
 $(document).ready(function () {
   function toggleSlick() {
-    const $list = $('.featured-case-studies__list');
+    const $list = $(".featured-case-studies__list");
 
     if ($(window).width() < 768) {
-      if (!$list.hasClass('slick-initialized')) {
+      if (!$list.hasClass("slick-initialized")) {
         $list.slick({
           slidesToShow: 1.1,
           slidesToScroll: 1,
@@ -157,8 +153,8 @@ $(document).ready(function () {
         });
       }
     } else {
-      if ($list.hasClass('slick-initialized')) {
-        $list.slick('unslick');
+      if ($list.hasClass("slick-initialized")) {
+        $list.slick("unslick");
       }
     }
   }
@@ -167,25 +163,23 @@ $(document).ready(function () {
   toggleSlick();
 
   // Recheck on window resize
-  $(window).on('resize', toggleSlick);
+  $(window).on("resize", toggleSlick);
 });
 
 /* Market Leaders Review Slider */
-$(document).ready(function() {
-  $('.review-slider').slick({
+$(document).ready(function () {
+  $(".review-slider").slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: $('.review-card__arrow--left'),
-    nextArrow: $('.review-card__arrow--right'),
+    prevArrow: $(".review-card__arrow--left"),
+    nextArrow: $(".review-card__arrow--right"),
   });
 });
 
-
-
 /*arabic translator*/
-  // On DOM load
+// On DOM load
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("header");
   const langTogglers = document.querySelectorAll(".lang-select");
@@ -193,7 +187,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const langDisplayLg = document.getElementById("lang-toggler-lg");
 
   // Added sections
-  const innovativeSolutionsSection = document.getElementById("innovative-solutions-section");
+  const innovativeSolutionsSection = document.getElementById(
+    "innovative-solutions-section"
+  );
   const footer = document.querySelector(".custom-footer");
 
   // Check saved language or default to English
@@ -201,8 +197,8 @@ document.addEventListener("DOMContentLoaded", () => {
   setLanguage(currentLang);
 
   // Add click events for language togglers
-  langTogglers.forEach(link => {
-    link.addEventListener("click", e => {
+  langTogglers.forEach((link) => {
+    link.addEventListener("click", (e) => {
       e.preventDefault();
       const selectedLang = link.getAttribute("data-lang");
       setLanguage(selectedLang);
@@ -235,23 +231,27 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateSectionTexts(container) {
       if (!container) return;
       const elements = container.querySelectorAll("[data-en]");
-      elements.forEach(el => {
+      elements.forEach((el) => {
         const text = el.getAttribute(`data-${lang}`) || el.textContent;
         el.textContent = text;
       });
     }
 
     // Update text content for all sections
-    const sections = document.querySelectorAll("section, header, footer, .consultation-content, .case-study-card, .review-card, #innovative-solutions-section, .custom-footer");
-    sections.forEach(section => {
+    const sections = document.querySelectorAll(
+      "section, header, footer, .consultation-content, .case-study-card, .review-card, #innovative-solutions-section, .custom-footer"
+    );
+    sections.forEach((section) => {
       updateSectionTexts(section);
 
       // Adjust text direction and alignment
       section.style.direction = lang === "ar" ? "rtl" : "ltr";
       const textAlignmentClass = lang === "ar" ? "text-start" : "text-end";
       const oppositeAlignmentClass = lang === "ar" ? "text-end" : "text-start";
-      const alignmentElements = section.querySelectorAll(`.${oppositeAlignmentClass}`);
-      alignmentElements.forEach(el => {
+      const alignmentElements = section.querySelectorAll(
+        `.${oppositeAlignmentClass}`
+      );
+      alignmentElements.forEach((el) => {
         el.classList.remove(oppositeAlignmentClass);
         el.classList.add(textAlignmentClass);
       });
@@ -261,7 +261,8 @@ document.addEventListener("DOMContentLoaded", () => {
     updateSectionTexts(innovativeSolutionsSection);
     updateSectionTexts(footer);
     if (innovativeSolutionsSection) {
-      innovativeSolutionsSection.style.direction = lang === "ar" ? "rtl" : "ltr";
+      innovativeSolutionsSection.style.direction =
+        lang === "ar" ? "rtl" : "ltr";
     }
     if (footer) {
       footer.style.direction = lang === "ar" ? "rtl" : "ltr";

@@ -4,6 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
       <link rel="stylesheet" href="/css/styles.css" />
+       <link rel="stylesheet" href="/css/mod.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"rel="stylesheet"/>
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
@@ -12,7 +17,9 @@
  
     <div class="who-we-help-bg">
   <div class="who-we-help-header-banner-bg">
-          <header class="container-fluid py-3">
+          <header class="container-fluid py-3" id="header">
+          <div class="inner-header">
+          <div class="header-cont">
             <div class="container-xxl">
                 <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3 gap-lg-0">
                 <!-- Left: Logo -->
@@ -38,16 +45,15 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="#results">Results</a></li>
                     <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#careers">Careers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/careers-khb.html">Careers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
 
                     <!-- Language Dropdown (visible only on small screens) -->
                     <li class="nav-item dropdown d-lg-none ">
                         <a class="nav-link dropdown-toggle text-white text-center" href="#" role="button" data-bs-toggle="dropdown">En</a>
                         <ul class="dropdown-menu dropdown-menu-dark">
                         <li><a class="dropdown-item" href="#en">English</a></li>
-                        <li><a class="dropdown-item" href="#fr">Français</a></li>
-                        <li><a class="dropdown-item" href="#es">Español</a></li>
+                        <li><a class="dropdown-item" href="#fr">arabic</a></li>
                         </ul>
                     </li>
                     </ul>
@@ -62,11 +68,13 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end">
                     <li><a class="dropdown-item" href="#en">English</a></li>
-                    <li><a class="dropdown-item" href="#fr">Français</a></li>
-                    <li><a class="dropdown-item" href="#es">Español</a></li>
+                    <li><a class="dropdown-item" href="#fr">arabic</a></li>
                     </ul>
                 </div>
                 </div>
+                </div>
+                </div>
+                </div></div>
             </header>
             <div class="custom-border-color"></div> 
              <section class="service-section">
@@ -323,71 +331,197 @@
                     </div>
                 </div>
                 </section>
-                    <section class="featured-case-studies ">
-        <header class="featured-case-studies__header ">
-          <h2 class="featured-case-studies__title ">Featured Case Studies</h2>
-          <button class="button ">View All Case Studies</button>
-        </header>
-        <div class="featured-case-studies__list ">
-          <article class="case-study-card " tabindex="0">
-            <img src="/images/Dummy/home/image-card.png" alt="Driving engagement campaign" class="case-study-card__image " />
-            <div class="case-study-card__content ">
-              <div class="">
-                <h3 class="case-study-card__headline ">Driving engagement through innovative campaigns </h3>
-                <p class="case-study-card__description mt-2 ">Discover how we enhanced brand visibility and customer interaction. </p>
-              </div>
-              <footer class="case-study-card__footer ">
-                <img src="/images/Dummy/home/Testimonial Person.png" alt="Jane Doe" class="case-study-card__avatar " />
-                <div>
-                  <p class="case-study-card__author ">Jane Doe</p>
-                  <time datetime="2022-01-11" class="case-study-card__date ">11 Jan 2022 • 5 min read</time>
-                </div>
-                <button class="case-study-card__btn ">
-                  <img src="images/dummy/Button arrow.png" alt="Read more" />
-                </button>
-              </footer>
+           <!---------------featured case studies section-------------------------->
+        <section
+          id="featured-case-studies-section"
+          class="featured-case-studies"
+        >
+          <div class="container">
+            <div class="featured-case-studies__header trans fade">
+              <h2
+                class="featured-case-studies__title"
+                data-en="Featured Case Studies"
+                data-ar="دراسات الحالة المميزة"
+              >
+                Featured Case Studies
+              </h2>
+              <button
+                class="button"
+                data-en="VIEW ALL CASE STUDIES"
+                data-ar="عرض جميع دراسات الحالة"
+              >
+              VIEW ALL CASE STUDIES
+              </button>
             </div>
-          </article>
-          <article class="case-study-card " tabindex="0">
-            <img src="/images/Dummy/home/image-card.png" alt="Driving engagement campaign" class="case-study-card__image " />
-            <div class="case-study-card__content ">
-              <div class="">
-                <h3 class="case-study-card__headline ">Maximizing ROI with data-driven strategies </h3>
-                <p class="case-study-card__description mt-2 ">Learn how data insights led to increased sales and customer loyalty.</p>
-              </div>
-              <footer class="case-study-card__footer ">
-                <img src="/images/Dummy/home/Testimonial Person.png" alt="Jane Doe" class="case-study-card__avatar " />
-                <div>
-                  <p class="case-study-card__author ">Jane Doe</p>
-                  <time datetime="2022-01-11" class="case-study-card__date ">11 Jan 2022 • 5 min read</time>
+            <div class="featured-case-studies__list trans fade mt-5">
+              <article class="addImgEffect case-study-card" tabindex="0">
+                <img
+                  src="/images/Dummy/home/image-card.jpg"
+                  alt="Driving engagement campaign"
+                  class="case-study-card__image"
+                />
+                <div class="case-study-card__content">
+                  <div>
+                    <h3
+                      class="case-study-card__headline"
+                      data-en="Driving engagement through innovative campaigns"
+                      data-ar="تعزيز التفاعل من خلال الحملات المبتكرة"
+                    >
+                      Driving engagement through innovative campaigns
+                    </h3>
+                    <p
+                      class="case-study-card__description mt-2"
+                      data-en="Discover how we enhanced brand visibility and customer interaction."
+                      data-ar="اكتشف كيف عززنا رؤية العلامة التجارية وتفاعل العملاء."
+                    >
+                      Discover how we enhanced brand visibility and customer
+                      interaction.
+                    </p>
+                  </div>
+                  <div class="case-study-card__footer">
+                    <img
+                      src="/images/Dummy/home/Testimonial Person.png"
+                      alt="Jane Doe"
+                      class="case-study-card__avatar"
+                    />
+                    <div>
+                      <p
+                        class="case-study-card__author"
+                        data-en="Jane Doe"
+                        data-ar="جين دو"
+                      >
+                        Jane Doe
+                      </p>
+                      <time
+                        datetime="2022-01-11"
+                        class="case-study-card__date"
+                        data-en="11 Jan 2022 • 5 min read"
+                        data-ar="11 يناير 2022 • قراءة 5 دقائق"
+                        >11 Jan 2022 • 5 min read</time
+                      >
+                    </div>
+                    <button class="case-study-card__btn">
+                      <img
+                        src="images/dummy/Button arrow.png"
+                        alt="Read more"
+                      />
+                    </button>
+                  </div>
                 </div>
-                <button class="case-study-card__btn ">
-                  <img src="images/dummy/Button arrow.png" alt="Read more" />
-                </button>
-              </footer>
-            </div>
-          </article>
-          <article class="case-study-card " tabindex="0">
-            <img src="/images/Dummy/home/image-card.png" alt="Driving engagement campaign" class="case-study-card__image " />
-            <div class="case-study-card__content ">
-              <div class="">
-                <h3 class="case-study-card__headline ">Innovative solutions for modern marketing challenges</h3>
-                <p class="case-study-card__description mt-2 ">Explore how our solutions addressed unique client challenges effectively.</p>
-              </div>
-              <footer class="case-study-card__footer ">
-                <img src="/images/Dummy/home/Testimonial Person.png" alt="Jane Doe" class="case-study-card__avatar " />
-                <div>
-                  <p class="case-study-card__author ">Jane Doe</p>
-                  <time datetime="2022-01-11" class="case-study-card__date ">11 Jan 2022 • 5 min read</time>
+              </article>
+              <article class="addImgEffect case-study-card" tabindex="0">
+                <img
+                  src="/images/Dummy/home/image-card.jpg"
+                  alt="Maximizing ROI"
+                  class="case-study-card__image"
+                />
+                <div class="case-study-card__content">
+                  <div >
+                    <h3
+                      class="case-study-card__headline"
+                      data-en="Maximizing ROI with data-driven strategies"
+                      data-ar="تعظيم العائد على الاستثمار من خلال استراتيجيات مدفوعة بالبيانات"
+                    >
+                      Maximizing ROI with data-driven strategies
+                    </h3>
+                    <p
+                      class="case-study-card__description mt-2"
+                      data-en="Learn how data insights led to increased sales and customer loyalty."
+                      data-ar="تعرف كيف أدت رؤى البيانات إلى زيادة المبيعات وولاء العملاء."
+                    >
+                      Learn how data insights led to increased sales and
+                      customer loyalty.
+                    </p>
+                  </div>
+                  <div class="case-study-card__footer">
+                    <img
+                      src="/images/Dummy/home/Testimonial Person.png"
+                      alt="Jane Doe"
+                      class="case-study-card__avatar"
+                    />
+                    <div>
+                      <p
+                        class="case-study-card__author"
+                        data-en="Jane Doe"
+                        data-ar="جين دو"
+                      >
+                        Jane Doe
+                      </p>
+                      <time
+                        datetime="2022-01-11"
+                        class="case-study-card__date"
+                        data-en="11 Jan 2022 • 5 min read"
+                        data-ar="11 يناير 2022 • قراءة 5 دقائق"
+                        >11 Jan 2022 • 5 min read</time
+                      >
+                    </div>
+                    <button class="case-study-card__btn">
+                      <img
+                        src="images/dummy/Button arrow.png"
+                        alt="Read more"
+                      />
+                    </button>
+                  </div>
                 </div>
-                <button class="case-study-card__btn ">
-                  <img src="images/dummy/Button arrow.png" alt="Read more" />
-                </button>
-              </footer>
+              </article>
+              <article class="addImgEffect case-study-card" tabindex="0">
+                <img
+                  src="/images/Dummy/home/image-card.jpg"
+                  alt="Maximizing ROI"
+                  class="case-study-card__image"
+                />
+                <div class="case-study-card__content">
+                  <div>
+                    <h3
+                      class="case-study-card__headline"
+                      data-en="Maximizing ROI with data-driven strategies"
+                      data-ar="تعظيم العائد على الاستثمار من خلال استراتيجيات مدفوعة بالبيانات"
+                    >
+                      Maximizing ROI with data-driven strategies
+                    </h3>
+                    <p
+                      class="case-study-card__description mt-2"
+                      data-en="Learn how data insights led to increased sales and customer loyalty."
+                      data-ar="تعرف كيف أدت رؤى البيانات إلى زيادة المبيعات وولاء العملاء."
+                    >
+                      Learn how data insights led to increased sales and
+                      customer loyalty.
+                    </p>
+                  </div>
+                  <div class="case-study-card__footer">
+                    <img
+                      src="/images/Dummy/home/Testimonial Person.png"
+                      alt="Jane Doe"
+                      class="case-study-card__avatar"
+                    />
+                    <div>
+                      <p
+                        class="case-study-card__author"
+                        data-en="Jane Doe"
+                        data-ar="جين دو"
+                      >
+                        Jane Doe
+                      </p>
+                      <time
+                        datetime="2022-01-11"
+                        class="case-study-card__date"
+                        data-en="11 Jan 2022 • 5 min read"
+                        data-ar="11 يناير 2022 • قراءة 5 دقائق"
+                        >11 Jan 2022 • 5 min read</time
+                      >
+                    </div>
+                    <button class="case-study-card__btn">
+                      <img
+                        src="images/dummy/Button arrow.png"
+                        alt="Read more"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </article>
             </div>
-          </article>
-        </div>
-      </section>
+          </div>
+        </section>
                    <section class="free-consultation mt-5 fade-in-section">
         <div class="consultation-content container fade-in-section">
           <div class="consultation-text fade-in-section">
@@ -411,73 +545,145 @@
             </p>
           </div>
           <div class="consultation-image fade-in-section">
-            <img src="/images/dummy/home/consultation-image.png" alt="Consultation Graphic" />
+            <img src="/images/dummy/home/consultation-image.jpg" alt="Consultation Graphic" />
           </div>
         </div>
       </section>
-                <footer class="custom-footer">
-                    <div class="newsletter-section">
-                    <div class="newsletter-text">
-                        <h5>Subscribe to our newsletter for the latest updates on features and releases.</h5>
-                    </div>
-
-                  <form class="newsletter-form">
-                    <div class="form-row">
-                        <input type="email" placeholder="Your email" required class="input-email" />
-                        <button type="submit" class="button">Sign Up</button>
-                    </div>
-                    <small>
-                        By subscribing you consent to our <a href="#">privacy policy</a> and agree to receive updates.
-                    </small>
-                    </form>
-                    </div>
-                    <div class="divider"></div>
-                 <div class="footer-main">
-                    <div class="footer-logo">
-                    <img src="images/dummy/home/Logo - Black.png" alt="KHB Logo" />
-                    </div>
-
-                    <div class="footer-links">
-                    <h6>Company</h6>
-                    <ul>
-                        <li><a href="#">Who We Help</a></li>
-                        <li><a href="#">Why KHB?</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Results</a></li>
-                    </ul>
-                    </div>
-
-                    <div class="footer-links">
-                    <h6>Resources</h6>
-                    <ul>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Get in touch</a></li>
-                    </ul>
-                    </div>
-
-                    <div class="footer-social">
-                    <h6>Follow us</h6>
-                    <div class="social-icons">
-                        <a href="#"><img src="images/dummy/footer/Linkedin.png" alt="LinkedIn" /></a>
-                      <a href="#"><img src="images/dummy/footer/Instagram.png" alt="Instagram" /></a>
-                      <a href="#"><img src="images/dummy/footer/x.png" alt="X" /></a>
-                      <a href="#"><img src="images/dummy/footer/Youtube.png" alt="YouTube" /></a>
-                    </div>
-                    </div>
+                 <!---------------footer section-------------------------->
+        <footer class="custom-footer">
+          <div class="container">
+            <div class="newsletter-section">
+              <div class="newsletter-text">
+                <h5
+                  class="
+                  data-en="Subscribe to our newsletter for the latest updates on features and releases."
+                  data-ar="اشترك في نشرتنا الإخبارية للحصول على أحدث التحديثات والميزات."
+                >
+                  Subscribe to our newsletter for the latest updates on features
+                  and releases.
+                </h5>
+              </div>
+              <form class="newsletter-form">
+                <div class="form-row">
+                  <input
+                    type="email"
+                    placeholder="Your email"
+                    required
+                    class="input-email"
+                  />
+                  <button
+                    type="submit"
+                    class="button"
+                    data-en="Sign Up"
+                    data-ar="اشترك"
+                  >
+                    Sign Up
+                  </button>
                 </div>
-
-            <div class="divider"></div>
-
-            <div class="footer-bottom">
-                <p class="footer-p">© 2025 KOLE HUGG & BOOZ. All rights reserved</p>
-                <div class="footer-policies">
-                <a href="#">Privacy policy</a>
-                <a href="#">Terms of service</a>
-                <a href="#">Cookies settings</a>
-                </div>
+                <small
+                  class="
+                  data-en="By subscribing you consent to our privacy policy and agree to receive updates."
+                  data-ar="بالاشتراك، فإنك توافق على سياسة الخصوصية الخاصة بنا وتوافق على تلقي التحديثات."
+                >
+                  By subscribing you consent to our
+                  <a href="#">privacy policy</a> and agree to receive updates.
+                </small>
+              </form>
             </div>
-            </footer>
+            <div class="divider"></div>
+            <div class="footer-main">
+              <div class="footer-logo">
+                <img src="images/dummy/home/Logo - Black.png" alt="KHB Logo" />
+              </div>
+              <div class="footer-links">
+                <ul>
+                  <li>
+                    <a href="#" data-en="Who We Help" data-ar="من نساعد"
+                      >Who We Help</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-en="Why KHB?" data-ar="لماذا KHB؟"
+                      >Why KHB?</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-en="Services" data-ar="الخدمات"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" data-en="Results" data-ar="النتائج">Results</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-links">
+                <ul>
+                  <li>
+                    <a href="#" data-en="Career" data-ar="وظائف">Career</a>
+                  </li>
+                  <li>
+                    <a href="#" data-en="Blog" data-ar="مدونة">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#" data-en="Get in touch" data-ar="تواصل معنا"
+                      >Get in touch</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-social">
+                <h6
+                  class="
+                  data-en="Follow us"
+                  data-ar="تابعنا"
+                >
+                  Follow us
+                </h6>
+                <div class="social-icons">
+                  <a href="#"
+                    ><img src="images/dummy/footer/Linkedin.png" alt="LinkedIn"
+                  /></a>
+                  <a href="#"
+                    ><img
+                      src="images/dummy/footer/Instagram.png"
+                      alt="Instagram"
+                  /></a>
+                  <a href="#"
+                    ><img src="images/dummy/footer/x.png" alt="X"
+                  /></a>
+                  <a href="#"
+                    ><img src="images/dummy/footer/Youtube.png" alt="YouTube"
+                  /></a>
+                </div>
+              </div>
+            </div>
+            <div class="divider"></div>
+            <div class="footer-bottom">
+              <p
+                class="footer-p"
+                data-en="© 2025 KOLE HUGG & BOOZ. All rights reserved"
+                data-ar="© 2025 كول هوغ وبوز. جميع الحقوق محفوظة"
+              >
+                © 2025 KOLE HUGG & BOOZ. All rights reserved
+              </p>
+              <div class="footer-policies">
+                <a href="#" data-en="Privacy policy" data-ar="سياسة الخصوصية"
+                  >Privacy policy</a
+                >
+                <a href="#" data-en="Terms of service" data-ar="شروط الخدمة"
+                  >Terms of service</a
+                >
+                <a
+                  href="#"
+                  data-en="Cookies settings"
+                  data-ar="إعدادات ملفات تعريف الارتباط"
+                  >Cookies settings</a
+                >
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -485,5 +691,7 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./assets/js/home.js" ></script>
 <script src="./assets/js/who-we-help.js" ></script>
+     <script src="./assets/js/animations.js"></script>
+    
   </body>
 </html>

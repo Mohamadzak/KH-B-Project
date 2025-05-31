@@ -1,3 +1,6 @@
+::placeholder {
+  color: #d8d8d8;
+}
 .form-input {
   width: 100%;
   max-width: 384px;
@@ -7,8 +10,8 @@
   background-color: #272727;
   padding: 16px;
 }
-.form-label{
-font-family: Tahoma;
+.form-label {
+  font-family: Tahoma;
   font-weight: 700;
   font-size: 13px;
   line-height: 100%;
@@ -16,48 +19,48 @@ font-family: Tahoma;
   text-transform: uppercase;
   color: var(--white-color);
 }
-.radio{
-    display: flex;
-    gap: 24px;
-    justify-content: space-between;
-    .form-check-label{
-       font-family: Tahoma;
-        font-weight: 400;
-        font-size: 17px;
-        line-height: 24px;
-        letter-spacing: 0%;
-        color: var(--white-color);
-    }
-}
-.message{
-    width: 1200px;
-    height:213px;
-    border-radius:8px; 
-    border: 1px solid #535353;
-    background-color: #272727;
-    padding: 16px;
-    gap: 16px;
-    width: 100%;
-    margin-top: 10px;
-}
-  .message::placeholder{
-         text-align: left;
-         vertical-align: top;
-         line-height: 1.2;
-         color: #D8D8D8;
-    }
-    .form-check-input{
-        background-color: transparent;
-        border: 1px solid var(--white-color);
-    }
-.form-check-label{
-      font-family: Tahoma;
+.radio {
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+  .form-check-label {
+    font-family: Tahoma;
     font-weight: 400;
     font-size: 17px;
     line-height: 24px;
     letter-spacing: 0%;
     color: var(--white-color);
-    span{
-        text-decoration: underline;
-    }
+  }
+}
+.message {
+  width: 1200px;
+  height: 213px;
+  border-radius: 8px;
+  border: 1px solid #535353;
+  background-color: #272727;
+  padding: 16px;
+  gap: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+.message::placeholder {
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.2;
+  color: #d8d8d8;
+}
+.form-check-input {
+  background-color: transparent;
+  border: 1px solid var(--white-color);
+}
+.form-check-label {
+  font-family: Tahoma;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: var(--white-color);
+  span {
+    text-decoration: underline;
+  }
 }
