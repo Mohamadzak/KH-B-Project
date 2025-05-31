@@ -1107,10 +1107,6 @@ body {
   border: 1px solid #565656;
   padding: 40px 32px 72px;
   gap: 24px;
-  width: 100%;
-  max-width: 384px;
-  min-width: 240px;
-  height: 415px;
   flex: 1 1 0;
   box-sizing: border-box;
 }
@@ -4224,6 +4220,48 @@ body {
   color: #d5d5d5;
   font-size: 17px;
   font-weight: 400;
+  line-height: 24px;
+}
+
+.team-list {
+  background-color: #272727;
+  border: 1px solid #565656;
+}
+
+.team-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  color: var(--white-color);
+  letter-spacing: -2%;
+}
+
+.team-description {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 64px;
+  color: #d5d5d5;
+  letter-spacing: -2%;
+}
+
+.team-name {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.team-position {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.team-info {
+  color: #d5d5d5;
+  font-weight: 400;
+  font-size: 17px;
   line-height: 24px;
 }
 
