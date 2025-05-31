@@ -7,8 +7,8 @@
   --text-color: #535353;
   --white-color: #ffffff;
   --black-color: #000000;
-  --success-color: #A3F287;
-  --warning-color: #EFCB2E;
+  --success-color: #a3f287;
+  --warning-color: #efcb2e;
 }
 
 html,
@@ -931,24 +931,11 @@ body {
     margin-bottom: 8px;
   }
 }
-/* Fix container overflow */
-.who-we-help-bg,
-.service-container,
-.service-content {
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 1440px;
-}
-
 .who-we-help-bg {
   position: relative;
-  width: 100%;
-  max-width: 1440px; /* same as your banner width */
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 152px;
-  padding-bottom: 80px;
   background: linear-gradient(307deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%), url(/images/banner-bg.png) no-repeat center center/cover;
 }
 
@@ -965,8 +952,6 @@ body {
 .service-container {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
   align-items: center;
   gap: 48px;
@@ -1826,11 +1811,11 @@ body {
 }
 
 /* Reset and base background */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: var(--black-color);
-  min-height: 100vh;
 }
 
 .insight {
@@ -1895,7 +1880,7 @@ html, body {
 .insight .insight-description {
   font-family: "Tahoma", sans-serif;
   font-size: 17px;
-  color: #D5D5D5;
+  color: #d5d5d5;
   line-height: 1.5;
   margin: 0;
 }
@@ -1941,7 +1926,7 @@ html, body {
 }
 
 .insight .benefit-item {
-  border-bottom: 1px solid #5C5C5C;
+  border-bottom: 1px solid #5c5c5c;
   padding-bottom: 24px;
 }
 
@@ -1961,7 +1946,7 @@ html, body {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0;
-  color: #D5D5D5;
+  color: #d5d5d5;
   margin: 0;
 }
 
