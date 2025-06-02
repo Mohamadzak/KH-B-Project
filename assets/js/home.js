@@ -103,6 +103,31 @@ $(document).ready(function () {
     });
   }
 });
+//words slider
+$(document).ready(function () {
+  $(".words-slider").slick({
+    slidesToShow: 6,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: false,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+    ],
+  });
+});
 //market leader slider
 document.addEventListener("DOMContentLoaded", () => {
   const cards = document.querySelectorAll(".review-card");

@@ -3,10 +3,10 @@
 */
 $(document).ready(function () {
   function toggleSlick() {
-    const $list = $('.featured-case-studies__list');
+    const $list = $(".featured-case-studies__list");
 
     if ($(window).width() < 768) {
-      if (!$list.hasClass('slick-initialized')) {
+      if (!$list.hasClass("slick-initialized")) {
         $list.slick({
           slidesToShow: 1.1,
           slidesToScroll: 1,
@@ -17,8 +17,8 @@ $(document).ready(function () {
         });
       }
     } else {
-      if ($list.hasClass('slick-initialized')) {
-        $list.slick('unslick');
+      if ($list.hasClass("slick-initialized")) {
+        $list.slick("unslick");
       }
     }
   }
@@ -27,58 +27,54 @@ $(document).ready(function () {
   toggleSlick();
 
   // Recheck on window resize
-  $(window).on('resize', toggleSlick);
+  $(window).on("resize", toggleSlick);
 });
 
-
-//challenges slicck slider
- $(document).ready(function () {
-  function setEqualHeight() {
-    var maxHeight = 0;
-    $('.khb-challenge-card').css('height', 'auto'); // reset height
-
-    $('.khb-challenge-card').each(function () {
-      var thisHeight = $(this).outerHeight();
-      if (thisHeight > maxHeight) {
-        maxHeight = thisHeight;
-      }
-    });
-
-    $('.khb-challenge-card').css('height', maxHeight + 'px');
-  }
-
+// Challenges Slick Slider (for all screen sizes)
+$(document).ready(function () {
   function slickify() {
-    if ($(window).width() <= 900) {
-      if (!$('.khb-challenges-listing').hasClass('slick-initialized')) {
-        $('.khb-challenges-listing').slick({
-          dots: false,
-          arrows: true,
-          infinite: true,           // Loop slides infinitely
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          adaptiveHeight: false,    // Disable adaptiveHeight to fix height manually
-          prevArrow: '<button type="button" class="slick-prev">‹</button>',
-          nextArrow: '<button type="button" class="slick-next">›</button>',
-        });
-
-        setEqualHeight(); // Set equal height after init
-
-        // Also set equal height after each slide change (to handle dynamic content if any)
-        $('.khb-challenges-listing').on('afterChange', function () {
-          setEqualHeight();
-        });
+    if (!$(".khb-challenges-listing").hasClass("slick-initialized")) {
+      // Inject arrows inside .khb-challenges-listing (if not already)
+      if ($("#slick-prev").length === 0 && $("#slick-next").length === 0) {
+        $(".khb-challenges-listing").append(`
+          <img class="khb-arrow" id="slick-prev" src="images/dummy/who-we-help/Vector.png" alt="prev arrow" />
+          <img class="khb-arrow" id="slick-next" src="images/dummy/who-we-help/Vector (1).png" alt="next arrow" />
+        `);
       }
-    } else {
-      if ($('.khb-challenges-listing').hasClass('slick-initialized')) {
-        $('.khb-challenges-listing').slick('unslick');
-        $('.khb-challenge-card').css('height', 'auto'); // reset height when slick is destroyed
-      }
+
+      $(".khb-challenges-listing").slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        adaptiveHeight: false,
+        prevArrow: $("#slick-prev"), // Use injected arrows
+        nextArrow: $("#slick-next"),
+        responsive: [
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
+      });
+
+      setEqualHeight();
+
+      $(".khb-challenges-listing").on("afterChange", function () {
+        setEqualHeight();
+      });
     }
   }
 
-  slickify(); // Run on page load
+  slickify();
 
-  $(window).on('resize', function () {
+  $(window).on("resize", function () {
+    if ($(".khb-challenges-listing").hasClass("slick-initialized")) {
+      $(".khb-challenges-listing").slick("unslick");
+    }
     slickify();
   });
 });

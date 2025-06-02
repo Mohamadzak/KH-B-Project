@@ -60,31 +60,28 @@
   text-align: left;
   align-self: flex-start;
 }
-
+.khb-challenges-listing .slick-slide {
+  margin: 0 25px;
+  box-sizing: border-box;
+}
 .khb-challenges-listing {
   display: flex;
   flex-direction: row;
   align-items: stretch;
-  gap: 24px;
-  width: 100%;
-  max-width: 1200px;
+  gap: 50px;
   position: relative;
   height: auto;
   justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .khb-challenge-card {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   background: #272727;
   border-radius: 8px;
   border: 1px solid #565656;
   padding: 40px 32px 72px;
   gap: 24px;
-
   flex: 1 1 0;
   box-sizing: border-box;
 }
@@ -153,6 +150,18 @@
 .khb-arrow {
   width: 24px;
   height: 28px;
+}
+.khb-challenges-arrows {
+  display: flex;
+  justify-content: center;
+  gap: 1200px;
+  margin-top: 20px;
+}
+
+.khb-arrow {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
 }
 
 @media (max-width: 1300px) {
