@@ -1,9 +1,9 @@
 /* Reset and base background */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: var(--black-color);
-  min-height: 100vh;
 }
 
 .insight {
@@ -68,7 +68,7 @@ html, body {
 .insight .insight-description {
   font-family: "Tahoma", sans-serif;
   font-size: 17px;
-  color: #D5D5D5;
+  color: #d5d5d5;
   line-height: 1.5;
   margin: 0;
 }
@@ -113,7 +113,7 @@ html, body {
 }
 
 .insight .benefit-item {
-  border-bottom: 1px solid #5C5C5C;
+  border-bottom: 1px solid #5c5c5c;
   padding-bottom: 24px;
 }
 
@@ -133,10 +133,9 @@ html, body {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0;
-  color: #D5D5D5;
+  color: #d5d5d5;
   margin: 0;
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 1024px) {

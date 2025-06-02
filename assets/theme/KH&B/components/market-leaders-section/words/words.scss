@@ -19,6 +19,14 @@
   margin: 0 auto;
   box-sizing: border-box;
 }
+.words-slider div {
+  padding: 10px;
+}
+.words-slider img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* Tablet: 3 columns */
 @media (max-width: 900px) {

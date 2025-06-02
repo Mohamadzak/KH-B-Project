@@ -300,6 +300,12 @@ transform: scale(1.2,1.2) rotate(5deg);*/
   z-index: 100;
   border-bottom: 1px solid #383838;
 }
+.mega-menu-section {
+  position: fixed;
+  width: 100%;
+  top: 17%;
+  z-index: 100;
+}
 
 #header {
   min-height: 7.2rem;
