@@ -1,112 +1,83 @@
-@media (max-width: 800px) {
-  .go-to-market-section {
-    padding: 0 16px 32px 16px;
-    gap: 32px;
-  }
+/* Default styles - do NOT change desktop layout */
+.go-to-market-detail {
+  /* existing styles, do not change for desktop */
+}
 
-  .go-to-market-title {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  .go-to-market-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-  }
-
-  .go-to-market-intro {
-    font-size: 16px;
-    line-height: 24px;
-    max-width: 100%;
-  }
-
-  .go-to-market-details-list {
-    gap: 16px;
-  }
-
+/* Responsive styles for mobile (max-width: 768px) */
+@media (max-width: 768px) {
   .go-to-market-detail {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    padding: 16px;
-    background: #111;
-    border: 1px solid #444;
-    border-radius: 12px;
-    width: 100%;
-    margin-bottom: 16px;
-    box-sizing: border-box;
+    align-items: start;
+    position: relative;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    border-radius: 14px;
+    background: transparent;
+
+    max-width: 340px;
+    margin: 0 auto;
+    border: 1px solid #5c5c5c;
+    margin-top: 10px;
   }
 
-  /* Container holding both text and image */
-  .go-to-market-detail-main {
-    display: flex;
-    flex-direction: column;  /* stack vertically */
-    gap: 0;
-    width: 100%;
-  }
-
-  /* Image container: show block, full width, order first */
+  /* Move CTA icon to top and style */
   .go-to-market-cta {
-    display: block;
-    width: 100%;
-    margin-bottom: 12px;
-    order: 0; /* image comes first */
-  }
-
-  /* Image styling */
-  .go-to-market-cta-icon {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-    margin-bottom: 12px;
-  }
-
-  /* Text container: order after image */
-  .go-to-market-detail-main > :not(.go-to-market-cta) {
-    order: 1;
-  }
-
-  .go-to-market-detail-head {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 8px;
-    margin-top: 0;
-  }
+    margin-bottom: 1rem;
 
-  .go-to-market-icon {
-    width: 28px;
-    height: 28px;
-    flex-shrink: 0;
+    background: none;
+    box-shadow: none;
   }
-
-  .go-to-market-detail-title {
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 600;
-    color: #fff;
+  .go-to-market-cta-icon {
+    display: block;
+    order: 1;
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1rem auto;
+    object-fit: contain;
   }
-
-  .go-to-market-detail-desc {
-    font-size: 16px;
-    line-height: 24px;
-    color: #ccc;
-    margin: 0 0 12px 0;
-    max-width: 100%;
-  }
-
-  .go-to-market-cta-text {
-    font-weight: 600;
-    font-size: 1rem;
-    color: #0af;
-    border-bottom: 1px solid #0af;
-    width: fit-content;
-  }
-
-  .go-to-market-arrow,
-  .go-to-market-divider {
+  /* Hide arrow on mobile */
+  .go-to-market-arrow {
     display: none !important;
+  }
+  /* Main content below the icon */
+  .go-to-market-detail-main {
+    text-align: start;
+    margin: 0;
+    padding: 0;
+  }
+  .go-to-market-detail-head {
+    flex-direction: column;
+    align-items: start;
+    display: flex;
+    gap: 0.5rem;
+    order: 2;
+  }
+  .go-to-market-icon {
+    display: none;
+  }
+  .go-to-market-detail-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0.5rem 0 0.25rem 0;
+    display: block;
+    text-align: start;
+  }
+  .go-to-market-detail-desc {
+    margin: 0 0 1rem 0;
+    text-align: start;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Optional: set a max-width if needed */
+  }
+  .go-to-market-cta-text {
+    padding: 0.5rem 1.2rem;
+    border-radius: 24px;
+    display: inline-block;
+    text-align: start;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   }
 }

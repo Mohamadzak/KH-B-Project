@@ -18,17 +18,13 @@ body {
   align-items: center;
   gap: 96px; /* Large vertical spacing between main container children */
   padding: 64px 0;
-  width: 100%;
   background-color: var(--black-color);
-  min-height: 100vh;
   overflow: hidden;
 }
 
 .insight .insight-content {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
-  width: 100%;
   padding: 0 120px;
   gap: 64px; /* Vertical spacing inside content */
 }
@@ -105,8 +101,6 @@ body {
   list-style: none;
   padding: 0;
   margin: 32px 0 0 0; /* spacing only on top */
-  width: 100%;
-  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 32px; /* spacing between benefit items */

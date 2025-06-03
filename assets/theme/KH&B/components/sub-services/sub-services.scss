@@ -8,14 +8,12 @@
 }
 
 .service-details-hero__content {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 32px 16px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   position: relative;
-  min-height: 340px;
 }
 
 .service-details-hero__text {
@@ -42,7 +40,6 @@
   color: var(--white-color);
   margin-bottom: 10px;
   text-align: left;
-  max-width: 500px;
 }
 
 .service-details-hero__desc-actions {
@@ -52,7 +49,6 @@
   align-items: flex-end;
   justify-content: flex-start;
   margin-left: 40px;
-  min-width: 320px;
   z-index: 1;
 }
 
@@ -61,7 +57,6 @@
   color: #d5d5d5;
   margin-bottom: 28px;
   line-height: 1.5;
-  max-width: 380px;
   text-align: right;
 }
 
@@ -175,12 +170,10 @@
 /* SUB SERVICES LISTING */
 .sub-services-listing {
   background: #000;
-  width: 100%;
   padding: 48px 0;
 }
 
 .sub-services-listing__container {
-  max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -196,13 +189,12 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
-  min-height: 160px;
-  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.04);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.04);
   transition: box-shadow 0.22s;
 }
 
 .sub-services-listing__item:hover {
-  box-shadow: 0 4px 28px 0 rgba(2,176,139, 0.08);
+  box-shadow: 0 4px 28px 0 rgba(2, 176, 139, 0.08);
 }
 
 .sub-services-listing__heading {

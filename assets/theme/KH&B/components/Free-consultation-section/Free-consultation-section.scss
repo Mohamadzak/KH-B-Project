@@ -2,7 +2,6 @@
    Free Consultation Section
 =========================== */
 .free-consultation {
-  width: 100%;
   background-color: #171717;
   padding: 80px 20px;
   display: flex;
@@ -13,10 +12,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
-  max-width: 1200px;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
 }
 
 .consultation-text {
@@ -69,7 +66,6 @@
   background-color: #272727;
   color: var(--white-color);
   flex-grow: 1;
-  min-width: 0;
 }
 
 .consultation-form input::placeholder {
@@ -81,7 +77,7 @@
   color: var(--white-color);
   line-height: 1.6;
   font-family: "Tahoma", sans-serif;
-  a{
+  a {
     color: var(--white-color);
   }
 }

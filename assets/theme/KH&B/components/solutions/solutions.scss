@@ -5,8 +5,6 @@
 }
 
 .solutions-section {
-  width: 100%;
-  max-width: 1440px;
   margin: 0 auto;
   background: var(--black-color);
   position: relative;
@@ -14,13 +12,11 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 700px;
 }
 
 .solutions-header {
   display: flex;
   flex-direction: row;
-  width: 100%;
   align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 48px;
@@ -55,7 +51,7 @@
 
 .highlighted {
   font-weight: 700;
-  letter-spacing:-2%;
+  letter-spacing: -2%;
 }
 
 .main-title-light {
@@ -64,20 +60,16 @@
 }
 
 .solutions-intro {
-  width: 588px;
-  height: 96px;
   color: #d5d5d5;
   font-size: 17px;
   line-height: 24px;
   font-family: "Tahoma-Regular", Helvetica, Arial, sans-serif;
-  margin: 0;
   font-weight: 400;
-  transform: translateX(10%);
+  transform: translateX(8%);
 }
 
 .solutions-content {
   display: flex;
-  width: 100%;
   justify-content: flex-start;
   align-items: stretch;
   gap: 48px;
@@ -85,10 +77,6 @@
 }
 
 .solutions-image {
-  width: 486px;
-  min-width: 320px;
-  max-width: 486px;
-  height: 100%;
   object-fit: cover;
   flex-shrink: 0;
   flex-grow: 0;
@@ -100,8 +88,6 @@
   flex-direction: column;
   gap: 48px;
   flex: 2 1 0;
-  min-width: 0;
-  height: 100%;
   margin-left: 40px; /* Added: push the features/card to the right */
 }
 
@@ -111,21 +97,18 @@
   gap: 16px;
   flex: 1 1 0;
   justify-content: space-between;
-  min-width: 0;
 }
 
 .solutions-feature-card {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  width: 100%;
-  min-width: 0;
 }
 
 .feature-title {
   color: var(--white-color);
   font-size: 28px;
-  letter-spacing:-2%;
+  letter-spacing: -2%;
   line-height: 32px;
   font-family: "Tahoma-Regular", Helvetica, Arial, sans-serif;
   font-weight: 400;
@@ -142,8 +125,7 @@
 
 .feature-divider {
   height: 1px;
-  background: #5C5C5C;
-  width: 100%;
+  background: #5c5c5c;
   margin: 16px 0;
 }
 
@@ -179,9 +161,6 @@
 
   .solutions-image,
   .solutions-features {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
     margin-left: 0 !important;
   }
 
@@ -196,7 +175,6 @@
 
   .solutions-intro {
     margin-right: 0;
-    width: 100%;
     height: auto;
     transform: none;
   }
