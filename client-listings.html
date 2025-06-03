@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="utf-8" />
+    <title>KH&B client listings page</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
       <link rel="stylesheet" href="/css/styles.css" />
           <link rel="stylesheet" href="/css/mod.css" />
     <link
@@ -16,12 +18,12 @@
   <body class="bg-black">
  
     <div class="who-we-help-bg">
-  <div class="who-we-help-header-banner-bg">
-            <!---------------Header-------------------------->
-        <div class="header-wrapper position-relative">
-        <header class="ps-lg-3" id="header">
+  <div>
+          <!---------------Header-------------------------->
+        <div class="header-wrapper position-relative ">
+        <header id="header" >
           <div class="inner-header">
-          <div class="header-cont">
+          <div class="header-cont ">
             <div
               class="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-3 gap-lg-0"
             >
@@ -40,18 +42,22 @@
 
               <!-- Center: Navbar -->
               <nav
-                class="navbar navbar-expand-lg navbar-dark w-100 w-lg-auto"
+                class="navbar py-0 position-inherit navbar-expand-lg navbar-dark w-100 w-lg-auto"
               >
                 <button
-                  class="navbar-toggler navbar-toggler-abs border-0"
+                  class="navbar-toggler navbar-toggler-abs border-0 collapsed"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarNavDropdown"
                 >
-                  <span class="navbar-toggler-icon"></span>
+                <div class="menu-toggle">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
                 </button>
                 <div
-                  class="collapse navbar-collapse navbar-collapse-absolute justify-content-center mt-3 mt-lg-0"
+                  class="collapse position-inherit navbar-collapse navbar-collapse-absolute justify-content-center mt-3 mt-lg-0"
                   id="navbarNavDropdown"
                 >
                   <ul class="navbar-nav gap-3" id="nav-links">
@@ -73,7 +79,7 @@
                         >Why KHB</a
                       >
                     </li>
-                    <li class="nav-item dropdown">
+                    <li class="nav-item position-inherit dropdown">
                       <a
                         class="nav-link dropdown-toggle"
                         href="#"
@@ -88,7 +94,92 @@
                           </svg>
                           </a
                       >
-                      <ul class="dropdown-menu dropdown-menu-dark">
+
+
+                      <div class="mega-menu-section">
+                        <div class="d-flex bg-black">
+                          <!-- Left Column 1 -->
+                          <div class="menu-left text-white p-5 ms-4 ">
+                            <p class="menu-titles mb-4">Explore our work</p>
+                            <ul class="list-unstyled">
+                              <li class="mb-4">
+                                <span class="menu-span mt-5">Case studies</span>
+                                <p class="mb-0 menu-p mt-2 col-md-12 ">Discover how we help clients succeed.</p>
+                              </li>
+                              <li class="mb-4">
+                                <span class="menu-span mt-5">Blog insights</span>
+                                <p class="mb-0 menu-p mt-2 col-md-12 ">Latest trends and insights from our experts.</p>
+                              </li>
+                              <li class="mb-4">
+                                <span class="menu-span mt-5">Contact us</span>
+                                <p class="mb-0 menu-p mt-2 col-md-12 ">Get in touch to discuss your needs.</p>
+                              </li>
+                              <li>
+                                <span class="menu-span mt-5">Client login</span>
+                                <p class="mb-0 menu-p mt-2 col-md-12 ">Access your account and manage projects.</p>
+                              </li>
+                            </ul>
+                          </div>
+              
+                          <!-- Left Column 2 (duplicate for layout symmetry, can customize) -->
+                          <div class="menu-left text-white p-5 ms-4">
+                            <p class="menu-titles mb-4">Latest articles</p>
+                            <ul class="list-unstyled">
+                              <li class="mb-4">
+                                <span class="menu-span mt-5">Marketing tips</span>
+                                <p class="mb-0 menu-p mt-2 col-md-12 ">Strategies to enhance your marketing efforts.</p>
+                              </li>
+                              <li class="mb-4">
+                                <span class="menu-span mt-5">Tech insights</span>
+                                <p class="mb-0 menu-p mt-2 col-md-12 ">Stay updated on the latest technology trends.</p>
+                              </li>
+                              <li class="mb-4">
+                                <span class="menu-span mt-5">Success stories</span>
+                                <p class="mb-0 menu-p mt-2 col-md-12 ">Learn how we drive client success.</p>
+                              </li>
+                              <li>
+                                <span class="menu-span mt-5">Industry news</span>
+                                <p class="mb-0 menu-p mt-2 col-md-12 ">Stay informed about industry developments.</p>
+                              </li>
+                            </ul>
+                          </div>
+              
+                          <!-- Left Column 3 -->
+                          <div class="menu-left text-white p-5 ms-4">
+                            <p class="menu-titles mb-4">Page group here</p>
+                            <ul class="list-unstyled">
+                              <li class="mb-4">
+                                <span class="menu-span mt-5">Page nine</span>
+                                <p class="mb-0 menu-p mt-2 col-md-12 ">Lorem ipsum dolor sit amet consectetur elit.</p>
+                              </li>
+                              <li class="mb-4">
+                                <span class="menu-span mt-5">Page ten</span>
+                                <p class="mb-0 menu-p mt-2 col-md-12 ">Lorem ipsum dolor sit amet consectetur elit.</p>
+                              </li>
+                              <li class="mb-4">
+                                <span class="menu-span mt-5">Page eleven</span>
+                                <p class="mb-0 menu-p mt-2 col-md-12 ">Lorem ipsum dolor sit amet consectetur elit.</p>
+                              </li>
+                              <li>
+                                <span class="menu-span mt-5">Page twelve</span>
+                                <p class="mb-0 menu-p mt-2 col-md-12 ">Lorem ipsum dolor sit amet consectetur elit.</p>
+                              </li>
+                            </ul>
+                          </div>
+              
+                          <!-- Right Blog Panel -->
+                          <div class="right-menu-open p-5 rounded">
+                            <span class="d-block menu-titles mb-2">From our blog</span>
+                            <img src="images/dummy/home/image-card.jpg" alt="" class="w-75 mt-4">
+                            <p class="mb-2 mt-3 menu-span">Insightful article</p>
+                            <p class="mb-3 menu-p mt-2 col-md-10">Lorem ipsum dolor sit amet consectetur elit.</p>
+                            <a href="#" class="learn-more-link text-uppercase">
+                              Learn more <span class="ms-1">&#10132;</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- <ul class="dropdown-menu dropdown-menu-dark">
                         <li>
                           <a
                             class="dropdown-item"
@@ -116,7 +207,7 @@
                             >target-market</a
                           >
                         </li>
-                      </ul>
+                      </ul> -->
                     </li>
                     <li class="nav-item">
                       <a
@@ -163,7 +254,9 @@
                         role="button"
                         data-bs-toggle="dropdown"
                         id="lang-toggler-sm"
-                        >En</a
+                        ><span id="lang-head">En</span> <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.2959 9.81507L0.295898 2.21039L1.76377 0.815067L8.2959 7.02423L14.828 0.815067L16.2959 2.21039L8.2959 9.81507Z" fill="white"></path>
+                          </svg></a
                       >
                       <ul class="dropdown-menu dropdown-menu-dark">
                         <li>
@@ -226,96 +319,18 @@
               </div>
             </div>
           </div></div>
+
+       
         </header>
-        <section class="mega-menu-section">
-          <div class="d-flex bg-black">
-            <!-- Left Column 1 -->
-            <div class="menu-left text-white p-5 ms-4 ">
-              <p class="menu-titles mb-3">Explore our work</p>
-              <ul class="list-unstyled">
-                <li class="mb-4">
-                  <span class="menu-span mt-5">Case studies</span>
-                  <p class="mb-0 menu-p mt-3 col-md-12 ">Discover how we help clients succeed.</p>
-                </li>
-                <li class="mb-4">
-                  <span class="menu-span mt-5">Blog insights</span>
-                  <p class="mb-0 menu-p mt-3 col-md-12 ">Latest trends and insights from our experts.</p>
-                </li>
-                <li class="mb-4">
-                  <span class="menu-span mt-5">Contact us</span>
-                  <p class="mb-0 menu-p mt-3 col-md-12 ">Get in touch to discuss your needs.</p>
-                </li>
-                <li>
-                  <span class="menu-span mt-5">Client login</span>
-                  <p class="mb-0 menu-p mt-3 col-md-12 ">Access your account and manage projects.</p>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Left Column 2 (duplicate for layout symmetry, can customize) -->
-            <div class="menu-left text-white p-5 ms-4">
-              <p class="menu-titles mb-3">Latest articles</p>
-              <ul class="list-unstyled">
-                <li class="mb-4">
-                  <span class="menu-span mt-5">Marketing tips</span>
-                  <p class="mb-0 menu-p mt-3 col-md-12 ">Strategies to enhance your marketing efforts.</p>
-                </li>
-                <li class="mb-4">
-                  <span class="menu-span mt-5">Tech insights</span>
-                  <p class="mb-0 menu-p mt-3 col-md-12 ">Stay updated on the latest technology trends.</p>
-                </li>
-                <li class="mb-4">
-                  <span class="menu-span mt-5">Success stories</span>
-                  <p class="mb-0 menu-p mt-3 col-md-12 ">Learn how we drive client success.</p>
-                </li>
-                <li>
-                  <span class="menu-span mt-5">Industry news</span>
-                  <p class="mb-0 menu-p mt-3 col-md-12 ">Stay informed about industry developments.</p>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Left Column 3 -->
-            <div class="menu-left text-white p-5 ms-4">
-              <p class="menu-titles mb-3">Page group here</p>
-              <ul class="list-unstyled">
-                <li class="mb-4">
-                  <span class="menu-span mt-5">Page nine</span>
-                  <p class="mb-0 menu-p mt-3 col-md-12 ">Lorem ipsum dolor sit amet consectetur elit.</p>
-                </li>
-                <li class="mb-4">
-                  <span class="menu-span mt-5">Page ten</span>
-                  <p class="mb-0 menu-p mt-3 col-md-12 ">Lorem ipsum dolor sit amet consectetur elit.</p>
-                </li>
-                <li class="mb-4">
-                  <span class="menu-span mt-5">Page eleven</span>
-                  <p class="mb-0 menu-p mt-3 col-md-12 ">Lorem ipsum dolor sit amet consectetur elit.</p>
-                </li>
-                <li>
-                  <span class="menu-span mt-5">Page twelve</span>
-                  <p class="mb-0 menu-p mt-3 col-md-12 ">Lorem ipsum dolor sit amet consectetur elit.</p>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Right Blog Panel -->
-            <div class="right-menu-open p-5 rounded">
-              <span class="d-block menu-titles mb-2">From our blog</span>
-              <img src="images/dummy/home/image-card.jpg" alt="" class="w-75 mt-4">
-              <p class="mb-2 mt-3 menu-span">Insightful article</p>
-              <p class="mb-3 menu-p mt-2 col-md-10">Lorem ipsum dolor sit amet consectetur elit.</p>
-              <a href="#" class="learn-more-link text-uppercase">
-                Learn more <span class="ms-1">&#10132;</span>
-              </a>
-            </div>
-          </div>
-        </section>
+       
+        </div>
         </div>
             <div class="custom-border-color"></div> 
+            <div class="container">
               <section class="service-section">
               <div class="service-container">
-                <div class="service-content container">
-                  <div class="service-header">
+                <div class="service-content">
+                  <div class="service-header col-md-5">
                     <img src="images/dummy/home/ellipses/Ellipse 46.png" alt="" class="service-icon-46 mt-5">
                     <div class="tagline">Innovative</div>
                     <h1 class="title">Our clients</h1>
@@ -466,22 +481,22 @@
         </section>
         </div>
                   <!---------------free-consultation-section-------------------------->
-        <section
+       <section
           id="free-consultation-section"
-          class="free-consultation mt-5"
+          class="free-consultation mt-5 fade-in-section"
         >
-          <div class="consultation-content container">
-            <div class="consultation-text">
+          <div class="consultation-content container fade-in-section">
+            <div class="consultation-text fade-in-section">
               <h2
-                class="consultation-title"
+                class="consultation-title fade-in-section"
                 data-en="Consult with a SaaS & tech marketing specialist today"
                 data-ar="استشر متخصصًا في تسويق SaaS والتكنولوجيا اليوم"
               >
                 Consult with a SaaS & tech marketing specialist today
               </h2>
-              <div class="consultation-benefits">
+              <div class="consultation-benefits fade-in-section">
                 <p
-
+                  class="fade-in-section"
                   data-en="Start with a complimentary digital sales and marketing review. Send us your email and schedule a chat with our experts. You’ll get:"
                   data-ar="ابدأ بمراجعة مجانية للمبيعات والتسويق الرقمي. أرسل لنا بريدك الإلكتروني وجدول محادثة مع خبرائنا. ستحصل على:"
                 >
@@ -489,20 +504,23 @@
                   Send us your email and schedule a chat with our experts.
                   You’ll get:
                 </p>
-                <ul class="custom-bullets">
+                <ul class="custom-bullets fade-in-section">
                   <li
+                    class="fade-in-section"
                     data-en="Helpful advice and guidance."
                     data-ar="نصائح وإرشادات مفيدة."
                   >
                     Helpful advice and guidance.
                   </li>
                   <li
+                    class="fade-in-section"
                     data-en="No sales pitches or nonsense."
                     data-ar="لا عروض مبيعات أو هراء."
                   >
                     No sales pitches or nonsense.
                   </li>
                   <li
+                    class="fade-in-section"
                     data-en="No obligations or commitments."
                     data-ar="لا التزامات أو تعهدات."
                   >
@@ -510,15 +528,15 @@
                   </li>
                 </ul>
               </div>
-              <div class="consultation-form">
+              <div class="consultation-form fade-in-section">
                 <input
                   type="email"
                   placeholder="Your email"
-                  class="consultation-mail"
+                  class="consultation-mail fade-in-section"
                 />
                 <button
                   type="button"
-                  class="button"
+                  class="button fade-in-section"
                   data-en="Book Now"
                   data-ar="احجز الآن"
                 >
@@ -526,7 +544,7 @@
                 </button>
               </div>
               <p
-                class="disclaimer"
+                class="disclaimer fade-in-section"
                 data-en="By clicking sign up you’re confirming that you agree with our Terms & Conditions."
                 data-ar="بالنقر على الاشتراك، تؤكد أنك توافق على الشروط والأحكام الخاصة بنا."
               >
@@ -534,7 +552,7 @@
                 <a href="#">Terms & Conditions.</a>
               </p>
             </div>
-            <div class="consultation-image">
+            <div class="consultation-image fade-in-section">
               <img
                 src="/images/dummy/home/consultation-image.jpg"
                 alt="Consultation Graphic"
@@ -542,13 +560,12 @@
             </div>
           </div>
         </section>
-        <!---------------footer section-------------------------->
-        <footer class="custom-footer">
-          <div class="container">
-            <div class="newsletter-section">
-              <div class="newsletter-text">
+        <footer class="custom-footer fade-in-section px-0">
+          <div class="container px-0">
+            <div class="newsletter-section fade-in-section">
+              <div class="newsletter-text fade-in-section">
                 <h5
-                  class="
+                  class="fade-in-section"
                   data-en="Subscribe to our newsletter for the latest updates on features and releases."
                   data-ar="اشترك في نشرتنا الإخبارية للحصول على أحدث التحديثات والميزات."
                 >
@@ -556,17 +573,17 @@
                   and releases.
                 </h5>
               </div>
-              <form class="newsletter-form">
-                <div class="form-row">
+              <form class="newsletter-form fade-in-section">
+                <div class="form-row fade-in-section">
                   <input
                     type="email"
                     placeholder="Your email"
                     required
-                    class="input-email"
+                    class="input-email fade-in-section"
                   />
                   <button
                     type="submit"
-                    class="button"
+                    class="button fade-in-section"
                     data-en="Sign Up"
                     data-ar="اشترك"
                   >
@@ -574,6 +591,7 @@
                   </button>
                 </div>
                 <small
+                  class="fade-in-section"
                   data-en="By subscribing you consent to our privacy policy and agree to receive updates."
                   data-ar="بالاشتراك، فإنك توافق على سياسة الخصوصية الخاصة بنا وتوافق على تلقي التحديثات."
                 >
@@ -582,56 +600,57 @@
                 </small>
               </form>
             </div>
-            <div class="divider"></div>
-            <div class="footer-main">
-              <div class="footer-logo">
+            <div class="divider fade-in-section"></div>
+            <div class="footer-main fade-in-section">
+              <div class="footer-logo fade-in-section">
                 <img src="images/dummy/home/Logo - Black.png" alt="KHB Logo" />
               </div>
-              <div class="footer-links">
+              <div class="footer-links fade-in-section">
                 <ul>
-                  <li>
+                  <li class="fade-in-section">
                     <a href="#" data-en="Who We Help" data-ar="من نساعد"
                       >Who We Help</a
                     >
                   </li>
-                  <li>
+                  <li class="fade-in-section">
                     <a href="#" data-en="Why KHB?" data-ar="لماذا KHB؟"
                       >Why KHB?</a
                     >
                   </li>
-                  <li>
+                  <li class="fade-in-section">
                     <a href="#" data-en="Services" data-ar="الخدمات"
                       >Services</a
                     >
                   </li>
-                  <li>
+                  <li class="fade-in-section">
                     <a href="#" data-en="Results" data-ar="النتائج">Results</a>
                   </li>
                 </ul>
               </div>
-              <div class="footer-links">
+              <div class="footer-links fade-in-section">
                 <ul>
-                  <li>
+                  <li class="fade-in-section">
                     <a href="#" data-en="Career" data-ar="وظائف">Career</a>
                   </li>
-                  <li>
+                  <li class="fade-in-section">
                     <a href="#" data-en="Blog" data-ar="مدونة">Blog</a>
                   </li>
-                  <li>
+                  <li class="fade-in-section">
                     <a href="#" data-en="Get in touch" data-ar="تواصل معنا"
                       >Get in touch</a
                     >
                   </li>
                 </ul>
               </div>
-              <div class="footer-social">
+              <div class="footer-social fade-in-section">
                 <h6
+                  class="fade-in-section"
                   data-en="Follow us"
                   data-ar="تابعنا"
                 >
                   Follow us
                 </h6>
-                <div class="social-icons">
+                <div class="social-icons fade-in-section">
                   <a href="#"
                     ><img src="images/dummy/footer/Linkedin.png" alt="LinkedIn"
                   /></a>
@@ -649,16 +668,16 @@
                 </div>
               </div>
             </div>
-            <div class="divider"></div>
-            <div class="footer-bottom">
+            <div class="divider fade-in-section"></div>
+            <div class="footer-bottom fade-in-section">
               <p
-                class="footer-p"
+                class="footer-p fade-in-section"
                 data-en="© 2025 KOLE HUGG & BOOZ. All rights reserved"
                 data-ar="© 2025 كول هوغ وبوز. جميع الحقوق محفوظة"
               >
                 © 2025 KOLE HUGG & BOOZ. All rights reserved
               </p>
-              <div class="footer-policies">
+              <div class="footer-policies fade-in-section">
                 <a href="#" data-en="Privacy policy" data-ar="سياسة الخصوصية"
                   >Privacy policy</a
                 >
@@ -682,5 +701,6 @@
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./assets/js/categories.js"></script>
   <script src="./assets/js/animations.js"></script>
+  <script src="./assets/js/home.js"></script>
   </body>
 </html>

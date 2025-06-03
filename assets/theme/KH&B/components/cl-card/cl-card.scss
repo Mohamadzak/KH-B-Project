@@ -55,11 +55,11 @@
 }
 
 .client-card-name {
-    font-weight: 400;
-    line-height: 32px;
+  font-weight: 400;
+  line-height: 32px;
   font-size: 24px;
   color: var(--black-color);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 @media (max-width: 1100px) {
   .client-section {
@@ -77,8 +77,8 @@
   }
 
   .client-card {
-    width: 90vw;      /* Use most of the screen width */
-    height: auto;     /* Let height grow naturally */
+    width: 90vw; /* Use most of the screen width */
+    height: auto; /* Let height grow naturally */
     max-width: 400px; /* Prevent it from being too large */
   }
 }

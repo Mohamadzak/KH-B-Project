@@ -1,6 +1,5 @@
 /* tm Data Analytics Case Studies Container */
 .tm-data-analytics-case-studies {
-  max-width: 1200px;
   margin: 100px auto;
   padding: 0 24px;
   display: flex;
@@ -15,13 +14,11 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 48px;
-  width: 100%;
 }
 
 /* Title Styling - allow wrapping */
 .tm-data-analytics-case-studies__title {
   overflow: visible;
-  max-width: 50%;
   margin: 0;
   padding: 0;
   color: var(--white-color);
@@ -44,7 +41,6 @@
 /* Description paragraph */
 .tm-data-analytics-case-studies__header > div > p {
   margin: 0 0 8px 0;
-  max-width: 100%;
   line-height: 1.4;
   color: #d5d5d5;
 }
@@ -114,15 +110,15 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-  flex-wrap: wrap;
-  margin-left: -10px; /* Negative half of padding */
+    flex-wrap: wrap;
+    margin-left: -10px; /* Negative half of padding */
   }
   /* Slick slider margin fix */
-.case-study-card {
-  flex: 0 0 30%;
-  margin-left: 20px; /* half spacing */
-  box-sizing: border-box;
-}
+  .case-study-card {
+    flex: 0 0 30%;
+    margin-left: 20px; /* half spacing */
+    box-sizing: border-box;
+  }
 
   /* Move action row (button + learn more) below slider */
   .tm-action-row {
@@ -150,7 +146,6 @@
   background: var(--white-color);
   border-radius: 8px;
   flex: 1 1 300px;
-  max-width: 384px;
   display: flex;
   flex-direction: column;
 }
@@ -163,8 +158,6 @@
 
 /* Card Image */
 .tm-data-analytics-case-study-card__image {
-  width: 100%;
-  height: 185px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
 }
@@ -185,7 +178,7 @@
 
 /* Headline */
 .tm-data-analytics-case-study-card__headline {
-  font-family: 'Tahoma', sans-serif;
+  font-family: "Tahoma", sans-serif;
   font-weight: 600;
   font-size: 24px;
   color: var(--black-color);
@@ -198,7 +191,7 @@
 
 /* Description */
 .tm-data-analytics-case-study-card__description {
-  font-family: 'Tahoma', sans-serif;
+  font-family: "Tahoma", sans-serif;
   font-weight: 400;
   font-size: 1rem;
   color: #616161;
@@ -219,9 +212,4 @@
   border: none;
   cursor: pointer;
   color: var(--black-color);
-}
-
-.tm-data-analytics-case-study-card__btn img {
-  width: 50px;
-  height: auto;
 }

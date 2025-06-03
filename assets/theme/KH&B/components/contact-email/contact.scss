@@ -16,8 +16,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,8 +39,6 @@
 }
 
 .check-mark {
-  width: 60px;
-  height: 60px;
   font-size: 2.5rem;
   background-color: var(--success-color);
   i {

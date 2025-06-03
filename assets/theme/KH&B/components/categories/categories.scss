@@ -3,7 +3,7 @@
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-    direction: ltr;
+  direction: ltr;
 }
 
 .category-box {
@@ -19,20 +19,19 @@
   align-items: center;
   justify-content: center;
   color: white;
-   text-transform: uppercase;
+  text-transform: uppercase;
 }
-    .slick-initialized {
+.slick-initialized {
   direction: ltr;
 }
 .category-box:hover {
-   border-color: #BCFFA5;
+  border-color: #bcffa5;
 }
-@media(max-width:768px){
-    .slick-initialized {
-  direction: ltr;
-}
-.category-box{
+@media (max-width: 768px) {
+  .slick-initialized {
+    direction: ltr;
+  }
+  .category-box {
     margin-left: 15px;
-}
-
+  }
 }

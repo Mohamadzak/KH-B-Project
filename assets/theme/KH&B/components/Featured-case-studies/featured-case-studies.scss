@@ -35,7 +35,7 @@
 
 /* Title overrides */
 .featured-case-studies__title {
-  font-size:3rem;
+  font-size: 3rem;
   margin-top: 0; /* Remove top margin */
   padding-bottom: 0; /* Remove bottom padding */
 }
@@ -127,6 +127,7 @@
 .case-study-card__content:active {
   border: 1px solid var(--black-color);
   transform: scale(0.95); /* Slight shrink effect */
+  margin-top: 5px;
 }
 
 /* Headline */

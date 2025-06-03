@@ -21,20 +21,21 @@
   font-size: 17px;
   line-height: 100%;
   transition: color 0.3s ease;
-  margin:2.5rem 0;
+  margin: 2.5rem 0;
 }
-.nav-item:hover .mega-menu-section{
-  display:flex;
+.nav-item:hover .mega-menu-section {
+  display: flex;
 }
-.navbar-nav .nav-link:hover, .navbar-nav .nav-item:hover > .nav-link {
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-item:hover > .nav-link {
   color: var(--black-color);
   background-color: var(--white-color);
   font-weight: 400;
   font-size: 17px;
   border-radius: 20px;
 }
-.navbar-nav .nav-item:hover > .nav-link svg path{
-  fill:black;
+.navbar-nav .nav-item:hover > .nav-link svg path {
+  fill: black;
 }
 /* Dropdown */
 .dropdown {
@@ -43,11 +44,6 @@
 
 .dropdown-menu a:hover {
   background-color: #333;
-}
-
-/* Border Utility */
-.custom-border-color {
-  border-bottom: 1px var(--dark-color) solid;
 }
 
 /* Logo Alignment */
@@ -90,7 +86,6 @@
 
 /* Show the mega menu when hovering on the wrapper or header */
 
-
 /* Optional: styling the content inside the section */
 .mega-menu-section > div {
   color: white;
@@ -112,7 +107,7 @@
   color: #d5d5d5;
   font-weight: 400;
   font-size: 15px;
-  line-height:1.5;
+  line-height: 1.5;
 }
 
 .right-menu-open {
