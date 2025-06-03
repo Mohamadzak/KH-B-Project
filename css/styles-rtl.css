@@ -1,0 +1,95 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+    overflow-x: hidden;
+}
+
+.carousel-section{
+    direction: ltr !important;
+}
+
+.newsletter-text, .fade-in-section{
+    text-align: right;
+}
+
+.carousel-section .slick-slide, .featured-case-studies__list-cont{
+    direction: rtl;
+}
+
+.case-study-card__btn, .learn-more-link span{
+    transform: scaleX(-1);
+    display: inline-block;
+  }
+
+.carousel-section .end-0 {
+    left: 0 !important;
+    right:auto;
+}
+
+.carousel-section .banner-span {
+    padding-left: 17%;
+    padding-right:0;
+    text-align: right;
+}
+
+.carousel-section .button{
+    float:right;
+}
+
+.custom-bullets {
+    padding-right: 20px;
+    padding-left:0;
+}
+
+#innovators-section div, #innovators-section .section-subject, #innovators-section .description {
+    text-align: right !important;
+}
+
+.review-card__arrows {
+    left: 100px;
+    right:auto;
+}
+
+.case-study-card__btn{
+    margin-left:0;
+    margin-right:auto;
+}
+
+
+@media (max-width: 600px) {
+    .navbar-toggler-abs {
+        left: 5px;
+        right:auto;
+      }
+     
+    #nav-links {
+        right: -15px;
+        left:auto;
+    }
+
+    #lang-toggler-sm {
+        float: right;
+        text-align: right !important;
+    }
+
+    .inner-header .dropdown-toggle svg {
+        float: left;
+    }
+
+    #lang-toggler-sm{
+        background:black !important;
+    }
+
+    .slick-progress-cont {
+       
+        right: -10px;
+        left:auto;
+    }
+
+    .featured-case-studies__list-cont {
+
+        right: -30px;
+        left:auto;
+    }
+}
+

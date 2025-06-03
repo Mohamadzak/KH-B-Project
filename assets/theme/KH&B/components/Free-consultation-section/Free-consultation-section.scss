@@ -62,16 +62,14 @@
 }
 
 .consultation-form input[type="email"] {
-  padding: 16px;
+  padding: 14px;
   font-size: 16px;
-  border: 1px var(--text-color) solid;
+  border: 1px solid #535353;
   border-radius: 48px;
-  background-color: var(--text-color);
+  background-color: #272727;
   color: var(--white-color);
   flex-grow: 1;
   min-width: 0;
-  max-width: none;
-  max-height: 56px;
 }
 
 .consultation-form input::placeholder {

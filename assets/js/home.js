@@ -86,6 +86,16 @@ $(document).ready(function () {
     slidesToShow: 1,
     slidesToScroll: 1,
     adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          arrows: false,
+          dots:true,
+          slidesToShow: 1,
+        },
+      }
+    ],
   });
 });
 
@@ -99,7 +109,7 @@ $(document).ready(function () {
       arrows: false,
       infinite: false,
       slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToScroll: 1,
     });
   }
 });
@@ -116,13 +126,17 @@ $(document).ready(function () {
       {
         breakpoint: 900,
         settings: {
+          arrows: false,
           slidesToShow: 3,
         },
       },
       {
         breakpoint: 600,
         settings: {
+          arrows: false,
           slidesToShow: 2,
+          centerMode: true,             // Enable center mode under 600px
+          centerPadding: "15%", 
         },
       },
     ],
@@ -175,6 +189,8 @@ $(document).ready(function () {
           arrows: false,
           infinite: false,
           adaptiveHeight: true,
+          centerMode: true,             // Enable center mode under 600px
+          centerPadding: "30px", 
         });
       }
     } else {
@@ -208,7 +224,7 @@ $(document).ready(function () {
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("header");
   const langTogglers = document.querySelectorAll(".lang-select");
-  const langDisplaySm = document.getElementById("lang-toggler-sm");
+  const langDisplaySm = document.getElementById("lang-head");
   const langDisplayLg = document.getElementById("lang-toggler-lg");
 
   // Added sections
@@ -235,13 +251,13 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("siteLanguage", lang);
 
     // Update text direction & lang attribute on <html>
-    if (lang === "ar") {
-      document.documentElement.lang = "ar";
-      document.documentElement.dir = "rtl";
-    } else {
-      document.documentElement.lang = "en";
-      document.documentElement.dir = "ltr";
-    }
+    // if (lang === "ar") {
+    //   document.documentElement.lang = "ar";
+    //   document.documentElement.dir = "rtl";
+    // } else {
+    //   document.documentElement.lang = "en";
+    //   document.documentElement.dir = "ltr";
+    // }
 
     // Update language toggler display text
     langDisplaySm.textContent = lang === "en" ? "En" : "ع";
@@ -377,17 +393,31 @@ document.body.classList.add('load-content');
 
 let lastScrollTop = 0;
 const header = document.getElementById("header");
-
+const collapseElement = document.querySelector(".collapse");
 window.addEventListener("scroll", () => {
 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
 if (scrollTop > lastScrollTop) {
 // Scrolling down
-header.classList.add("hide");
+if (!collapseElement.classList.contains("show")) {
+  header.classList.add("hide");
+}
 } else {
 // Scrolling up
 header.classList.remove("hide");
 }
 
 lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});
+
+document.querySelectorAll(".nav-link.dropdown-toggle").forEach(button => {
+  button.addEventListener("click", function () {
+    const parent = this.parentElement; // or closest() if needed
+
+    if (parent.classList.contains("active")) {
+      parent.classList.remove("active");
+    } else {
+      parent.classList.add("active");
+    }
+  });
 });

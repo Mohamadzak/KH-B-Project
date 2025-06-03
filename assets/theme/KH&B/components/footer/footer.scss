@@ -55,15 +55,16 @@
 
 /* Email input styling */
 .newsletter-form .input-email {
-  padding: 16px;
+  padding: 18px;
   font-size: 16px;
-  border: 1px var(--text-color) solid;
+  border: 1px  solid #535353;
   border-radius: 48px;
-  background-color: var(--text-color);
+  background-color: #272727;
   color: var(--white-color);
   flex-grow: 1;
   min-width: 0; /* Allow flex shrinking */
   max-width: none;
+
 }
 
 /* Placeholder text styling for email input */

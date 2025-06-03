@@ -56,10 +56,10 @@
   .featured-case-studies .button {
     width: 100%;
     margin-bottom: 0;
-    transform: translateY(1400%); /* Move below header */
-    position: absolute;
-    right: 0;
-    top: 100%;
+    // transform: translateY(1400%); /* Move below header */
+    // position: absolute;
+    // right: 0;
+    // top: 100%;
   }
 
   .featured-case-studies__title {
@@ -68,6 +68,7 @@
     text-overflow: ellipsis;
     flex: 1 1 auto;
     margin-bottom: 0;
+    font-size: 9vw;
   }
 }
 

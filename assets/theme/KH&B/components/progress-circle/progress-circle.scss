@@ -71,10 +71,10 @@
 
 /* Tablet */
 @media (max-width: 992px) {
-  .progress-circle {
-    width: 172px;
-    height: 252px;
-  }
+  // .progress-circle {
+  //   width: 172px;
+  //   height: 252px;
+  // }
 
   .progress-circle:last-child {
     margin-right: 0;
@@ -89,17 +89,17 @@
 
 /* Mobile */
 @media (max-width: 600px) {
-  .progress-circle {
-    width: 172px;
-    height: 252px;
-  }
+  // .progress-circle {
+  //   width: 172px;
+  //   height: 252px;
+  // }
 
   .progress-circle:last-child {
     margin-right: 0;
   }
 
   .circle-text {
-    font-size: 18px;
+    font-size: 36px;
   }
 
   .circle-svg {
