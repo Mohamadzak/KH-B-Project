@@ -1,0 +1,87 @@
+/* Responsive Design for Innovative Solution Section */
+
+/* Tablet: adjust padding, direction, and margins */
+@media (max-width: 1024px) {
+  .innovative-section {
+    padding: 32px 32px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .services-list {
+    margin-left: 0;
+    margin-top: 24px;
+    gap: 32px;
+  }
+  .decorative-image {
+    left: -32px;
+    top: -32px;
+    width: 60px;
+  }
+  .innovative-section .button {
+    margin-top: 32px;
+  }
+}
+
+/* Mobile: stack columns, adjust font sizes, and spacing */
+@media (max-width: 600px) {
+  .innovative-section {
+    padding: 20px 8px;
+    border-radius: 8px;
+  }
+  .content-column,
+  .services-list {
+    flex: 1 1 100%;
+    margin-left: 0;
+    margin-top: 12px;
+    gap: 16px;
+  }
+  .title-group {
+    gap: 8px;
+  }
+  .sub-title {
+    font-size: 11px;
+    letter-spacing: 2%;
+  }
+  .main-heading,
+  .main-heading span {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -2%;
+  }
+  .description-solution {
+    font-size: 15px;
+    line-height: 30px;
+  }
+  .text-block h3 {
+    font-size: 18px;
+    white-space: normal;
+    letter-spacing: -1%;
+  }
+  .text-block p {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .services-list {
+    margin-top: 8px;
+    gap: 25px;
+  }
+  .service-item {
+    gap: 12px;
+  }
+  .bullet {
+    width: 1rem;
+    height: 1rem;
+    margin-top: 0.1rem;
+    box-shadow: 0 0 0.5rem 0.1rem #bcffa5;
+  }
+  .decorative-image {
+    left: -8px;
+    top: -8px;
+    width: 36px;
+  }
+  .innovative-section .button {
+    width: 100%;
+position: absolute;
+top: 97%;
+  }
+}

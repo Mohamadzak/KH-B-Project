@@ -1,0 +1,79 @@
+/* Market leaders section */
+.home-page-d .market-leaders {
+  gap: 32px;
+  padding: 0 6vw;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--black-color);
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+/* Clients section styling */
+.clients-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 24px 4vw;
+  background-color: var(--black-color);
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+.clients-container {
+  max-width: 792px;
+  width: 100%;
+  gap: 16px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Clients subtitle */
+.clients-subtitle {
+  font-family: "Tahoma", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: var(--white-color);
+  letter-spacing: 0.05em; /* 5% converted to em */
+  margin: 0;
+  line-height: 1;
+}
+
+/* Clients main title */
+.clients-title {
+  font-family: "Tahoma", sans-serif;
+  font-weight: 400;
+  font-size: 6vw;
+  line-height: 1.2;
+  letter-spacing: -0.02em; /* -2% converted to em */
+  color: var(--white-color);
+  margin: 0;
+}
+
+@media (min-width: 600px) {
+  .clients-title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+@media (min-width: 900px) {
+  .clients-title {
+    font-size: 48px;
+    line-height: 64px;
+  }
+}
+
+/* Highlight text in clients section */
+.clients-highlight {
+  font-weight: 700;
+}
+
+/* Market leaders buttons */
+
+@media (max-width: 768px) {
+  .market-leaders .button {
+    width: 100%;
+    max-width: 100%;
+  }
+}

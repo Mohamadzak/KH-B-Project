@@ -1,0 +1,24 @@
+$container-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1190px,
+    xxl: 1250px,
+    xxxl:1358px
+);
+
+@mixin custom-container {
+    @each $breakpoint, $width in $container-widths {
+        @media (min-width: #{map-get($container-widths, $breakpoint)}) {
+            .container-#{$breakpoint} {
+                max-width: $width;
+                width: 100%;
+                margin: 0 auto; // Centers the container
+                padding: 0 15px; // Adds padding for spacing
+            }
+        }
+    }
+}
+
+// Use the mixin to generate your custom containers
+@include custom-container;

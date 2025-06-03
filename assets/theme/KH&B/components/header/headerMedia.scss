@@ -1,0 +1,18 @@
+// .navbar-toggler-abs{
+//   transform: translate(40% , -170%);
+// }
+@media (min-width: 992px) {
+  /* Center logo vertically and reset transform on desktop */
+  .logo-direction {
+    align-self: center;
+    transform: translateY(0);
+  }
+
+
+  /* Reset navbar collapse styles for desktop */
+  .navbar-collapse-absolute {
+    position: static;           /* Normal flow */
+    background-color: transparent; /* Remove black bg */
+    padding: 0;                 /* Remove padding */
+  }
+}

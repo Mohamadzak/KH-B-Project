@@ -1,0 +1,197 @@
+.service-offerings {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: var(--black-color);
+  padding-bottom: 64px;
+}
+
+.service-offerings__container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 64px; /* Increased gap for more space between image and content */
+  padding: 0;
+  max-width: 1280px;
+  margin: 64px auto 0 auto;
+  width: 100%;
+}
+
+.service-offerings__main-image {
+  width: 486px;
+  object-fit: cover;
+  flex-shrink: 0;
+  height: 510px;
+  align-self: stretch;
+  background: #232323;
+}
+
+.service-offerings__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 588px;
+  z-index: 1;
+  height: 510px;
+  transform: translateX(5%);
+}
+
+.service-offerings__title {
+  font-family: "Tahoma", Helvetica, Arial, sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  color: var(--white-color);
+  letter-spacing: -0.96px;
+  line-height: 64px;
+  margin: 0 0 12px 0;
+}
+
+.service-offerings__intro {
+  color: #d5d5d5;
+  font-family: "Tahoma", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0 0 32px 0;
+}
+
+.service-offerings__list {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+  justify-content: space-between;
+  gap: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-height: 320px;
+}
+
+.service-offerings__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px 0;
+}
+
+.service-offerings__bullet {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  margin-top: 6px;
+  background: #bcffa5;
+  border-radius: 50%;
+  box-shadow: 0 0 18px 3px #bcffa5;
+  flex-shrink: 0;
+}
+
+.service-offerings__item-title {
+  font-family: "Tahoma", Helvetica, Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: var(--white-color);
+  letter-spacing: -0.56px;
+  margin: 0 0 8px 0;
+}
+
+.service-offerings__item-desc {
+  color: #d5d5d5;
+  font-family: "Tahoma", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  margin: 0;
+}
+
+
+/* Responsive Styles */
+
+@media (max-width: 1280px) {
+  .service-offerings__container {
+    gap: 40px; /* Still a good space but slightly less on small screens */
+    max-width: 100%;
+    padding: 0 24px;
+  }
+  .service-offerings__main-image {
+    width: 420px;
+    min-height: 450px;
+    max-height: 540px;
+  }
+  .service-offerings__content {
+    width: 440px;
+  }
+}
+
+@media (max-width: 900px) {
+  .service-offerings__container {
+    flex-direction: column;
+    align-items: center;
+    margin: 48px auto 0 auto;
+    gap: 40px;
+    padding: 0 16px;
+  }
+  .service-offerings__main-image {
+    width: 100%;
+    max-width: 500px;
+    min-height: auto;
+    max-height: auto;
+    height: auto;
+    border-radius: 12px;
+  }
+  .service-offerings__content {
+    width: 100%;
+    max-width: 600px;
+    align-items: start;
+    text-align: start;
+  }
+  .service-offerings__title {
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.7px;
+  }
+  .service-offerings__intro {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+  .service-offerings__list {
+    min-height: auto;
+  }
+  /* Keep flex-direction: row so bullet stays left next to text */
+  .service-offerings__item {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 0;
+  }
+  .service-offerings__bullet {
+    margin-top: 6px;
+  }
+  .service-offerings__item-title {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+  .service-offerings__item-desc {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .service-offerings__accent-image {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-offerings__title {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .service-offerings__intro {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .service-offerings__item-title {
+    font-size: 20px;
+  }
+  .service-offerings__item-desc {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}

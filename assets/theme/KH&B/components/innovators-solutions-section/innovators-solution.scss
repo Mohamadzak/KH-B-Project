@@ -1,0 +1,102 @@
+/* ===========================
+   Innovative Solution Section
+=========================== */
+.innovative-section {
+  padding: 0 120px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 16px;
+}
+
+.innovative-section .button {
+  width: 50%;
+}
+
+.content-column {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sub-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 5%;
+  color: var(--white-color);
+}
+
+.main-heading {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 64px;
+  color: var(--white-color);
+  letter-spacing: -2%;
+  span {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+    color: var(--white-color);
+  }
+}
+
+.description-solution {
+  font-size: 17px;
+  color: #d5d5d5;
+  line-height: 24px;
+}
+
+.services-list {
+  flex: 1 1 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px; /* space between each service item */
+  margin-left: 100px;
+  margin-top: 80px; /* push whole list down */
+}
+
+.service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Optionally, remove margin from the last item */
+.service-item:last-child {
+  margin-bottom: 0;
+}
+.bullet {
+  flex-shrink: 0; /* prevent bullet from shrinking */
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: #bcffa5;
+  border-radius: 50%;
+  box-shadow: 0 0 0.75rem 0.1875rem #bcffa5;
+  margin-top: 0.4rem; /* small offset so bullet aligns with first line of text */
+}
+
+.text-block h3 {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0 0 6px 0;
+  line-height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  letter-spacing: -2%;
+}
+
+.text-block p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #d5d5d5;
+  margin: 0;
+  line-height: 24px;
+}

@@ -1,0 +1,100 @@
+/* ===========================
+   Free Consultation Section
+=========================== */
+.free-consultation {
+  width: 100%;
+  background-color: #171717;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.consultation-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.consultation-text {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.consultation-title {
+  font-family: "Tahoma", sans-serif;
+  font-size: 42px;
+  line-height: 1.3;
+  color: var(--white-color);
+  margin: 0;
+}
+
+.consultation-benefits {
+  font-family: "Tahoma", sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #d5d5d5;
+}
+
+.custom-bullets {
+  padding-left: 20px;
+  margin: 0;
+  color: #d5d5d5;
+}
+
+.custom-bullets li {
+  list-style-type: disc;
+  color: #d5d5d5;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+.consultation-form {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.consultation-form input[type="email"] {
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #535353;
+  border-radius: 48px;
+  background-color: #272727;
+  color: var(--white-color);
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.consultation-form input::placeholder {
+  color: var(--white-color);
+}
+
+.disclaimer {
+  font-size: 14px;
+  color: var(--white-color);
+  line-height: 1.6;
+  font-family: "Tahoma", sans-serif;
+  a{
+    color: var(--white-color);
+  }
+}
+
+.consultation-image {
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transform: translateY(-8%);
+}
+
+.consultation-image img {
+  width: 486px;
+  height: 353.76px;
+}

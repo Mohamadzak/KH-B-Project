@@ -1,0 +1,118 @@
+/* ===========================
+   Innovators Section - Responsive (Taller & Longer Content)
+=========================== */
+
+/* Tablet and below (≤ 1200px) */
+@media (max-width: 1200px) {
+  .innovators-section {
+  width: 375px;
+  height: 693px;
+  padding: 163px 16px 32px 16px;
+  background: linear-gradient(
+      0deg, 
+      rgba(0, 0, 0, 0) 0%, 
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url('/images/dummy/home/banner.png') center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .innovators-section {
+    padding: 16px 32px;
+    width: 343px;
+    height: 525px;
+    gap: 24px;
+  }
+  .container-innovators {
+    padding: 0 80px; /* Wider horizontal padding */
+  }
+  .content-box {
+    max-width: 760px; /* Even wider content box */
+    padding: 56px;    /* More padding inside the box */
+    min-height: 500px; /* Enforce taller box */
+  }
+  .section-subject,
+  .section-subject strong {
+    font-size: 34px;
+    line-height: 44px;
+    letter-spacing: -2%;
+    font-weight: 400;
+  }
+  .headline {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}
+
+/* Small Tablet (≤ 900px) */
+@media (max-width: 900px) {
+  .innovators-section {
+    padding: 140px 0 140px 0; /* Much taller */
+  }
+  .container-innovators {
+    padding: 0 36px;
+    justify-content: center;
+  }
+  .content-box {
+    max-width: 98vw;
+    padding: 44px;
+    min-height: 420px;
+  }
+  .section-title {
+    font-size: 16px;
+  }
+  .section-subject,
+  .section-subject strong {
+    font-size: 38px;
+    line-height: 54px;
+  }
+  .headline {
+    font-size: 30px;
+    line-height: 1.32;
+  }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .innovators-section {
+    padding: 100px 0 90px 0; /* Taller top and bottom */
+    background-position: center top;
+  }
+  .container-innovators {
+    padding: 0 8vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-box {
+    padding: 32px 10px;
+    border-radius: 14px;
+    gap: 24px;
+    min-height: 320px;
+  }
+  .section-title {
+    font-size: 15px;
+    letter-spacing: 0.7px;
+  }
+  .section-subject,
+  .section-subject strong {
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0;
+  }
+  .headline {
+    font-size: 21px;
+    line-height: 1.25;
+  }
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .content-box button {
+    width: 100%;
+    min-width: unset;
+    font-size: 19px;
+    padding: 18px 0;
+  }
+}

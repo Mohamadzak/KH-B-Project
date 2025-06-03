@@ -1,0 +1,50 @@
+/* ===========================
+   Data Driven Section
+=========================== */
+.data-driven-section {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  font-family: "Tahoma", sans-serif;
+  button {
+    width: 30%;
+  }
+  h5 {
+    font-size: 26px;
+    font-weight: 400;
+    color: var(--white-color);
+    line-height: 36px;
+  }
+  span {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--white-color);
+    line-height: 36px;
+  }
+}
+
+.data-driven-section h2 {
+  font-size: 2.5rem;
+  letter-spacing: -1px;
+}
+
+.data-driven-description {
+  font-size: 17px;
+  font-weight: 400;
+  color: #d5d5d5;
+  line-height: 24px;
+}
+
+.Innovative-strategies {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2%;
+  color: var(--white-color);
+  .Innovative-mark {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2%;
+    color: var(--white-color);
+  }
+}

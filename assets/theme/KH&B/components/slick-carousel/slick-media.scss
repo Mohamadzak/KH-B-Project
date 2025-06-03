@@ -1,0 +1,91 @@
+@media (max-width: 1024px) {
+  .banner-span {
+    font-size: 72px;
+    line-height: 68px;
+  }
+
+  .Not-your {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .lead {
+    font-size: 20px;
+    line-height: 36px;
+  }
+
+  // .slick-carousel button {
+  //   width: 30%;
+  // }
+ 
+    /* Scroll down indicator styling for smaller screens */
+  .scroll-down-responsive {
+    position: absolute;
+    z-index: 10;
+    font-size: 0.9rem;
+    padding: 4px 10px;
+    border-radius: 8px;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .banner-span {
+    font-size: 56px;
+    line-height: 54px;
+  }
+
+  .Not-your {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .lead {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+//   .slick-carousel button {
+//     width: 35%;
+//   }
+ }
+
+@media (max-width: 480px) {
+  .banner-span {
+    font-size: 42px;
+    line-height: 40px;
+  }
+
+  .Not-your {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .lead {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  // .slick-carousel button {
+  //   width: 100%;
+  // }
+
+  .slide-number {
+    font-size: 16px;
+  }
+}
+@media (max-width: 991.98px) {
+  .slide-counter-scroll-container {
+    width: 100%;
+  }
+
+  .responsive-slide-counter {
+    font-size: 1rem;
+  }
+
+  .scroll-down-responsive {
+    font-size: 0.9rem;
+    cursor: pointer;
+    transform: translateX(120%);
+  }
+}

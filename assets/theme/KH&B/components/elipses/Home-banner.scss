@@ -1,0 +1,16 @@
+.ellipse-45 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(110%) ;
+  z-index: 0;
+  opacity: 50%;
+}
+
+.ellipse-46 {
+  position: absolute;
+  top: 15px;
+  left: -70px;          /* Shifted a little left from start (0) */
+  z-index: 0;
+  opacity: 30%;       /* same opacity */
+}

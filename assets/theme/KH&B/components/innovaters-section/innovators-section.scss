@@ -1,0 +1,71 @@
+/* ===========================
+   Innovators Section
+=========================== */
+.innovators-section {
+  padding: 160px 20px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%),
+    url("/images/dummy/home/banner.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box {
+  background-color: var(--white-color);
+  padding: 48px;
+  max-width: 690px;
+  border-radius: 12px;
+  backdrop-filter: blur(12px) brightness(100%);
+  -webkit-backdrop-filter: blur(12px) brightness(100%);
+  gap: 24px;
+}
+
+.section-title {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.65px;
+  font-family: Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+.section-subject {
+  color: var(--black-color);
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: -2%;
+  strong {
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: -2%;
+  }
+}
+
+.headline {
+  font-size: 40px;
+  line-height: 1.4;
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  color: var(--black-color);
+}
+
+.headline strong {
+  font-weight: 700;
+}
+
+.description {
+  font-size: 17px;
+  color: #616161;
+  line-height: 1.6;
+  font-family: Tahoma, sans-serif;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+//button edit
+.content-box {
+  button {
+    width:44%;
+  }
+}

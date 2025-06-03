@@ -1,0 +1,130 @@
+/* Sticky Header Base */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--black-color);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Sticky Active State (JS will toggle this class) */
+.site-header.sticky-active {
+  opacity: 0.95;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  background-color: #0a0a0a; /* slightly darker */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 100%;
+  transition: color 0.3s ease;
+  margin:2.5rem 0;
+}
+.nav-item:hover .mega-menu-section{
+  display:flex;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-item:hover > .nav-link {
+  color: var(--black-color);
+  background-color: var(--white-color);
+  font-weight: 400;
+  font-size: 17px;
+  border-radius: 20px;
+}
+.navbar-nav .nav-item:hover > .nav-link svg path{
+  fill:black;
+}
+/* Dropdown */
+.dropdown {
+  gap: 4px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #333;
+}
+
+/* Border Utility */
+.custom-border-color {
+  border-bottom: 1px var(--dark-color) solid;
+}
+
+/* Logo Alignment */
+.logo-direction {
+  align-self: flex-start;
+  transform: translateY(30%);
+}
+
+/* Mobile Toggler Positioning */
+.navbar-toggler-abs {
+  position: absolute;
+  // top: 100%;
+  right: 5px;
+  // transform: translateY(-150%);
+  z-index: 10;
+}
+
+/* Mobile Nav Collapse */
+.navbar-collapse-absolute {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--black-color);
+  padding: 10px;
+  z-index: 9;
+  border-radius: 5px;
+}
+
+.mega-menu-section {
+  border-top: 1px var(--dark-color) solid;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-height: 70vh;
+  display: none;
+  z-index: 1000;
+}
+
+/* Show the mega menu when hovering on the wrapper or header */
+
+
+/* Optional: styling the content inside the section */
+.mega-menu-section > div {
+  color: white;
+}
+.menu-titles {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 5%;
+}
+.menu-span {
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.menu-p {
+  color: #d5d5d5;
+  font-weight: 400;
+  font-size: 15px;
+  line-height:1.5;
+}
+
+.right-menu-open {
+  background-color: #1c1c1c;
+}
+
+.learn-more-link {
+  color: var(--white-color);
+  text-decoration: none;
+  position: relative;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 5%;
+}

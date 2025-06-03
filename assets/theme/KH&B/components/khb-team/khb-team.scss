@@ -1,0 +1,37 @@
+.team-list {
+  background-color: #272727;
+  border: 1px solid #565656;
+}
+.team-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  color: var(--white-color);
+  letter-spacing: -2%;
+}
+
+.team-description {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 64px;
+  color: #d5d5d5;
+  letter-spacing: -2%;
+}
+.team-name {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+}
+.team-position {
+  color: var(--white-color);
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+}
+.team-info {
+  color: #d5d5d5;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+}
