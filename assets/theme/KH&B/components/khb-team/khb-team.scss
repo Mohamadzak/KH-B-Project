@@ -35,3 +35,43 @@
   font-size: 17px;
   line-height: 24px;
 }
+//hiring hover
+.team-wrapper {
+  position: relative;
+  height: 100%;
+}
+
+/* Make both cards stack and take same space */
+.team-main,
+.hiring-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  transition: opacity 0.3s ease;
+}
+
+/* Default state */
+.team-main {
+  z-index: 1;
+  opacity: 1;
+}
+.hiring-hover {
+  z-index: 0;
+  opacity: 0;
+  pointer-events: none;
+  align-content: center;
+}
+
+/* Hover behavior */
+.team-wrapper:hover .team-main {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.team-wrapper:hover .hiring-hover {
+  z-index: 2;
+  opacity: 1;
+  pointer-events: auto;
+}

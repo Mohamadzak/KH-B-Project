@@ -34,7 +34,11 @@
   letter-spacing: -2%;
   margin-bottom: 1rem; /* Adds space below */
 }
-
+.toc-container {
+  position: sticky;
+  top: 20px;
+  align-self: flex-start;
+}
 .toc-item {
   cursor: pointer;
 
@@ -49,7 +53,7 @@
 .toc-item:hover {
   color: #ccc;
 }
-.toc-item.active-toc{
+.toc-item.active-toc {
   padding-left: 1.5rem;
 }
 .toc-item.active-toc::before {

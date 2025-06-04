@@ -21,6 +21,9 @@
   justify-content: center;
   z-index: 1050;
   display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .modal-content {
@@ -44,4 +47,11 @@
   i {
     color: var(--black-color);
   }
+}
+
+.text-upload {
+  color: #d8d8d8;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
 }

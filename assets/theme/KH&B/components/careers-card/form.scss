@@ -49,10 +49,53 @@
   line-height: 1.2;
   color: #d8d8d8;
 }
-.form-check-input {
+.form-check-input[type="radio"] {
+  position: relative;
+  width: 20px;
+  height: 20px;
   background-color: transparent;
-  border: 1px solid var(--white-color);
+  border: none;
+  border-radius: 50%;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
 }
+
+/* Outer border (first white border) */
+.form-check-input[type="radio"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+/* Inner fill when checked (white dot) with spacing from border */
+.form-check-input[type="radio"]:checked::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+/* Second border on active (with space between the two) */
+.form-check-input[type="radio"]:active::before {
+  top: -3px;
+  left: -3px;
+  width: 26px;
+  height: 26px;
+  border: 2px solid white;
+  z-index: -1;
+}
+
 .form-check-label {
   font-family: Tahoma;
   font-weight: 400;
@@ -63,4 +106,39 @@
   span {
     text-decoration: underline;
   }
+}
+.checkbox-input {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background-color: transparent !important;
+  border: 2px solid white; /* inner border */
+  border-radius: 4px;
+  appearance: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Outer border with gap using ::before */
+.checkbox-input:active::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: calc(100% + 12px);
+  height: calc(100% + 12px);
+  border: 2px solid white; /* outer border */
+  border-radius: 6px; /* slightly bigger radius */
+  pointer-events: none; /* avoid interaction */
+  box-sizing: border-box;
+}
+.checkbox-input:checked::after {
+  content: "";
+  position: absolute;
+  top: 4px; /* space from border */
+  left: 4px;
+  width: 8px; /* smaller than full width */
+  height: 8px;
+  background-color: white;
+  border-radius: 2px;
 }
