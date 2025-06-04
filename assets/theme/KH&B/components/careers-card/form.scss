@@ -108,11 +108,10 @@
   }
 }
 .checkbox-input {
-  position: relative;
   width: 20px;
   height: 20px;
   background-color: transparent !important;
-  border: 2px solid white; /* inner border */
+  border: 2px solid white;
   border-radius: 4px;
   appearance: none;
   cursor: pointer;
@@ -127,17 +126,19 @@
   left: -6px;
   width: calc(100% + 12px);
   height: calc(100% + 12px);
-  border: 2px solid white; /* outer border */
-  border-radius: 6px; /* slightly bigger radius */
-  pointer-events: none; /* avoid interaction */
+  border: 2px solid white;
+  border-radius: 6px;
+  pointer-events: none;
   box-sizing: border-box;
 }
+
+/* Inner dot for checked state */
 .checkbox-input:checked::after {
   content: "";
   position: absolute;
-  top: 4px; /* space from border */
+  top: 4px;
   left: 4px;
-  width: 8px; /* smaller than full width */
+  width: 8px;
   height: 8px;
   background-color: white;
   border-radius: 2px;

@@ -1226,6 +1226,34 @@ body {
   flex-direction: column;
   gap: 48px;
   overflow-x: hidden;
+  position: relative;
+}
+
+/* common arrow styles */
+.testimonial-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  font-size: 28px;
+  line-height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+/* left arrow aligned on left edge */
+.testimonial-arrow.left-arrow {
+  left: -20px; /* shift outside container, adjust as needed */
+}
+
+/* right arrow aligned on right edge */
+.testimonial-arrow.right-arrow {
+  right: -20px; /* shift outside container, adjust as needed */
 }
 
 /* Header layout */
@@ -3936,11 +3964,10 @@ body {
 }
 
 .checkbox-input {
-  position: relative;
   width: 20px;
   height: 20px;
   background-color: transparent !important;
-  border: 2px solid white; /* inner border */
+  border: 2px solid white;
   border-radius: 4px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -3957,18 +3984,19 @@ body {
   left: -6px;
   width: calc(100% + 12px);
   height: calc(100% + 12px);
-  border: 2px solid white; /* outer border */
-  border-radius: 6px; /* slightly bigger radius */
-  pointer-events: none; /* avoid interaction */
+  border: 2px solid white;
+  border-radius: 6px;
+  pointer-events: none;
   box-sizing: border-box;
 }
 
+/* Inner dot for checked state */
 .checkbox-input:checked::after {
   content: "";
   position: absolute;
-  top: 4px; /* space from border */
+  top: 4px;
   left: 4px;
-  width: 8px; /* smaller than full width */
+  width: 8px;
   height: 8px;
   background-color: white;
   border-radius: 2px;

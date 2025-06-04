@@ -249,16 +249,17 @@
 
                     <!-- Language Dropdown (visible only on small screens) -->
                     <li class="nav-item dropdown d-lg-none">
-                      <a
-                        class="nav-link dropdown-toggle text-white text-center"
-                        href="#"
-                        role="button"
-                        data-bs-toggle="dropdown"
-                        id="lang-toggler-sm"
-                        ><span id="lang-head">En</span> <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M8.2959 9.81507L0.295898 2.21039L1.76377 0.815067L8.2959 7.02423L14.828 0.815067L16.2959 2.21039L8.2959 9.81507Z" fill="white"></path>
-                          </svg></a
-                      >
+                    <a
+                    class="nav-link dropdown-toggle text-white text-center"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    id="lang-toggler-sm"
+                  >
+                    <span id="lang-head">En</span> 
+                    <img src="images/Dropdown arrow (1).png" alt="">
+                  </a>
+
                       <ul class="dropdown-menu dropdown-menu-dark">
                         <li>
                           <a
@@ -287,15 +288,16 @@
                 class="flex-shrink-0 mt-3 mt-lg-0 d-none d-lg-block"
               >
                 <div class="dropdown">
-                  <a
-                    class="nav-link dropdown-toggle text-white text-center text-lg-end"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    id="lang-toggler-lg"
-                  >
-                    En
-                  </a>
+                 <a
+                      class="nav-link dropdown-toggle text-white text-center"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      id="lang-toggler-sm"
+                    >
+                      <span id="lang-head">En</span> 
+                      <img src="images/Dropdown arrow (1).png" alt="">
+                    </a>
                   <ul
                     class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
                   >
@@ -479,14 +481,13 @@
             </div>
 
             <div class="container py-4 d-flex justify-content-end">
-              <!-- Removed nested form here -->
               <div class="d-flex align-items-center gap-3">
-                <div class="form-check m-0">
-                  <input class="checkbox-input" type="checkbox" id="termsCheck">
-                  <label class="form-check-label" for="termsCheck">
-                    I accept the <span>terms and conditions</span>
-                  </label>
-                </div>
+              <div class="form-check d-flex align-items-center m-0">
+              <input class="checkbox-input me-2" type="checkbox" id="termsCheck">
+              <label class="form-check-label m-0" for="termsCheck">
+                I accept the <span class="text-decoration-underline">terms and conditions</span>
+              </label>
+            </div>
                 <button type="submit" class="button submit-button">
                   submit
                 </button>
@@ -495,10 +496,11 @@
           </form>
         </div>
                <!-- Modal Popup -->
+        <!-- Modal Popup -->
       <div id="successModal" class="modal-overlay">
-        <div class="bg-white rounded-3 p-5 text-center modal-content" style="max-width: 500px; width: 90%;">
-          <span class="check-mark d-inline-flex align-items-center justify-content-center rounded-circle text-white mx-auto mb-4">
-              <i class="bi bi-check"></i>
+        <div class="bg-white rounded-3 text-center modal-content h-100">
+          <span class="check-mark d-inline-flex align-items-center justify-content-center rounded-circle mx-auto mb-4">
+              <img src="images/dummy/contact/correct-icon.png" alt="">
             </span>
           <h2 class="mb-3">We have successfully received your message!</h2>
           <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, urna eu tincidunt consectetur, nisi nisl aliquam nunc, euismod aliquam nisl nunc eu nisl.</p>
