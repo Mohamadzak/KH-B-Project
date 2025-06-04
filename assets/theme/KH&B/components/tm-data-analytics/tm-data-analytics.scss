@@ -4,8 +4,10 @@
   padding: 0 24px;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 22px;
+  margin-bottom: 20px;
 }
+
 
 /* Header Section */
 .tm-data-analytics-case-studies__header {
@@ -14,6 +16,8 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 48px;
+  margin-bottom: 50px;
+
 }
 
 /* Title Styling - allow wrapping */
@@ -94,6 +98,7 @@
     order: 1;
     flex-direction: column !important;
     gap: 24px;
+    margin-bottom: 50px;
   }
 
   /* Description paragraph inside header */

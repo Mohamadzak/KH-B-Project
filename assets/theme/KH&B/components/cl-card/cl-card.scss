@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  padding: 50px;
+  padding: 50px 0;
   background-color: black;
   font-family: Arial, sans-serif;
   justify-content: center;
@@ -11,13 +11,14 @@
 
 .client-card-wrapper {
   display: flex;
+  width:100%;
   justify-content: center;
   align-items: center;
 }
 
 .client-card {
-  width: 360px;
-  height: 380px;
+  width: 100%;
+  min-height: 380px;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 0 1px #ddd;

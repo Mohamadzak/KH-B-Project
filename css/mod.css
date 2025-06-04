@@ -9,6 +9,10 @@
   font-size: 27px !important;
 }
 
+.service-container .tagline{
+  text-transform: uppercase;
+}
+
 .menu-toggle {
   width: 30px;
   height: 21px;
@@ -220,12 +224,12 @@ ul.slick-dots li button {
   }
 }
 
-.ellipse-45 {
+.ellipse-45, .service-icon-46, .go-to-market-accent {
   transform: translateX(-50%);
   animation: wander 80s ease-in-out infinite;
   will-change: transform;
 }
-.decorative-image {
+.decorative-image, .khb-challenges-accent img, .solutions-accent img, .insight-icon-1 img , .insight-icon-3 img, .target-market-frame-167 img, .Target-market-frame-163 img{
   animation: rotateScaleMove 8s infinite ease-in-out;
   transform-origin: center;
 }
@@ -438,6 +442,9 @@ ul.slick-dots li.slick-active button {
   height: 1rem;
   opacity: 1;
 }
+.scrolled .inner-header{
+  background-color: black;
+}
 @media (max-width: 600px) {
   .mob {
     display: block;
@@ -445,6 +452,10 @@ ul.slick-dots li.slick-active button {
 
   .web {
     display: none;
+  }
+
+  footer{
+    overflow: hidden;
   }
 
   section.carousel-section {

@@ -2,11 +2,21 @@
    Featured Case Studies Container
    ========================================================================== */
 .featured-case-studies {
-  margin: 100px auto;
+  margin: 50px auto;
   padding: 0 24px;
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 25px;
+ 
+  padding-bottom: 15px;
+}
+
+.category-container{
+  margin-top: 80px !important;
+}
+
+.featured-case-studies__list{
+  margin-top: 15px;
 }
 
 /* ==========================================================================
@@ -81,6 +91,7 @@
   gap: 24px; /* Spacing between cards */
   overflow: visible; /* Prevent clipping */
   justify-content: center; /* Center cards horizontally */
+  margin-bottom: 30px;
 }
 
 /* Slick slider margin fix */
@@ -94,7 +105,7 @@
 .case-study-card {
   background: var(--white-color);
   border-radius: 8px;
-  flex: 1 1 300px; /* Responsive flex-basis */
+  flex:1 1 30.5%; /* Responsive flex-basis */
   display: flex;
   flex-direction: column;
 }

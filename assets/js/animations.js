@@ -75,7 +75,11 @@ const header = document.getElementById("header");
 
 window.addEventListener("scroll", () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
+  if (scrollTop > 30) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
   if (scrollTop > lastScrollTop) {
     // Scrolling down
     header.classList.add("hide");

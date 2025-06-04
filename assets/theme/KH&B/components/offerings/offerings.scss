@@ -21,14 +21,20 @@
   align-self: stretch;
   background: #232323;
 }
-
+.pl-h-5{
+  padding-left: 4rem;
+}
 .service-offerings__content {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 588px;
   z-index: 1;
-  transform: translateX(5%);
+ 
+}
+
+.khb-challenges-listing-row{
+  margin:0 -40px;
 }
 
 .service-offerings__title {
@@ -56,6 +62,7 @@
   justify-content: space-between;
   gap: 0;
   list-style: none;
+  padding-left:5px !important
 }
 
 .service-offerings__item {

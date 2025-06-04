@@ -396,7 +396,11 @@ const header = document.getElementById("header");
 const collapseElement = document.querySelector(".collapse");
 window.addEventListener("scroll", () => {
 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
+if (scrollTop > 30) {
+  header.classList.add("scrolled");
+} else {
+  header.classList.remove("scrolled");
+}
 if (scrollTop > lastScrollTop) {
 // Scrolling down
 if (!collapseElement.classList.contains("show")) {

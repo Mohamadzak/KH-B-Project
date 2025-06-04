@@ -36,7 +36,7 @@
   color: var(--white-color);
   font-size: var(--solutions-label-size);
   letter-spacing: var(--solutions-label-spacing);
-  margin-bottom: 12px;
+
 }
 
 .solutions-main-title {
@@ -65,7 +65,6 @@
   line-height: 24px;
   font-family: "Tahoma-Regular", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  transform: translateX(8%);
 }
 
 .solutions-content {
@@ -86,9 +85,10 @@
 .solutions-features {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 60px;
   flex: 2 1 0;
-  margin-left: 40px; /* Added: push the features/card to the right */
+  //margin-left: 40px; /* Added: push the features/card to the right */
+  
 }
 
 .solutions-feature-list {
