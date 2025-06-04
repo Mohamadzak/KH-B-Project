@@ -4,35 +4,7 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
-  overflow-x: hidden;
-  position: relative;
-}
-
-/* common arrow styles */
-.testimonial-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  font-size: 28px;
-  line-height: 40px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 10;
-}
-
-/* left arrow aligned on left edge */
-.testimonial-arrow.left-arrow {
-  left: -20px; /* shift outside container, adjust as needed */
-}
-
-/* right arrow aligned on right edge */
-.testimonial-arrow.right-arrow {
-  right: -20px; /* shift outside container, adjust as needed */
+  overflow-x: visible;
 }
 
 /* Header layout */
