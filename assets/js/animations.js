@@ -70,23 +70,36 @@ window.addEventListener("load", () => {
   document.body.classList.add("load-content");
 });
 
-let lastScrollTop = 0;
-const header = document.getElementById("header");
+let lastScrollTop2 = 0;
+const header2 = document.getElementById("header");
 
 window.addEventListener("scroll", () => {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-  if (scrollTop > 30) {
-    header.classList.add("scrolled");
-  } else {
-    header.classList.remove("scrolled");
-  }
-  if (scrollTop > lastScrollTop) {
+
+  if (scrollTop > lastScrollTop2) {
     // Scrolling down
-    header.classList.add("hide");
+    header2.classList.add("hide");
   } else {
     // Scrolling up
-    header.classList.remove("hide");
+    header2.classList.remove("hide");
   }
 
-  lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  lastScrollTop2 = scrollTop <= 0 ? 0 : scrollTop;
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuButton = document.querySelector('.navbar-toggler');
+
+  if (menuButton) {
+    menuButton.addEventListener('click', function () {
+      // Your callback code here
+    
+      console.log('Menu button clicked');
+
+      // Example: toggle class on body
+      document.body.classList.toggle('menu-open');
+    });
+  }
 });

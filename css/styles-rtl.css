@@ -1,95 +1,147 @@
+/* //////////////////////////////RTL///////////////////////// */
+
 body{
     font-family: Arial, Helvetica, sans-serif;
-
+  direction: rtl;
     overflow-x: hidden;
-}
-
-.carousel-section{
+  }
+  
+  .carousel-section{
     direction: ltr !important;
-}
-
-.newsletter-text, .fade-in-section{
+  }
+  .service-content {
+    padding-left: 40px;
+    padding-right:0;
+  }
+  .newsletter-text, .fade-in-section, .khb-challenges-title, .khb-challenge-details, .khb-challenge-bullet, .team-title, .team-description {
     text-align: right;
-}
-
-.carousel-section .slick-slide, .featured-case-studies__list-cont{
+  }
+  h2.text-start, p.text-start {
+    text-align: right !important;
+  }
+  .carousel-section .slick-slide, .featured-case-studies__list-cont{
     direction: rtl;
-}
-
-.case-study-card__btn, .learn-more-link span{
+  }
+  .form-check {
+    padding-left:0  !important;
+    padding-right: 1.5em !important;
+  }
+  .form-check .form-check-input {
+    float: right !important;
+    margin-right: -1.5em;
+    margin-left:0  !important;
+  }
+  button, input, optgroup, select, textarea{
+    text-align: right;
+  }
+  .case-study-card__btn, .learn-more-link span, .go-to-market-arrow, .bi-arrow-right::before, .bi-arrow-left::before{
     transform: scaleX(-1);
     display: inline-block;
   }
-
-.carousel-section .end-0 {
+  .blog-icons.me-2 {
+    margin-left: .5rem !important;
+    margin-right: 0 !important;
+  }
+  
+  div.share-lbl{
+    margin-right: 0 !important;
+    margin-left: 1.5rem !important;
+  
+  }
+  .toc-item.active-toc::before {
+    
+    right: 0;
+    left:auto;
+  }
+  div.ms-2
+   {
+      margin-right: .5rem !important;
+      margin-left:0 !important;
+  }
+  
+  .toc-item.active-toc {
+    padding-right: 1.5rem;
+    padding-left:0;
+  }
+  .carousel-section .end-0 {
     left: 0 !important;
     right:auto;
-}
-
-.carousel-section .banner-span {
+  }
+  
+  .carousel-section .banner-span {
     padding-left: 17%;
     padding-right:0;
     text-align: right;
-}
-
-.carousel-section .button{
+  }
+  
+  .carousel-section .button{
     float:right;
-}
-
-.custom-bullets {
+  }
+  
+  .custom-bullets {
     padding-right: 20px;
     padding-left:0;
-}
-
-#innovators-section div, #innovators-section .section-subject, #innovators-section .description {
+  }
+  
+  #innovators-section div, #innovators-section .section-subject, #innovators-section .description {
     text-align: right !important;
-}
-
-.review-card__arrows {
+  }
+  
+  .review-card__arrows {
     left: 100px;
     right:auto;
-}
-
-.case-study-card__btn{
+  }
+  
+  .case-study-card__btn{
     margin-left:0;
     margin-right:auto;
-}
-
-
-@media (max-width: 600px) {
+  }
+  
+  
+  @media (max-width: 600px) {
     .navbar-toggler-abs {
         left: 5px;
         right:auto;
+      }
+
+      .radio .form-check{
+        padding-left: 0.7rem;
+        padding-right: 0;
+      }
+      h2.text-end, p.text-end {
+        text-align: right !important;
       }
      
     #nav-links {
         right: -15px;
         left:auto;
     }
-
+  
     #lang-toggler-sm {
         float: right;
         text-align: right !important;
     }
-
+  
     .inner-header .dropdown-toggle svg {
         float: left;
     }
-
+  
     #lang-toggler-sm{
         background:black !important;
     }
-
+  
     .slick-progress-cont {
        
         right: -10px;
         left:auto;
     }
-
+  
     .featured-case-studies__list-cont {
-
+  
         right: -30px;
         left:auto;
     }
-}
-
+  }
+  
+  
+  

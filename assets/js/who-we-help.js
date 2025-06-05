@@ -2,6 +2,7 @@
    - Responsive toggle: initialize on small screens, destroy on large screens
 */
 $(document).ready(function () {
+
   function toggleSlick() {
     const $list = $(".featured-case-studies__list");
 
@@ -33,6 +34,7 @@ $(document).ready(function () {
 // Challenges Slick Slider (for all screen sizes)
 $(document).ready(function () {
   function slickify() {
+    if (window.innerWidth > 600) {
     if (!$(".khb-challenges-listing").hasClass("slick-initialized")) {
       // Inject arrows inside .khb-challenges-listing (if not already)
       if ($("#slick-prev").length === 0 && $("#slick-next").length === 0) {
@@ -66,7 +68,7 @@ $(document).ready(function () {
       $(".khb-challenges-listing").on("afterChange", function () {
         setEqualHeight();
       });
-    }
+    } }
   }
 
   slickify();
